@@ -41,8 +41,13 @@
     <!-- Scrollable sections: Ticket Info + Recent / Similar Tickets -->
     <div
       class="border-t flex-1 min-h-0 overflow-y-auto divide-y-[1px]"
-      v-if="Boolean(customFields.length) || showRecentSimilarTickets"
+      v-if="Boolean(customFields.length) || showRecentSimilarTickets || showCredits"
     >
+      <!-- KB Credits (kb_credits app; self-hides when not installed) -->
+      <div v-if="showCredits">
+        <TicketCreditsSection />
+      </div>
+
       <!-- Ticket Info (custom fields) -->
       <div v-if="Boolean(customFields.length)">
         <Section label="Ticket Info" v-model:opened="openedSections.ticketInfo">
@@ -158,6 +163,7 @@ import { useStorage } from "@vueuse/core";
 import { dayjs, Tooltip } from "frappe-ui";
 import { computed, inject, ref } from "vue";
 import LucideChevronRight from "~icons/lucide/chevron-right";
+import TicketCreditsSection from "../kb-credits/TicketCreditsSection.vue";
 import Section from "../Section.vue";
 import TicketField from "../TicketField.vue";
 import AssignTo from "./AssignTo.vue";
@@ -169,6 +175,9 @@ const customizations = inject(CustomizationSymbol)!;
 const activities = inject(ActivitiesSymbol)!;
 const recentSimilarTickets = inject(RecentSimilarTicketsSymbol)!;
 const { getFields, getField } = getMeta("HD Ticket");
+// kb_credits ships the custom fields below; their presence is a cheap, reliable
+// signal that the app is installed, and avoids an extra round-trip on every ticket.
+const showCredits = computed(() => Boolean(getField("kb_on_quote")));
 const { notifyTicketUpdate } = useNotifyTicketUpdate(ticket.value?.name);
 
 const dateFormat = window.date_format;
