@@ -139,7 +139,8 @@ export function prettyDate(date, mini = false) {
       } else if (dayDiff < 365) {
         return __("{0} M", [Math.floor(dayDiff / 30)]);
       } else {
-        return __("{0} y", [Math.floor(dayDiff / 365)]);
+        const years = Math.floor(dayDiff / 365);
+        return years >= 2 ? __("{0} yrs", [years]) : __("{0} y", [years]);
       }
     }
   } else {
@@ -233,13 +234,13 @@ export function formatTime(
 
   let formattedTime = "";
 
-  if (config.day && days > 0) {    formattedTime += `${days}d `;
+  if (config.day && days > 0) {    formattedTime += __("{0}d", String(days)) + " ";
   }
 
   if (config.hour && (hours > 0 || days > 0)) {    formattedTime += `${hours}h `;
   }
 
-  if (config.minute && (minutes > 0 || hours > 0 || days > 0)) {    formattedTime += `${minutes}m `;
+  if (config.minute && (minutes > 0 || hours > 0 || days > 0)) {    formattedTime += `${minutes}min `;
   }
 
   if (config.second) {
@@ -260,7 +261,8 @@ export function getTimeInSeconds(time: string) {
   let timeParts = time.split(" ");
   let seconds = 0;
   timeParts.forEach((part) => {
-    if (part.endsWith("d")) {
+    // « j » : suffixe des jours une fois formatTime traduit en français
+    if (part.endsWith("d") || part.endsWith("j")) {
       seconds += parseInt(part) * 24 * 60 * 60; // days
     } else if (part.endsWith("h")) {
       seconds += parseInt(part) * 60 * 60; // hours
@@ -385,13 +387,15 @@ export function formatTimeShort(date: string) {
   const diffMonths = now.diff(inputDate, "month");
   const diffYears = now.diff(inputDate, "year");
 
-  if (diffSeconds < 60) return `${diffSeconds} s`;
-  if (diffMinutes < 60) return `${diffMinutes} m`;
-  if (diffHours < 24) return `${diffHours} h`;
-  if (diffDays < 7) return `${diffDays} d`;
-  if (diffWeeks < 4) return `${diffWeeks} w`;
-  if (diffMonths < 12) return `${diffMonths} M`;
-  return `${diffYears}Y`;
+  // KB : unités traduites (fr : s, min, h, j, sem., mois, an/ans)
+  if (diffSeconds < 60) return __("{0} s", [diffSeconds]);
+  if (diffMinutes < 60) return __("{0} m", [diffMinutes]);
+  if (diffHours < 24) return __("{0} h", [diffHours]);
+  if (diffDays < 7) return __("{0} d", [diffDays]);
+  if (diffWeeks < 4) return __("{0} w", [diffWeeks]);
+  if (diffMonths < 12) return __("{0} M", [diffMonths]);
+  if (diffYears >= 2) return __("{0} yrs", [diffYears]);
+  return __("{0} y", [diffYears]);
 }
 
 function hasArabicContent(content: string) {
@@ -857,16 +861,16 @@ export function shortDuration(target: string | Date): string {
   const seconds = Math.abs(dayjs(target).diff(dayjs(), "second"));
   if (seconds >= YEAR) {
     const years = Math.floor(seconds / YEAR);
-    return `${years} ${years === 1 ? "year" : "years"}`;
+    return `${years} ${years === 1 ? __("year") : __("years")}`;
   }
   if (seconds >= MONTH) {
     const months = Math.floor(seconds / MONTH);
-    return `${months} ${months === 1 ? "month" : "months"}`;
+    return `${months} ${months === 1 ? __("month") : __("months")}`;
   }
   if (seconds >= DAY) {
     const days = Math.floor(seconds / DAY);
     const hours = Math.floor((seconds % DAY) / HOUR);
-    const dayLabel = `${days} ${days === 1 ? "day" : "days"}`;
+    const dayLabel = `${days} ${days === 1 ? __("day") : __("days")}`;
     return hours ? `${dayLabel} ${hours}h` : dayLabel;
   }
   if (seconds >= HOUR) {

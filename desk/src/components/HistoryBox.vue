@@ -7,9 +7,11 @@
         v-if="relatedActivities.length > 1"
         class="inline-flex flex-wrap gap-1.5 text-ink-gray-8 font-medium w-4/5"
       >
-        <span>{{ `${show_others ? "Hide " : "Show "}` }}</span>
-        <span>+{{ relatedActivities.length }} </span>
-        <span>changes from </span>
+        <span>{{
+          show_others
+            ? __("Hide +{0} changes from", String(relatedActivities.length))
+            : __("Show +{0} changes from", String(relatedActivities.length))
+        }}</span>
         <span>{{ user }}</span>
 
         <Button
@@ -26,7 +28,7 @@
         <span class="font-medium text-ink-gray-8">
           {{ user }}
         </span>
-        <span> {{ content }}</span>
+        <span> {{ __(content) }}</span>
       </div>
 
       <div class="text-ink-gray-5 text-sm w-2/6 flex justify-end">
@@ -45,7 +47,7 @@
           <span class="font-medium text-ink-gray-8">
             {{ relatedActivity.user }}
           </span>
-          <span> {{ relatedActivity.content }}</span>
+          <span> {{ __(relatedActivity.content) }}</span>
         </div>
         <Tooltip
           :text="dateFormat(relatedActivity.creation, dateTooltipFormat)"

@@ -55,7 +55,7 @@
         </div>
         <div class="flex items-center gap-2">
           <div class="text-sm text-ink-gray-5">
-            {{ dayjs.tz(n.creation).fromNow() }}
+            {{ fromNowFr(n.creation) }}
           </div>
           <div v-if="!n.read" class="h-1.5 w-1.5 rounded-full bg-blue-400" />
         </div>
@@ -70,7 +70,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import { Breadcrumbs, dayjs, Tooltip } from "frappe-ui";
+import { Breadcrumbs, Tooltip } from "frappe-ui";
+import { fromNowFr } from "@/components/kb-credits-portal/format";
 import LayoutHeader from "@/components/LayoutHeader.vue";
 import { useNotificationStore } from "@/stores/notification";
 import { ref } from "vue";

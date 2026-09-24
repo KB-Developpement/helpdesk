@@ -21,7 +21,7 @@
               :id="field.fieldname"
               :class="section.group ? 'flex-1 min-w-0' : 'w-full'"
               :page-length="10"
-              :label="field.label"
+              :label="__(field.label)"
               :placeholder="field.placeholder"
               :doctype="field.doctype"
               :modelValue="field.value"
@@ -50,7 +50,7 @@
 
       <!-- Ticket Info (custom fields) -->
       <div v-if="Boolean(customFields.length)">
-        <Section label="Ticket Info" v-model:opened="openedSections.ticketInfo">
+        <Section :label="__('Ticket Info')" v-model:opened="openedSections.ticketInfo">
           <template #header="{ opened, toggle }">
             <div
               class="flex gap-2.5 items-center justify-between sticky top-0 bg-surface-white z-10 px-4 py-4 cursor-pointer"
@@ -131,7 +131,7 @@
                       class="text-xs px-2 py-0.5 font-base shrink-0 rounded-sm"
                       :class="getStatusColor(t.status as string)"
                     >
-                      {{ t.status }}
+                      {{ __(t.status) }}
                     </span>
                   </div>
                 </div>
@@ -145,6 +145,7 @@
 </template>
 
 <script setup lang="ts">
+import { __ } from "@/translation";
 import { Link } from "@/components";
 import { parseField } from "@/composables/formCustomisation";
 import { useNotifyTicketUpdate } from "@/composables/realtime";
@@ -177,7 +178,11 @@ const recentSimilarTickets = inject(RecentSimilarTicketsSymbol)!;
 const { getFields, getField } = getMeta("HD Ticket");
 // kb_credits ships the custom fields below; their presence is a cheap, reliable
 // signal that the app is installed, and avoids an extra round-trip on every ticket.
-const showCredits = computed(() => Boolean(getField("kb_on_quote")));
+// The section itself needs a customer (credits hang off the customer's account):
+// without one it renders nothing, so don't leave an empty divided block either.
+const showCredits = computed(
+  () => Boolean(getField("kb_on_quote")) && Boolean(ticket.value?.doc?.customer)
+);
 const { notifyTicketUpdate } = useNotifyTicketUpdate(ticket.value?.name);
 
 const dateFormat = window.date_format;
@@ -306,7 +311,7 @@ function getFieldInFormat(fieldTemplate, fieldMeta) {
     options: fieldMeta?.options || "",
     placeholder:
       fieldTemplate.placeholder ||
-      `Enter ${fieldMeta?.label || fieldTemplate.fieldname}`,
+      __("Enter {0}", __(fieldMeta?.label || fieldTemplate.fieldname)),
     readonly: Boolean(fieldMeta.read_only),
     disabled: Boolean(fieldMeta.read_only),
     url_method: fieldTemplate.url_method || "",

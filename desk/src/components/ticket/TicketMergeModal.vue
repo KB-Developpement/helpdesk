@@ -1,5 +1,5 @@
 <template>
-  <Dialog title="Merge with another ticket" v-model:open="showDialog">
+  <Dialog :title="__('Merge with another ticket')" v-model:open="showDialog">
     <template #default>
       <div class="flex flex-col gap-4">
         <p class="text-p-base text-ink-gray-8">
@@ -52,7 +52,7 @@
         <Link
           class="form-control"
           doctype="HD Ticket"
-          placeholder="Select Ticket"
+          :placeholder="__('Select Ticket')"
           :filters="getDefaultFilters()"
           :label="__('Ticket')"
           :page-length="10"

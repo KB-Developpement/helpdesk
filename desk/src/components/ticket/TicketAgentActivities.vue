@@ -111,6 +111,7 @@
 </template>
 
 <script setup lang="ts">
+import { __ } from "@/translation";
 import { FadedScrollableDiv } from "@/components";
 import {
   ActivityIcon,
@@ -154,20 +155,20 @@ const { getUser } = useUserStore();
 const makeCall = inject<() => void>("makeCall");
 
 const emptyText = computed(() => {
-  if (props.title === "Emails") return "No email communications";
-  if (props.title === "Comments") return "No comments found";
-  if (props.title === "Calls") return "No calls made";
+  if (props.title === __("Emails")) return __("No email communications");
+  if (props.title === __("Comments")) return __("No comments found");
+  if (props.title === __("Calls")) return __("No calls made");
 
-  return "No activity found";
+  return __("No activity found");
 });
 
 const emptyTextIcon = computed(() => {
   let icon = ActivityIcon;
-  if (props.title == "Emails") {
+  if (props.title == __("Emails")) {
     icon = EmailIcon;
-  } else if (props.title == "Comments") {
+  } else if (props.title == __("Comments")) {
     icon = CommentIcon;
-  } else if (props.title == "Calls") {
+  } else if (props.title == __("Calls")) {
     icon = PhoneIcon;
   }
   return h(icon, { class: "text-ink-gray-4" });

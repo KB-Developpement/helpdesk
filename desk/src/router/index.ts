@@ -116,6 +116,12 @@ const routes = [
     name: "CallLogs",
     component: () => import("@/pages/call-logs/CallLogs.vue"),
   },
+  // kb_credits (G2) — agent dashboard, "Menu → Crédits d'intervention"
+  {
+    path: "/kb-credits",
+    name: "KBCreditsDashboard",
+    component: () => import("@/pages/kb-credits/AgentCreditsDashboard.vue"),
+  },
 
   // Customer Portal Routes
   {
@@ -145,6 +151,16 @@ const routes = [
     meta: {
       onSuccessRoute: "TicketCustomer",
       parent: "TicketsCustomer",
+      public: true,
+      auth: true,
+    },
+  },
+  // kb_credits (F1/F2/F3) — customer portal, "Tickets → Mes crédits"
+  {
+    path: "/my-credits",
+    name: "CustomerCredits",
+    component: () => import("@/pages/kb-credits/CustomerCredits.vue"),
+    meta: {
       public: true,
       auth: true,
     },

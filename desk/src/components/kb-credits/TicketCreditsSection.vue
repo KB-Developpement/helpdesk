@@ -17,7 +17,7 @@
             variant="subtle"
             size="sm"
           >
-            {{ credits.announced_total }}
+            {{ formatCredits(credits.announced_total) }}
           </Badge>
         </div>
         <LucideChevronRight
@@ -42,8 +42,8 @@
           v-if="credits.on_quote"
           class="flex items-start gap-1.5 rounded bg-surface-violet-1 px-2 py-1.5"
         >
-          <LucideFileText class="size-3.5 shrink-0 mt-px text-ink-violet-3" />
-          <span class="text-ink-violet-3 text-xs leading-snug">
+          <LucideFileText class="size-3.5 shrink-0 mt-px text-violet-700" />
+          <span class="text-violet-700 text-xs leading-snug">
             {{ __("This ticket is on quote — no credits are consumed.") }}
           </span>
         </div>
@@ -71,6 +71,7 @@
             :q="q"
             :can-qualify="credits.can_qualify"
             :is-manager="credits.is_manager"
+            :validation-threshold="validationThreshold"
             :busy="busyFor === q.name ? busyAction : null"
             @settle="onSettle"
             @requalify="onRequalify"
@@ -86,9 +87,10 @@
           v-if="credits.settled_total"
           class="flex justify-between text-sm pt-1"
         >
-          <span class="text-ink-gray-6">{{ __("Settled") }}</span>
+          <!-- même mot que le statut de ligne « Décomptée » -->
+          <span class="text-ink-gray-6">{{ __("Total settled") }}</span>
           <span class="text-ink-gray-9 font-semibold tabular-nums">
-            {{ credits.settled_total }}
+            {{ formatCredits(credits.settled_total) }}
           </span>
         </div>
 
@@ -125,7 +127,7 @@
 
 <script setup lang="ts">
 import { TicketSymbol } from "@/types";
-import { Badge, Button, call, createResource, dayjs, ErrorMessage, toast } from "frappe-ui";
+import { Badge, Button, call, createResource, ErrorMessage, toast } from "frappe-ui";
 import { computed, inject, ref, watch } from "vue";
 import LucideChevronRight from "~icons/lucide/chevron-right";
 import LucideFileText from "~icons/lucide/file-text";
@@ -136,10 +138,17 @@ import AnnounceQualificationDialog from "./AnnounceQualificationDialog.vue";
 import CreditsBalanceBar from "./CreditsBalanceBar.vue";
 import QualificationItem from "./QualificationItem.vue";
 import RequalifyDialog from "./RequalifyDialog.vue";
+import { formatCredits, formatDate } from "@/components/kb-credits-portal/format";
 import type { GridCode, Qualification, ResponsibilityLayer, TicketCredits } from "./types";
 
 const ticket = inject(TicketSymbol)!;
-const ticketName = computed(() => ticket.value?.name as string | undefined);
+// TicketSymbol is a *document resource*: the ticket's fields live under
+// `.doc`, which is null while the document loads. Reading `ticket.value.customer`
+// (the resource, not the doc) is always undefined and silently hid the panel.
+const doc = computed(() => ticket.value?.doc as Record<string, any> | null | undefined);
+const ticketName = computed(
+  () => (doc.value?.name ?? ticket.value?.name) as string | undefined
+);
 
 const opened = ref(false);
 const loadError = ref("");
@@ -148,16 +157,24 @@ const available = ref(true);
 // Credits hang off the customer's account: with no customer linked, the server
 // legitimately refuses ("Aucun client n'a pu etre determine"). Don't call at all
 // in that case, rather than turning a normal state into a red error box.
-const hasCustomer = computed(() => Boolean(ticket.value?.customer));
+const hasCustomer = computed(() => Boolean(doc.value?.customer));
+
+// Only an absent kb_credits (app uninstalled, method renamed) hides the panel.
+// A PermissionError or a business-rule error is information the agent needs.
+const ABSENT_APP =
+  /Failed to get method|No module named|has no attribute|is not whitelisted/i;
+
+function errorText(e: any): string {
+  return e?.messages?.join(", ") || e?.message || String(e);
+}
 
 const resource = createResource({
   url: "kb_credits.api.get_ticket_credits",
   makeParams: () => ({ ticket: ticketName.value }),
   auto: false,
   onError(e: any) {
-    const msg = e?.messages?.join(", ") || e?.message || String(e);
-    // kb_credits absent (or not permitted): stay silent rather than shouting
-    if (/not found|does not exist|AttributeError|Method Not Allowed|PermissionError/i.test(msg)) {
+    const msg = errorText(e);
+    if (ABSENT_APP.test(msg)) {
       available.value = false;
       return;
     }
@@ -166,26 +183,49 @@ const resource = createResource({
 });
 
 const credits = computed(() => resource.data as TicketCredits | undefined);
+const validationThreshold = computed(() =>
+  Number(credits.value?.validation_threshold ?? 1)
+);
 
 function reload() {
   if (!hasCustomer.value || !ticketName.value) return;
   loadError.value = "";
-  resource.fetch();
+  // resource.fetch() rethrows after onError: already handled above
+  resource.fetch().catch(() => {});
 }
 
+// grid + layers: only fetched when the agent actually opens a dialog
+const grid = ref<GridCode[]>([]);
+const layers = ref<ResponsibilityLayer[]>([]);
+
+// Another ticket (or another customer): never show the previous one's lines
+// while the new ones load, and forget the previous account's grid.
 watch(
-  [ticketName, hasCustomer],
-  () => {
-    if (hasCustomer.value && ticketName.value) reload();
-  },
+  () => [ticketName.value, doc.value?.customer],
+  (now, before) => {
+    if (before && (now[0] !== before[0] || now[1] !== before[1])) {
+      resource.reset();
+      grid.value = [];
+    }
+  }
+);
+
+// Closing a ticket settles its lines server-side, a priority change can make it
+// a legal P1, a customer change moves it to another account: reload on each.
+watch(
+  () => [
+    ticketName.value,
+    doc.value?.customer,
+    doc.value?.status,
+    doc.value?.priority,
+  ],
+  () => reload(),
   { immediate: true }
 );
 
-// ---- grid + layers: only fetched when the agent actually opens a dialog ----
-const grid = ref<GridCode[]>([]);
-const layers = ref<ResponsibilityLayer[]>([]);
 const optionsLoading = ref(false);
 
+// ---- dialog options ----
 async function ensureOptions() {
   if (grid.value.length && layers.value.length) return;
   optionsLoading.value = true;
@@ -197,7 +237,7 @@ async function ensureOptions() {
     grid.value = g || [];
     layers.value = l || [];
   } catch (e: any) {
-    toast.error(e?.messages?.join(", ") || e?.message || String(e));
+    toast.error(errorText(e));
   } finally {
     optionsLoading.value = false;
   }
@@ -230,7 +270,7 @@ async function run(q: Qualification, action: string, method: string, params: obj
     toast.success(__("Done"));
     reload();
   } catch (e: any) {
-    toast.error(e?.messages?.join(", ") || e?.message || String(e));
+    toast.error(errorText(e));
   } finally {
     busyFor.value = null;
     busyAction.value = null;
@@ -247,7 +287,4 @@ function onLowerCategory(q: Qualification) {
   });
 }
 
-function formatDate(d: string) {
-  return dayjs(d).format("DD/MM/YYYY");
-}
 </script>

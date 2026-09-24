@@ -1,16 +1,16 @@
 <template>
   <div class="space-y-2 px-6 py-3.5 border-b">
     <div class="flex items-center gap-4">
-      <span class="w-[150px] shrink-0 text-sm text-ink-gray-5">Status</span>
+      <span class="w-[150px] shrink-0 text-sm text-ink-gray-5">{{ __("Status") }}</span>
       <span
         class="flex-1 break-words rounded border border-outline-gray-2 bg-surface-white px-2 py-1 text-base font-medium text-ink-gray-9"
       >
-        {{ ticket.data.status }}
+        {{ __(ticket.data.status) }}
       </span>
     </div>
 
     <div class="flex items-center gap-4">
-      <span class="w-[150px] shrink-0 text-sm text-ink-gray-5">Priority</span>
+      <span class="w-[150px] shrink-0 text-sm text-ink-gray-5">{{ __("Priority") }}</span>
       <span
         class="flex-1 break-words rounded border border-outline-gray-2 bg-surface-white px-2 py-1 text-base font-medium text-ink-gray-9"
       >
@@ -23,7 +23,7 @@
       :key="data.label"
       class="flex items-center gap-4"
     >
-      <Tooltip :text="dayjs(data.value).format('LLLL')">
+      <Tooltip :text="formatFullDateFr(data.value)">
         <span class="w-[160px] shrink-0 text-sm text-ink-gray-5">{{
           data.title
         }}</span>
@@ -33,11 +33,11 @@
       >
         <Badge
           v-if="data.showSla"
-          :label="data.label"
+          :label="__(data.label)"
           :theme="data.theme"
           variant="outline"
         />
-        <span v-else>{{ dayjs.tz(data.value).fromNow() }}</span>
+        <span v-else>{{ fromNowFr(data.value) }}</span>
       </span>
     </div>
 
@@ -58,13 +58,29 @@
         {{ ticket.data[field.fieldname] || "—" }}
       </span>
     </div>
+
+    <!-- KB : crédits d'intervention (poids annoncé, Valider / Contester)
+         dans l'onglet Détails sur téléphone — la barre latérale qui les porte
+         sur ordinateur n'est pas affichée en vue mobile. -->
+    <TicketCreditsBlock
+      class="-mx-6 !max-h-none border-t"
+      :ticket="ticket.data.name"
+      :customer="ticket.data.customer"
+      :sla="ticket.data.sla"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
+import { __ } from "@/translation";
 import { dayjs } from "frappe-ui";
+import {
+  formatFullDateFr,
+  fromNowFr,
+} from "@/components/kb-credits-portal/format";
 import { Field } from "@/types";
 import { computed, inject } from "vue";
+import TicketCreditsBlock from "@/components/kb-credits-portal/TicketCreditsBlock.vue";
 import { ITicket } from "./symbols";
 
 const ticket = inject(ITicket);
@@ -80,7 +96,7 @@ const slaData = computed(() => {
   if (ticket.data.priority === "Unclassified") {
     return [
       {
-        title: "Expected First Response",
+        title: __("Expected First Response"),
         showSla: ticket.data.first_responded_on,
         label: responseSla,
         theme: responseSla === "Fulfilled" ? "green" : "red",
@@ -97,14 +113,14 @@ const slaData = computed(() => {
 
   return [
     {
-      title: "Expected First Response",
+      title: __("Expected First Response"),
       showSla: ticket.data.first_responded_on,
       label: responseSla,
       theme: responseSla === "Fulfilled" ? "green" : "red",
       value: ticket.data.response_by,
     },
     {
-      title: "Expected Resolution",
+      title: __("Expected Resolution"),
       showSla: ticket.data.resolution_date,
       label: resolutionSla,
       theme: resolutionSla === "Fulfilled" ? "green" : "red",

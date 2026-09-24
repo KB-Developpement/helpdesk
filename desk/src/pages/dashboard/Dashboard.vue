@@ -119,7 +119,7 @@
               :has-applied-filter="hasAppliedFilter"
               :empty-states="[
                 {
-                  title: `No ${(chart?.title).toLowerCase()} available.`,
+                  title: __('No {0} available.', __(chart?.title).toLowerCase()),
                 },
               ]"
             />
@@ -144,7 +144,7 @@
               :has-applied-filter="hasAppliedFilter"
               :empty-states="[
                 {
-                  title: `No ${(chart?.title).toLowerCase()} available.`,
+                  title: __('No {0} available.', __(chart?.title).toLowerCase()),
                 },
               ]"
             />
@@ -263,28 +263,28 @@ const colors = [
 ];
 const emptyStates = [
   {
-    title: "No ticket activity",
-    message: "Ticket trends will appear here once tickets are created.",
+    title: __("No ticket activity"),
+    message: __("Ticket trends will appear here once tickets are created."),
   },
   {
-    title: "No feedback data",
-    message: "Feedback insights will appear once responses are collected.",
+    title: __("No feedback data"),
+    message: __("Feedback insights will appear once responses are collected."),
   },
   {
-    title: "No team data",
-    message: "Tickets will be grouped by team once available.",
+    title: __("No team data"),
+    message: __("Tickets will be grouped by team once available."),
   },
   {
-    title: "No ticket type data",
-    message: "Tickets will be categorized by type once created.",
+    title: __("No ticket type data"),
+    message: __("Tickets will be categorized by type once created."),
   },
   {
-    title: "No priority data",
-    message: "Ticket priorities will be reflected here once assigned.",
+    title: __("No priority data"),
+    message: __("Ticket priorities will be reflected here once assigned."),
   },
   {
-    title: "No channel data",
-    message: "Tickets will be grouped by channel once received.",
+    title: __("No channel data"),
+    message: __("Tickets will be grouped by channel once received."),
   },
 ];
 
@@ -299,12 +299,12 @@ const tabButtons = computed(() => {
     {
       value: "organization",
       iconLeft: h(LucideBuilding2, { class: "size-4" }),
-      label: "My Organization",
+      label: __("My Organization"),
     },
     {
       value: "my_stats",
       iconLeft: h(LucideUser, { class: "size-4" }),
-      label: "My Stats",
+      label: __("My Stats"),
     },
   ];
 });
@@ -424,11 +424,33 @@ const loading = computed(() => {
   return numberCards.loading || masterData.loading || trendData.loading;
 });
 
+// KB : les séries des graphiques de tendance portent des noms anglais codés
+// côté serveur (« Open », « Closed », « SLA Fulfilled », « Rating »…) qui
+// servent aussi de clés de données : on renomme les deux côtés en français.
+function localizeAxisChart(chart: any) {
+  const names: Record<string, string> = {};
+  for (const s of chart.series || []) names[s.name] = __(s.name);
+  const rename = (row: Record<string, any>) => {
+    const out: Record<string, any> = {};
+    for (const [k, v] of Object.entries(row)) out[names[k] ?? k] = v;
+    return out;
+  };
+  return {
+    ...chart,
+    xAxis: chart.xAxis && {
+      ...chart.xAxis,
+      title: chart.xAxis.title && __(chart.xAxis.title),
+    },
+    series: (chart.series || []).map((s: any) => ({ ...s, name: names[s.name] })),
+    data: (chart.data || []).map(rename),
+  };
+}
+
 function getChartType(chart: any) {
   chart.colors = colors;
   if (chart["type"] === "axis") {
     return h(AxisChart, {
-      config: chart,
+      config: localizeAxisChart(chart),
     });
   }
   if (chart["type"] === "pie") {

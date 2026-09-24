@@ -6,7 +6,7 @@
       {{ title }}
     </div>
     <Dropdown
-      v-if="title == 'Calls'"
+      v-if="title == __('Calls')"
       :options="callActions"
       @click.stop
       placement="right"

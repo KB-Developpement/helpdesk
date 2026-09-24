@@ -8,7 +8,7 @@
         <div class="absolute right-0 pr-2">
           <Dropdown :options="dropdownOptions">
             <template #default="{ open }">
-              <Button :label="ticket.doc.status">
+              <Button :label="__(ticket.doc.status)">
                 <template #prefix>
                   <IndicatorIcon
                     :class="
@@ -74,6 +74,11 @@
                   {{ __("SLA") }}
                 </h3>
                 <TicketAgentDetails :ticket="ticket.doc" />
+                <!-- KB : crédits d'intervention (Annoncer, Décompter) aussi sur
+                     téléphone ; se masque seul sans client ou sans kb_credits -->
+                <div v-if="ticket.doc?.customer" class="border-t">
+                  <TicketCreditsSection />
+                </div>
                 <!-- Ticket Fields -->
                 <h3 class="px-6 pt-3 font-semibold text-base">
                   {{ __("Details") }}
@@ -205,6 +210,7 @@ import CustomActions from "@/components/CustomActions.vue";
 import AssignTo from "@/components/ticket-agent/AssignTo.vue";
 import SetContactPhoneModal from "@/components/ticket/SetContactPhoneModal.vue";
 import TicketAgentDetails from "@/components/ticket/TicketAgentDetails.vue";
+import TicketCreditsSection from "@/components/kb-credits/TicketCreditsSection.vue";
 import TicketAgentFields from "@/components/ticket/TicketAgentFields.vue";
 import {
   parseField,
@@ -423,7 +429,7 @@ const breadcrumbs = computed(() => {
 
 const dropdownOptions = computed(() =>
   ticketStatusStore.statuses.data?.map((o: HDTicketStatus) => ({
-    label: o.label_agent,
+    label: __(o.label_agent),
     value: o.label_agent,
     onClick: () => ticket.value.setValue.submit({ status: o.label_agent }),
     icon: () =>

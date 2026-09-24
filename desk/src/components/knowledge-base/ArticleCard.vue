@@ -28,14 +28,15 @@
         }}</span>
       </div>
       <span class="text-sm text-ink-gray-5">{{
-        dayjs.tz(article.modified).fromNow()
+        fromNowFr(article.modified)
       }}</span>
     </div>
   </router-link>
 </template>
 
 <script setup lang="ts">
-import { Avatar, dayjs } from "frappe-ui";
+import { Avatar } from "frappe-ui";
+import { fromNowFr } from "@/components/kb-credits-portal/format";
 import { Article } from "@/types";
 
 const props = defineProps<{

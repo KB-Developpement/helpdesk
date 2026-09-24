@@ -60,7 +60,7 @@ const chartData = computed(() => {
 
   const average =
     formatTime(_data?.average || 0, { day: true, hour: true, minute: true }) ||
-    "0m";
+    "0min";
 
   return {
     data: avg_time,

@@ -1,23 +1,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: frappe\n"
+"Project-Id-Version:  frappe\n"
 "Report-Msgid-Bugs-To: hello@frappe.io\n"
 "POT-Creation-Date: 2026-06-14 11:18+0000\n"
-"PO-Revision-Date: 2026-06-15 18:50\n"
+"PO-Revision-Date: 2026-06-15 18:50+0000\n"
 "Last-Translator: hello@frappe.io\n"
-"Language-Team: French\n"
 "Language: fr_FR\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: French\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Generated-By: Babel 2.16.0\n"
-"X-Crowdin-File: /[frappe.helpdesk] develop/helpdesk/locale/main.pot\n"
-"X-Crowdin-File-ID: 118\n"
-"X-Crowdin-Language: fr\n"
-"X-Crowdin-Project: frappe\n"
-"X-Crowdin-Project-ID: 639578\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: desk/src/components/CommentBox.vue:14
 msgid " commented"
@@ -31,6 +26,15 @@ msgstr "% de SLA respectés"
 #, python-format
 msgid "% of tickets created that were resolved within SLA"
 msgstr "% des tickets créés qui ont été résolus dans les délais du SLA"
+
+#: desk/src/components/view-controls/Filter.vue:417
+#, python-format
+msgid "%100%"
+msgstr "%100%"
+
+#: desk/src/components/view-controls/Filter.vue:417
+msgid "%John%"
+msgstr "%Jean%"
 
 #: desk/src/pages/SearchAgent.vue:120
 msgid "({0}s)"
@@ -58,14 +62,54 @@ msgstr "- {0} comme statut de réouverture<br>"
 msgid "0 is no feedback, 1 is Like, 2 is Dislike"
 msgstr "0 = aucun avis, 1 = J'aime, 2 = Je n'aime pas"
 
+#: desk/src/components/view-controls/Filter.vue:422
+msgid "01/01/2022"
+msgstr "01/01/2022"
+
+#: desk/src/components/view-controls/Filter.vue:412
+msgid "01/01/2022 to 01/31/2022"
+msgstr "01/01/2022 au 31/01/2022"
+
 #: desk/src/pages/home/components/AvgTimeMetrics.vue:178
 #: desk/src/pages/home/components/AvgTimeMetrics.vue:196
 msgid "1 Year"
 msgstr "1 an"
 
+#: desk/src/utils.ts:182
+msgid "1 hour ago"
+msgstr "Il y a 1 heure"
+
+#: desk/src/utils.ts:178
+msgid "1 minute ago"
+msgstr "Il y a 1 minute"
+
+#: desk/src/utils.ts:197
+msgid "1 month ago"
+msgstr "Il y a 1 mois"
+
 #: helpdesk/helpdesk/doctype/hd_ticket_comment/hd_ticket_comment.py:154
 msgid "1 person reacted to your comment"
 msgstr "1 personne a réagi à votre commentaire"
+
+#: desk/src/utils.ts:193
+msgid "1 week ago"
+msgstr "Il y a 1 semaine"
+
+#: desk/src/utils.ts:201
+msgid "1 year ago"
+msgstr "Il y a 1 an"
+
+#: desk/src/components/view-controls/Filter.vue:414
+msgid "100, 200, 300"
+msgstr "100, 200, 300"
+
+#: desk/src/components/view-controls/Filter.vue:421
+msgid "1000"
+msgstr "1000"
+
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:52
+msgid "15 days to contest, counted from its notification."
+msgstr "15 jours pour contester, à compter de sa notification."
 
 #: desk/src/pages/home/components/AvgTimeMetrics.vue:176
 #: desk/src/pages/home/components/AvgTimeMetrics.vue:188
@@ -79,42 +123,35 @@ msgid "6 Months"
 msgstr "6 mois"
 
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.py:117
-msgid ""
-"<br>Please update HD Settings to use a different status before disabling "
-"this status."
-msgstr ""
-"<br>Veuillez modifier les paramètres du Helpdesk pour utiliser un autre "
-"statut avant de désactiver celui-ci."
+msgid "<br>Please update HD Settings to use a different status before disabling this status."
+msgstr "<br>Veuillez modifier les paramètres du Helpdesk pour utiliser un autre statut avant de désactiver celui-ci."
 
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.py:95
-msgid ""
-"<br>Please update the SLA(s) to use a different status before disabling this"
-" status."
-msgstr ""
-"<br>Veuillez modifier le ou les SLA pour utiliser un autre statut avant de "
-"désactiver celui-ci."
+msgid "<br>Please update the SLA(s) to use a different status before disabling this status."
+msgstr "<br>Veuillez modifier le ou les SLA pour utiliser un autre statut avant de désactiver celui-ci."
 
 #. Introduction text of the email-feedback Web Form
 #: helpdesk/helpdesk/web_form/email_feedback/email_feedback.json
-msgid ""
-"<div class=\"ql-editor read-mode\"><p>Let us know if we solved your issue "
-"well. It’ll help us serve you better next time.</p></div>"
-msgstr ""
-"<div class=\"ql-editor read-mode\"><p>Dites-nous si nous avons bien résolu "
-"votre problème. Cela nous aidera à mieux vous servir la prochaine "
-"fois.</p></div>"
+msgid "<div class=\"ql-editor read-mode\"><p>Let us know if we solved your issue well. It’ll help us serve you better next time.</p></div>"
+msgstr "<div class=\"ql-editor read-mode\"><p>Dites-nous si nous avons bien résolu votre problème. Cela nous aidera à mieux vous servir la prochaine fois.</p></div>"
 
 #. Header text in the Helpdesk Workspace
 #: helpdesk/helpdesk/workspace/helpdesk/helpdesk.json
 msgid "<span class=\"h3\" style=\"\"><a href=\"/helpdesk\">Visit Helpdesk</a></span>"
-msgstr ""
-"<span class=\"h3\" style=\"\"><a href=\"/helpdesk\">Accéder au "
-"Helpdesk</a></span>"
+msgstr "<span class=\"h3\" style=\"\"><a href=\"/helpdesk\">Accéder au Helpdesk</a></span>"
 
 #. Paragraph text in the Helpdesk Workspace
 #: helpdesk/helpdesk/workspace/helpdesk/helpdesk.json
 msgid "<span class=\"h4\">Helpdesk Configuration<br></span>"
 msgstr "<span class=\"h4\">Configuration du Helpdesk<br></span>"
+
+#: desk/src/components/kb-credits-portal/LegalFreezeBanner.vue:16
+msgid "A legal deadline is less than 72 hours away: no non-urgent deployment, on our side or the customer's."
+msgstr "Une échéance légale tombe dans moins de 72 heures : aucun déploiement non urgent, ni de notre côté ni de celui du client."
+
+#: desk/src/components/kb-credits-portal/LegalFreezeBanner.vue:23
+msgid "A legal deadline is less than 72 hours away: please do not deploy anything non-urgent in production until it has passed. A blocked payroll or declaration is handled as a critical priority (P1)."
+msgstr "Une échéance légale tombe dans moins de 72 heures : ne déployez rien de non urgent en production avant qu'elle soit passée. Une paie ou une déclaration bloquée est traitée en priorité critique (P1)."
 
 #: desk/src/pages/ticket/TicketNew.vue:69
 msgid "A short description"
@@ -127,10 +164,13 @@ msgstr "Un jour ouvré portant ce nom existe déjà"
 #. Option for the 'Source Type' (Select) field in DocType 'HD Support Search
 #. Source'
 #. Label of the api_sb (Section Break) field in DocType 'HD Support Search
-#. Source'
 #: helpdesk/helpdesk/doctype/hd_support_search_source/hd_support_search_source.json
 msgid "API"
 msgstr "API"
+
+#: desk/src/pages/kb-credits/CustomerCredits.vue:61
+msgid "Above 1 credit, we wait for your agreement before intervening. Without a reply within 48 working hours, the weight is deemed accepted. The announced weight is a ceiling: it can only go down."
+msgstr "Au-delà de 1 crédit, nous attendons votre accord avant d'intervenir. Sans réponse sous 48 heures ouvrées, le poids est réputé accepté. Le poids annoncé est un plafond : il ne peut que baisser."
 
 #: desk/src/components/Settings/Teams/TeamEdit.vue:263
 msgid "Access all team tickets"
@@ -152,6 +192,10 @@ msgstr "Compte"
 msgid "Account Info & Security"
 msgstr "Informations et sécurité du compte"
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:142
+msgid "Accounts near the remedy cap"
+msgstr "Comptes proches du plafond de remèdes"
+
 #. Label of the acknowledgement_section (Section Break) field in DocType 'HD
 #. Settings'
 #: desk/src/components/Settings/EmailNotifications/NotificationList.vue:72
@@ -171,15 +215,11 @@ msgstr "Action requise"
 #. Description of the 'On click (Javascript)' (Code) field in DocType 'HD
 #. Action'
 #: helpdesk/helpdesk/doctype/hd_action/hd_action.json
-msgid ""
-"Action to perform when clicking the button. The doc will be available as "
-"`this`"
-msgstr ""
-"Action à exécuter lors du clic sur le bouton. Le document sera accessible "
-"via `this`"
+msgid "Action to perform when clicking the button. The doc will be available as `this`"
+msgstr "Action à exécuter lors du clic sur le bouton. Le document sera accessible via `this`"
 
 #. Option for the 'Category' (Select) field in DocType 'HD Agent Status'
-#: desk/src/components/Settings/Assignment Rules/AssignmentSchedule.vue:42
+#: Rules/AssignmentSchedule.vue:42 desk/src/components/Settings/Assignment
 #: helpdesk/helpdesk/doctype/hd_agent_status/hd_agent_status.json
 msgid "Active"
 msgstr "Actif"
@@ -204,7 +244,7 @@ msgstr ""
 msgid "Activity"
 msgstr "Activité"
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeSearch.vue:9
+#: Rules/AssigneeSearch.vue:9 desk/src/components/Settings/Assignment
 msgid "Add Assignee"
 msgstr "Ajouter un cessionnaire"
 
@@ -214,11 +254,15 @@ msgstr "Ajouter une catégorie"
 
 #: desk/src/components/view-controls/ColumnSettings.vue:69
 msgid "Add Column"
-msgstr "Ajouter une Colonne"
+msgstr "Ajouter une colonne"
 
 #: desk/src/components/Settings/Profile/UserEmailSettings.vue:91
 msgid "Add Email"
 msgstr "Ajouter un e-mail"
+
+#: desk/src/components/view-controls/Filter.vue:141
+msgid "Add Filter"
+msgstr "Ajouter un filtre"
 
 #: desk/src/components/view-controls/filter/Filter.vue:90
 msgid "Add Filter..."
@@ -246,7 +290,7 @@ msgstr "Ajouter des vacances hebdomadaires"
 msgid "Add a comment on a ticket"
 msgstr "Ajouter un commentaire sur un ticket"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRulesSection.vue:17
+#: Rules/AssignmentRulesSection.vue:17 desk/src/components/Settings/Assignment
 msgid "Add a condition"
 msgstr "Ajoutez une condition"
 
@@ -254,17 +298,21 @@ msgstr "Ajoutez une condition"
 msgid "Add a custom condition"
 msgstr "Ajouter une condition personnalisée"
 
+#: desk/src/components/ticket/TicketSplitModal.vue:14
+msgid "Add a subject for the new ticket"
+msgstr "Saisissez l'objet du nouveau ticket"
+
 #: desk/src/pages/home/Home.vue:91
 msgid "Add charts to get started"
 msgstr "Ajoutez des graphiques pour commencer"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRulesSection.vue:29
-#: desk/src/components/Settings/Assignment Rules/AssignmentRulesSection.vue:66
+#: Rules/AssignmentRulesSection.vue:29 Rules/AssignmentRulesSection.vue:66
+#: desk/src/components/Settings/Assignment
 #: desk/src/components/Settings/Sla/SlaAssignmentConditions.vue:25
 msgid "Add condition"
 msgstr "Ajouter condition"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRulesSection.vue:72
+#: Rules/AssignmentRulesSection.vue:72 desk/src/components/Settings/Assignment
 msgid "Add condition group"
 msgstr "Ajouter un groupe de conditions"
 
@@ -274,15 +322,13 @@ msgstr "Ajouter un filtre"
 
 #: desk/src/components/Settings/Holiday/HolidayView.vue:136
 msgid "Add holidays here to make sure they’re excluded from SLA calculations."
-msgstr ""
-"Ajoutez ici les jours fériés afin qu'ils soient exclus du calcul des SLA."
+msgstr "Ajoutez ici les jours fériés afin qu'ils soient exclus du calcul des SLA."
 
 #: desk/src/components/Settings/Teams/TeamEdit.vue:97
 msgid "Add members to this team to get started."
 msgstr "Ajoutez des membres à cette équipe pour commencer."
 
-#: desk/src/components/Settings/Assignment
-#: Rules/AssignmentRulesListView.vue:23
+#: Rules/AssignmentRulesListView.vue:23 desk/src/components/Settings/Assignment
 #: desk/src/components/Settings/EmailAccountList.vue:47
 #: desk/src/components/Settings/Holiday/HolidayList.vue:23
 #: desk/src/components/Settings/SavedReplies/SavedRepliesList.vue:92
@@ -295,12 +341,8 @@ msgid "Add recurring holidays such as weekends."
 msgstr "Ajoutez les congés récurrents, comme les week-ends."
 
 #: desk/src/components/Settings/Sla/SlaPolicyView.vue:183
-msgid ""
-"Add time targets around support milestones like first reply and resolution "
-"times."
-msgstr ""
-"Définissez des objectifs de temps sur les étapes clés du support, comme la "
-"première réponse et la résolution."
+msgid "Add time targets around support milestones like first reply and resolution times."
+msgstr "Définissez des objectifs de temps sur les étapes clés du support, comme la première réponse et la résolution."
 
 #. Label of the get_weekly_off_dates (Button) field in DocType 'HD Service
 #. Holiday List'
@@ -400,12 +442,12 @@ msgid "Agents & Teams"
 msgstr "Agents et équipes"
 
 #: desk/src/components/Settings/General/components/TicketSettings.vue:70
-msgid ""
-"Agents will no longer be able to view and create saved replies with global "
-"scope."
-msgstr ""
-"Les agents ne pourront plus consulter ni créer de réponses enregistrées de "
-"portée globale."
+msgid "Agents will no longer be able to view and create saved replies with global scope."
+msgstr "Les agents ne pourront plus consulter ni créer de réponses enregistrées de portée globale."
+
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:64
+msgid "Alerts at {0}% and {1}%"
+msgstr "Alertes à {0} % et {1} %"
 
 #. Name of a role
 #: desk/src/components/SavedRepliesSelectorModal.vue:165
@@ -441,21 +483,19 @@ msgstr "Toutes les vues"
 
 #: desk/src/pages/knowledge-base/KnowledgeBaseAgent.vue:322
 msgid "All articles from this category will move to General category."
-msgstr ""
-"Tous les articles de cette catégorie seront déplacés vers la catégorie "
-"Général."
+msgstr "Tous les articles de cette catégorie seront déplacés vers la catégorie Général."
 
 #: desk/src/components/ticket/TicketMergeModal.vue:7
-msgid ""
-"All comments and emails from both tickets will be merged into the selected "
-"ticket"
-msgstr ""
-"Tous les commentaires et e-mails des deux tickets seront fusionnés dans le "
-"ticket sélectionné"
+msgid "All comments and emails from both tickets will be merged into the selected ticket"
+msgstr "Tous les commentaires et e-mails des deux tickets seront fusionnés dans le ticket sélectionné"
 
 #: desk/src/pages/home/components/PendingTickets.vue:262
 msgid "All your assigned tickets have been responded to"
 msgstr "Tous les tickets qui vous sont assignés ont reçu une réponse"
+
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:24
+msgid "Allocated"
+msgstr "Alloués"
 
 #. Label of the allow_anyone_to_create_tickets (Check) field in DocType 'HD
 #. Settings'
@@ -481,49 +521,49 @@ msgstr "Autoriser les utilisateurs à réagir aux commentaires avec des emojis."
 msgid "Amber"
 msgstr "Ambre"
 
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:100
+msgid "Announce"
+msgstr "Annoncer"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:4
+#: desk/src/components/kb-credits/TicketCreditsSection.vue:99
+msgid "Announce a qualification"
+msgstr "Annoncer une qualification"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:213
+msgid "Announced: {0} credit(s)"
+msgstr "Annoncé : {0} crédit(s)"
+
+#: desk/src/pages/kb-credits/CustomerCredits.vue:53
+msgid "Announcements awaiting your reply"
+msgstr "Annonces en attente de votre réponse"
+
 #: desk/src/components/Settings/General/components/TicketSettings.vue:113
-msgid ""
-"Anyone will be able to create tickets without any permission. e.g. from "
-"webform."
-msgstr ""
-"N'importe qui pourra créer des tickets sans aucune permission, par exemple "
-"depuis un formulaire web."
+msgid "Anyone will be able to create tickets without any permission. e.g. from webform."
+msgstr "N'importe qui pourra créer des tickets sans aucune permission, par exemple depuis un formulaire web."
 
 #: desk/src/components/Settings/Preferences/Preferences.vue:26
 msgid "Appearance"
 msgstr "Apparence"
 
 #: desk/src/components/Settings/General/components/Branding.vue:17
-msgid ""
-"Appears in the left sidebar. Recommended size is minimum 32x32 px in PNG or "
-"SVG."
-msgstr ""
-"Apparaît dans la barre latérale gauche. Taille recommandée : 32x32 px "
-"minimum, en PNG ou SVG."
+msgid "Appears in the left sidebar. Recommended size is minimum 32x32 px in PNG or SVG."
+msgstr "Apparaît dans la barre latérale gauche. Taille recommandée : 32x32 px minimum, en PNG ou SVG."
 
 #. Description of the 'Favicon' (Attach Image) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"Appears next to the title in your browser tab. Recommended size is minimum "
-"32x32 px in PNG or ICO"
-msgstr ""
-"Apparaît à côté du titre dans l'onglet du navigateur. Taille recommandée : "
-"32x32 px minimum, en PNG ou ICO"
+msgid "Appears next to the title in your browser tab. Recommended size is minimum 32x32 px in PNG or ICO"
+msgstr "Apparaît à côté du titre dans l'onglet du navigateur. Taille recommandée : 32x32 px minimum, en PNG ou ICO"
 
 #: desk/src/components/Settings/General/components/Branding.vue:29
-msgid ""
-"Appears next to the title in your browser tab. Recommended size is minimum "
-"32x32 px in PNG or ICO."
-msgstr ""
-"Apparaît à côté du titre dans l'onglet du navigateur. Taille recommandée : "
-"32x32 px minimum, en PNG ou ICO."
+msgid "Appears next to the title in your browser tab. Recommended size is minimum 32x32 px in PNG or ICO."
+msgstr "Apparaît à côté du titre dans l'onglet du navigateur. Taille recommandée : 32x32 px minimum, en PNG ou ICO."
 
 #. Label of the apply_sla_for_resolution (Check) field in DocType 'HD Service
 #. Level Agreement'
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.json
 msgid "Apply SLA for Resolution Time"
-msgstr ""
-"Appliquer l'accord de niveau de service (SLA) pour le délai de résolution"
+msgstr "Appliquer l'accord de niveau de service (SLA) pour le délai de résolution"
 
 #. Label of the apply_to (Select) field in DocType 'HD Form Script'
 #: helpdesk/helpdesk/doctype/hd_form_script/hd_form_script.json
@@ -547,6 +587,10 @@ msgstr "Appliquer en dehors des heures ouvrées"
 msgid "Apply to customer portal"
 msgstr "Appliquer au portail client"
 
+#: desk/src/components/Apps.vue:18
+msgid "Apps"
+msgstr "Applications"
+
 #. Option for the 'Status' (Select) field in DocType 'HD Article'
 #: desk/src/pages/knowledge-base/KnowledgeBaseAgent.vue:451
 #: helpdesk/helpdesk/doctype/hd_article/hd_article.json
@@ -555,9 +599,7 @@ msgstr "Archivé"
 
 #: desk/src/components/Settings/SettingsModal.vue:74
 msgid "Are you sure you want to change tabs? Unsaved changes will be lost."
-msgstr ""
-"Voulez-vous vraiment changer d'onglet ? Les modifications non enregistrées "
-"seront perdues."
+msgstr "Voulez-vous vraiment changer d'onglet ? Les modifications non enregistrées seront perdues."
 
 #: desk/src/pages/ticket/TicketCustomer.vue:314
 msgid "Are you sure you want to close this ticket?"
@@ -568,15 +610,16 @@ msgid "Are you sure you want to delete these articles?"
 msgstr "Voulez-vous vraiment supprimer ces articles ?"
 
 #: desk/src/components/ticket-agent/TicketHeader.vue:204
-msgid ""
-"Are you sure you want to delete this ticket? This is an irreversible action "
-"and cannot be undone."
-msgstr ""
-"Voulez-vous vraiment supprimer ce ticket ? Cette action est irréversible."
+msgid "Are you sure you want to delete this ticket? This is an irreversible action and cannot be undone."
+msgstr "Voulez-vous vraiment supprimer ce ticket ? Cette action est irréversible."
 
 #: desk/src/pages/ticket/Tickets.vue:541
 msgid "Are you sure you want to delete this view?"
 msgstr "Voulez-vous vraiment supprimer cette vue ?"
+
+#: desk/src/components/ListViewBuilder.vue:240
+msgid "Are you sure you want to delete {0} item(s)?"
+msgstr "Voulez-vous vraiment supprimer {0} élément(s) ?"
 
 #: desk/src/pages/knowledge-base/Article.vue:147
 msgid "Are you sure you want to discard changes?"
@@ -586,7 +629,7 @@ msgstr "Voulez-vous vraiment abandonner les modifications ?"
 msgid "Are you sure you want to discard this article?"
 msgstr "Voulez-vous vraiment abandonner cet article ?"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:450
+#: Rules/AssignmentRuleView.vue:450 desk/src/components/Settings/Assignment
 #: desk/src/components/Settings/EmailNotifications/Notification.vue:103
 #: desk/src/components/Settings/FieldDependency/FieldDependency.vue:68
 #: desk/src/components/Settings/Holiday/HolidayView.vue:192
@@ -597,33 +640,29 @@ msgstr "Voulez-vous vraiment abandonner cet article ?"
 #: desk/src/components/Settings/Telephony/ExotelSettings.vue:215
 #: desk/src/components/Settings/Telephony/TwilioSettings.vue:184
 msgid "Are you sure you want to go back? Unsaved changes will be lost."
-msgstr ""
-"Êtes-vous sûr(e) de vouloir revenir en arrière ? Les modifications non "
-"enregistrées seront perdues."
+msgstr "Êtes-vous sûr(e) de vouloir revenir en arrière ? Les modifications non enregistrées seront perdues."
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeSearch.vue:165
+#: Rules/AssigneeSearch.vue:165 desk/src/components/Settings/Assignment
 msgid "Are you sure you want to leave? Unsaved changes will be lost."
-msgstr ""
-"Voulez-vous vraiment quitter ? Les modifications non enregistrées seront "
-"perdues."
+msgstr "Voulez-vous vraiment quitter ? Les modifications non enregistrées seront perdues."
 
 #: desk/src/components/Settings/General/components/Branding.vue:111
 msgid "Are you sure you want to remove the logo?"
 msgstr "Voulez-vous vraiment supprimer le logo ?"
 
 #: desk/src/components/Settings/EmailNotifications/Notification.vue:116
-msgid ""
-"Are you sure you want to reset the content? Current content will be "
-"overridden."
-msgstr ""
-"Voulez-vous vraiment réinitialiser le contenu ? Le contenu actuel sera "
-"écrasé."
+msgid "Are you sure you want to reset the content? Current content will be overridden."
+msgstr "Voulez-vous vraiment réinitialiser le contenu ? Le contenu actuel sera écrasé."
 
 #. Label of the article (Link) field in DocType 'HD Article Feedback'
 #: desk/src/pages/knowledge-base/KnowledgeBaseAgent.vue:114
 #: helpdesk/helpdesk/doctype/hd_article_feedback/hd_article_feedback.json
 msgid "Article"
 msgstr "Article"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:41
+msgid "Article 4 — determines the multiplier applied to the grid weight."
+msgstr "Article 4 : détermine le coefficient appliqué au poids de la grille."
 
 #: desk/src/pages/knowledge-base/Article.vue:519
 msgid "Article body cannot be set as empty."
@@ -636,6 +675,10 @@ msgstr "Article créé avec succès."
 #: desk/src/pages/knowledge-base/Article.vue:558
 msgid "Article deleted successfully."
 msgstr "Article supprimé avec succès."
+
+#: desk/src/pages/knowledge-base/Article.vue:469
+msgid "Article has been successfully moved."
+msgstr "L'article a bien été déplacé."
 
 #: desk/src/pages/knowledge-base/Article.vue:654
 msgid "Article link copied to clipboard"
@@ -656,6 +699,10 @@ msgstr "Articles supprimés avec succès."
 #: desk/src/pages/knowledge-base/KnowledgeBaseAgent.vue:235
 msgid "Articles moved successfully."
 msgstr "Articles déplacés avec succès."
+
+#: desk/src/pages/knowledge-base/KnowledgeBaseCustomer.vue:16
+msgid "Ask a question..."
+msgstr "Posez une question…"
 
 #: desk/src/components/layouts/Sidebar.vue:482
 msgid "Assign a ticket to an agent"
@@ -684,7 +731,7 @@ msgstr "Attribué à"
 msgid "Assignee"
 msgstr "Cessionnaire"
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeRules.vue:5
+#: Rules/AssigneeRules.vue:5 desk/src/components/Settings/Assignment
 msgid "Assignee Rules"
 msgstr "Règles d'assignation"
 
@@ -692,7 +739,7 @@ msgstr "Règles d'assignation"
 msgid "Assignee's updated successfully."
 msgstr "Assignations mises à jour avec succès."
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeRules.vue:75
+#: Rules/AssigneeRules.vue:75 desk/src/components/Settings/Assignment
 msgid "Assignees"
 msgstr "Personnes assignées"
 
@@ -705,7 +752,7 @@ msgstr "Assignations mises à jour avec succès."
 msgid "Assignment"
 msgstr "Attribution"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:122
+#: Rules/AssignmentRuleView.vue:122 desk/src/components/Settings/Assignment
 msgid "Assignment Condition"
 msgstr "Condition d'affectation"
 
@@ -721,52 +768,44 @@ msgstr "Conditions d'affectation"
 #: helpdesk/helpdesk/doctype/hd_team/hd_team.json
 #: helpdesk/helpdesk/workspace/helpdesk/helpdesk.json
 msgid "Assignment Rule"
-msgstr "Règle d&#39;assignation"
+msgstr "Règle d'attribution"
 
 #. Label of the assignment_rules_section (Section Break) field in DocType 'HD
 #. Settings'
-#: desk/src/components/Settings/Assignment Rules/AssignmentRulesList.vue:5
+#: Rules/AssignmentRulesList.vue:5 desk/src/components/Settings/Assignment
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
 msgid "Assignment Rules"
-msgstr "Règles d'assignation"
+msgstr "Règles d'attribution"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRulesList.vue:11
-msgid ""
-"Assignment Rules automatically route tickets to the right team members based"
-" on predefined conditions."
-msgstr ""
-"Les règles d'assignation dirigent automatiquement les tickets vers les bons "
-"membres de l'équipe selon des conditions prédéfinies."
+#: Rules/AssignmentRulesList.vue:11 desk/src/components/Settings/Assignment
+msgid "Assignment Rules automatically route tickets to the right team members based on predefined conditions."
+msgstr "Les règles d'assignation dirigent automatiquement les tickets vers les bons membres de l'équipe selon des conditions prédéfinies."
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:276
+#: Rules/AssignmentRuleView.vue:276 desk/src/components/Settings/Assignment
 msgid "Assignment Schedule"
 msgstr "Règle d’Affectation"
 
-#: desk/src/components/Settings/Assignment
-#: Rules/AssignmentRulesListView.vue:29
+#: Rules/AssignmentRulesListView.vue:29 desk/src/components/Settings/Assignment
 msgid "Assignment rule"
 msgstr "Règle d'assignation"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:545
+#: Rules/AssignmentRuleView.vue:545 desk/src/components/Settings/Assignment
 msgid "Assignment rule created successfully."
 msgstr "Règle d'assignation créée avec succès."
 
-#: desk/src/components/Settings/Assignment
-#: Rules/AssignmentRuleListItem.vue:130
+#: Rules/AssignmentRuleListItem.vue:130 desk/src/components/Settings/Assignment
 msgid "Assignment rule deleted successfully."
 msgstr "Règle d'assignation supprimée avec succès."
 
-#: desk/src/components/Settings/Assignment
-#: Rules/AssignmentRuleListItem.vue:173
+#: Rules/AssignmentRuleListItem.vue:173 desk/src/components/Settings/Assignment
 msgid "Assignment rule duplicated successfully."
 msgstr "Règle d'assignation dupliquée avec succès."
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:632
+#: Rules/AssignmentRuleView.vue:632 desk/src/components/Settings/Assignment
 msgid "Assignment rule updated successfully."
 msgstr "Règle d'assignation mise à jour avec succès."
 
-#: desk/src/components/Settings/Assignment
-#: Rules/AssignmentRuleListItem.vue:226
+#: Rules/AssignmentRuleListItem.vue:226 desk/src/components/Settings/Assignment
 msgid "Assignment rule {0} updated successfully."
 msgstr "Règle d'assignation {0} mise à jour avec succès."
 
@@ -793,8 +832,7 @@ msgstr "Au moins une équipe est requise"
 
 #: helpdesk/helpdesk/doctype/hd_escalation_rule/hd_escalation_rule.py:28
 msgid "At-least one of priority, team and ticket type is required"
-msgstr ""
-"Au moins l'un des champs priorité, équipe ou type de ticket est requis"
+msgstr "Au moins l'un des champs priorité, équipe ou type de ticket est requis"
 
 #. Label of the attachment (Attach) field in DocType 'HD Ticket'
 #. Label of a field in the tickets Web Form
@@ -821,21 +859,14 @@ msgid "Auto-close after (Days)"
 msgstr "Fermeture automatique après (jours)"
 
 #: desk/src/components/Settings/General/components/TicketSettings.vue:148
-msgid ""
-"Auto-close tickets that remain in a status for the specified number of days."
-msgstr ""
-"Fermer automatiquement les tickets restés dans un statut pendant le nombre "
-"de jours indiqué."
+msgid "Auto-close tickets that remain in a status for the specified number of days."
+msgstr "Fermer automatiquement les tickets restés dans un statut pendant le nombre de jours indiqué."
 
 #. Description of the 'Condition' (Code) field in DocType 'HD Service Level
 #. Agreement'
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.json
-msgid ""
-"Auto-generated from the portal view — do not edit directly unless you know "
-"what you're doing! "
-msgstr ""
-"Généré automatiquement depuis la vue du portail — ne modifiez pas "
-"directement, sauf si vous savez ce que vous faites !"
+msgid "Auto-generated from the portal view — do not edit directly unless you know what you're doing! "
+msgstr "Généré automatiquement depuis la vue du portail — ne modifiez pas directement, sauf si vous savez ce que vous faites !"
 
 #. Label of the auto_close_tickets (Check) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
@@ -894,8 +925,7 @@ msgstr "La note moyenne des avis par jour est d'environ {0} étoiles"
 
 #: desk/src/pages/home/components/AvgTimeMetrics.vue:107
 msgid "Average response and resolution metrics not available"
-msgstr ""
-"Les indicateurs moyens de réponse et de résolution ne sont pas disponibles"
+msgstr "Les indicateurs moyens de réponse et de résolution ne sont pas disponibles"
 
 #: helpdesk/api/dashboard.py:286
 msgid "Average tickets per day is around {0}"
@@ -935,6 +965,10 @@ msgstr "Temps moyen pour répondre une première fois à un ticket"
 msgid "Avg. time taken to resolve a ticket"
 msgstr "Temps moyen pour résoudre un ticket"
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:46
+msgid "Awaiting customer validation"
+msgstr "En attente de validation client"
+
 #. Option for the 'Category' (Select) field in DocType 'HD Agent Status'
 #: helpdesk/helpdesk/doctype/hd_agent_status/hd_agent_status.json
 msgid "Away"
@@ -948,6 +982,18 @@ msgstr "Retour"
 #: desk/src/pages/InvalidPage.vue:25 desk/src/pages/ticket/TicketAgent.vue:44
 msgid "Back to Tickets"
 msgstr "Retour aux tickets"
+
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:36
+msgid "Balance"
+msgstr "Solde"
+
+#: desk/src/components/kb-credits-portal/MovementsTable.vue:15
+msgid "Balance after"
+msgstr "Solde après"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:53
+msgid "Balance after intervention: {0}"
+msgstr "Solde après intervention : {0}"
 
 #. Label of the base_support_rotation (Link) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
@@ -965,18 +1011,12 @@ msgid "Based On"
 msgstr "Basé sur"
 
 #: helpdesk/helpdesk/doctype/hd_service_holiday_list/hd_service_holiday_list.js:34
-msgid ""
-"Based on your HR Policy, select your leave allocation period's end date"
-msgstr ""
-"En fonction de votre politique RH, sélectionnez la date de fin de la période"
-" d'attribution des congés"
+msgid "Based on your HR Policy, select your leave allocation period's end date"
+msgstr "En fonction de votre politique RH, sélectionnez la date de fin de la période d'attribution des congés"
 
 #: helpdesk/helpdesk/doctype/hd_service_holiday_list/hd_service_holiday_list.js:27
-msgid ""
-"Based on your HR Policy, select your leave allocation period's start date"
-msgstr ""
-"Selon votre politique RH, sélectionnez la date de début de la période "
-"d'attribution des congés"
+msgid "Based on your HR Policy, select your leave allocation period's start date"
+msgstr "Selon votre politique RH, sélectionnez la date de début de la période d'attribution des congés"
 
 #: desk/src/components/EmailEditor.vue:53
 msgid "Bcc"
@@ -985,6 +1025,14 @@ msgstr "Cci"
 #: desk/src/components/EmailEditor.vue:83
 msgid "Bcc:"
 msgstr "Cci :"
+
+#: desk/src/components/view-controls/Filter.vue:325
+msgid "Between"
+msgstr "Entre"
+
+#: desk/src/components/kb-credits/grid.ts:48
+msgid "Between {0} and {1} credits, per Annexe A."
+msgstr "Entre {0} et {1} crédits, selon l'Annexe A."
 
 #. Option for the 'Color' (Select) field in DocType 'HD Ticket Status'
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.json
@@ -1010,7 +1058,7 @@ msgstr "Image de marque"
 
 #: desk/src/components/ListViewBuilder.vue:270
 msgid "Bulk Operation Failed"
-msgstr "L'opération en masse a échoué"
+msgstr "Échec de l'opération en masse"
 
 #: desk/src/components/ListViewBuilder.vue:273
 msgid "Bulk Operation Successful"
@@ -1046,6 +1094,10 @@ msgstr "Bouton"
 msgid "CSV"
 msgstr "CSV"
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:110
+msgid "Calendar P1 in progress"
+msgstr "P1 calendaires en cours"
+
 #: desk/src/pages/call-logs/CallLogDetailModal.vue:8
 msgid "Call Details"
 msgstr "Détails de l'appel"
@@ -1071,12 +1123,8 @@ msgid "Calls"
 msgstr "Appels"
 
 #: desk/src/components/Settings/InviteAgents.vue:162
-msgid ""
-"Can invite new agents, manage tickets, create custom views and manage public"
-" views."
-msgstr ""
-"Peut inviter de nouveaux agents, gérer les tickets, créer des vues "
-"personnalisées et gérer les vues publiques."
+msgid "Can invite new agents, manage tickets, create custom views and manage public views."
+msgstr "Peut inviter de nouveaux agents, gérer les tickets, créer des vues personnalisées et gérer les vues publiques."
 
 #: desk/src/components/Settings/InviteAgents.vue:170
 msgid "Can manage all aspects of Helpdesk."
@@ -1084,9 +1132,7 @@ msgstr "Peut gérer tous les aspects du Helpdesk."
 
 #: desk/src/components/Settings/InviteAgents.vue:154
 msgid "Can work on tickets, create custom views and manage private views."
-msgstr ""
-"Peut traiter les tickets, créer des vues personnalisées et gérer les vues "
-"privées."
+msgstr "Peut traiter les tickets, créer des vues personnalisées et gérer les vues privées."
 
 #: desk/src/components/ListViewBuilder.vue:714 desk/src/pages/home/Home.vue:44
 msgid "Cancel"
@@ -1105,27 +1151,18 @@ msgid "Cannot Sync Customers"
 msgstr "Impossible de synchroniser les clients"
 
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:526
-msgid ""
-"Cannot delete the default SLA. At least one SLA must be marked as default."
-msgstr ""
-"Impossible de supprimer le SLA par défaut. Au moins un SLA doit être défini "
-"comme SLA par défaut."
+msgid "Cannot delete the default SLA. At least one SLA must be marked as default."
+msgstr "Impossible de supprimer le SLA par défaut. Au moins un SLA doit être défini comme SLA par défaut."
 
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.py:110
 msgid "Cannot disable this status as it is linked in HD Settings:<br><br>"
-msgstr ""
-"Impossible de désactiver ce statut car il est référencé dans les paramètres "
-"du Helpdesk :<br><br>"
+msgstr "Impossible de désactiver ce statut car il est référencé dans les paramètres du Helpdesk :<br><br>"
 
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.py:88
-msgid ""
-"Cannot disable this status as it is linked in the following SLAs:<br><br>"
-msgstr ""
-"Impossible de désactiver ce statut car il est référencé dans les SLA "
-"suivants :<br><br>"
+msgid "Cannot disable this status as it is linked in the following SLAs:<br><br>"
+msgstr "Impossible de désactiver ce statut car il est référencé dans les SLA suivants :<br><br>"
 
-#: desk/src/components/Settings/Assignment
-#: Rules/AssignmentRuleListItem.vue:198
+#: Rules/AssignmentRuleListItem.vue:198 desk/src/components/Settings/Assignment
 msgid "Cannot enable rule without adding users in it"
 msgstr "Impossible d'activer la règle sans y ajouter des utilisateurs"
 
@@ -1134,12 +1171,8 @@ msgid "Cannot merge General category"
 msgstr "Impossible de fusionner la catégorie Général"
 
 #: helpdesk/integrations/erpnext/utils.py:100
-msgid ""
-"Cannot rename: an unrelated {0} '{1}' already exists on the other side. "
-"Resolve the conflict manually first."
-msgstr ""
-"Renommage impossible : un {0} sans rapport nommé « {1} » existe déjà de "
-"l'autre côté. Résolvez d'abord le conflit manuellement."
+msgid "Cannot rename: an unrelated {0} '{1}' already exists on the other side. Resolve the conflict manually first."
+msgstr "Renommage impossible : un {0} sans rapport nommé « {1} » existe déjà de l'autre côté. Résolvez d'abord le conflit manuellement."
 
 #: desk/src/pages/knowledge-base/KnowledgeBaseCustomer.vue:24
 msgid "Categories"
@@ -1195,12 +1228,12 @@ msgstr "Cc :"
 
 #: desk/src/components/Settings/General/components/LogoUpload.vue:40
 msgid "Change"
-msgstr "la monnaie"
+msgstr "Modifier"
 
 #: desk/src/components/Settings/Profile/Profile.vue:152
 #: desk/src/components/Settings/Profile/components/ChangePasswordModal.vue:2
 msgid "Change Password"
-msgstr "Changer le Mot de passe"
+msgstr "Changez le mot de passe"
 
 #: desk/src/components/Settings/Profile/Profile.vue:198
 msgid "Change Photo"
@@ -1237,13 +1270,16 @@ msgstr "Modifier le fuseau horaire de l'application."
 
 #: desk/src/components/Settings/Profile/Profile.vue:147
 msgid "Change your account password for security."
-msgstr ""
-"Modifiez le mot de passe de votre compte pour des raisons de sécurité."
+msgstr "Modifiez le mot de passe de votre compte pour des raisons de sécurité."
 
 #. Label of a Card Break in the Helpdesk Workspace
 #: helpdesk/helpdesk/workspace/helpdesk/helpdesk.json
 msgid "Channels"
 msgstr "Canaux"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:37
+msgid "Check it at the start of the day. Imminent tacit acceptances and calendar P1s are the two columns that cost money when left unattended."
+msgstr "À consulter en début de journée. Les acceptations tacites imminentes et les P1 calendaires sont les deux colonnes qui coûtent si on les laisse sans suite."
 
 #: desk/src/components/Settings/FieldDependency/FieldDependencyFieldsSelection.vue:18
 msgid "Child field"
@@ -1257,17 +1293,13 @@ msgstr "Choisissez un champ"
 msgid "Choose how long this SLA policy will be active."
 msgstr "Choisissez la durée pendant laquelle cette politique SLA sera active."
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeRules.vue:22
+#: Rules/AssigneeRules.vue:22 desk/src/components/Settings/Assignment
 msgid "Choose how tickets are distributed among selected assignees."
-msgstr ""
-"Choisissez comment les tickets sont répartis entre les personnes assignées "
-"sélectionnées."
+msgstr "Choisissez comment les tickets sont répartis entre les personnes assignées sélectionnées."
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:280
+#: Rules/AssignmentRuleView.vue:280 desk/src/components/Settings/Assignment
 msgid "Choose the days of the week when this rule should be active."
-msgstr ""
-"Choisissez les jours de la semaine pendant lesquels cette règle doit être "
-"active."
+msgstr "Choisissez les jours de la semaine pendant lesquels cette règle doit être active."
 
 #: desk/src/components/Settings/Holiday/HolidayView.vue:66
 msgid "Choose the duration of this holiday list."
@@ -1275,28 +1307,25 @@ msgstr "Choisissez la durée de cette liste de jours fériés."
 
 #: desk/src/components/Settings/EmailAdd.vue:5
 msgid "Choose the email service provider you want to configure."
-msgstr ""
-"Choisissez le fournisseur de messagerie que vous souhaitez configurer."
+msgstr "Choisissez le fournisseur de messagerie que vous souhaitez configurer."
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:127
+#: Rules/AssignmentRuleView.vue:127 desk/src/components/Settings/Assignment
 msgid "Choose which tickets are affected by this assignment rule."
-msgstr ""
-"Choisissez quels tickets sont concernés par cette règle d'assignation."
+msgstr "Choisissez quels tickets sont concernés par cette règle d'assignation."
 
 #: desk/src/components/Settings/Sla/SlaPolicyView.vue:69
 msgid "Choose which tickets are affected by this policy."
 msgstr "Choisissez quels tickets sont concernés par cette politique."
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:204
+#: Rules/AssignmentRuleView.vue:204 desk/src/components/Settings/Assignment
 msgid "Choose which tickets are affected by this un-assignment rule."
-msgstr ""
-"Choisissez quels tickets sont concernés par cette règle de désassignation."
+msgstr "Choisissez quels tickets sont concernés par cette règle de désassignation."
 
 #: desk/src/components/Settings/SavedReplies/SavedReplyView.vue:69
 msgid "Choose who can view and use this response."
 msgstr "Choisissez qui peut consulter et utiliser cette réponse."
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeRules.vue:78
+#: Rules/AssigneeRules.vue:78 desk/src/components/Settings/Assignment
 msgid "Choose who receives the tickets."
 msgstr "Choisissez qui reçoit les tickets."
 
@@ -1323,17 +1352,10 @@ msgid "Clear all filters"
 msgstr "Effacer tous les filtres"
 
 #: helpdesk/helpdesk/doctype/hd_service_holiday_list/hd_service_holiday_list.js:46
-msgid ""
-"Click on Add to Holidays. This will populate the holidays table with all the"
-" dates that fall on the selected weekly off. Repeat the process for "
-"populating the dates for all your weekly holidays"
-msgstr ""
-"Cliquez sur Ajouter aux jours fériés. Le tableau des jours fériés sera "
-"rempli avec toutes les dates correspondant au jour de repos hebdomadaire "
-"sélectionné. Répétez l'opération pour chacun de vos jours de repos "
-"hebdomadaires"
+msgid "Click on Add to Holidays. This will populate the holidays table with all the dates that fall on the selected weekly off. Repeat the process for populating the dates for all your weekly holidays"
+msgstr "Cliquez sur Ajouter aux jours fériés. Le tableau des jours fériés sera rempli avec toutes les dates correspondant au jour de repos hebdomadaire sélectionné. Répétez l'opération pour chacun de vos jours de repos hebdomadaires"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleListItem.vue:69
+#: Rules/AssignmentRuleListItem.vue:69 desk/src/components/Settings/Assignment
 #: desk/src/components/Settings/Holiday/HolidayListItem.vue:47
 #: desk/src/components/Settings/SavedReplies/SavedRepliesList.vue:194
 #: desk/src/components/Settings/Sla/SlaPolicyListItem.vue:58
@@ -1353,9 +1375,19 @@ msgstr "Fermé"
 
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.py:351
 msgid "Closed or rated tickets cannot be updated by non-agents"
-msgstr ""
-"Les tickets fermés ou évalués ne peuvent pas être modifiés par des non-"
-"agents"
+msgstr "Les tickets fermés ou évalués ne peuvent pas être modifiés par des non-agents"
+
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:14
+msgid "Closing"
+msgstr "Solde de clôture"
+
+#: desk/src/components/kb-credits-portal/MovementsTable.vue:13
+msgid "Code"
+msgstr "Code"
+
+#: desk/src/components/kb-credits/grid.ts:69
+msgid "Code {0} requires an estimated weight {1}."
+msgstr "Le code {0} exige un poids estimé {1}."
 
 #: desk/src/components/layouts/Sidebar.vue:143
 msgid "Collapse"
@@ -1389,6 +1421,14 @@ msgstr "Valeurs séparées par des virgules"
 msgid "Comment"
 msgstr "Commentaire"
 
+#: desk/src/components/CommunicationArea.vue:85
+msgid "Comment (Ctrl + ⏎)"
+msgstr "Commenter (Ctrl + ⏎)"
+
+#: desk/src/components/CommunicationArea.vue:84
+msgid "Comment (⌘ + ⏎)"
+msgstr "Commenter (⌘ + ⏎)"
+
 #: desk/src/components/CommentBox.vue:318
 msgid "Comment cannot be empty."
 msgstr "Le commentaire ne peut pas être vide."
@@ -1421,7 +1461,7 @@ msgstr "Commentaires"
 
 #: desk/src/components/modals/ShortcutsModal.vue:97
 msgid "Communication"
-msgstr "la communication"
+msgstr "Communication"
 
 #: desk/src/components/ticket/TicketSplitModal.vue:76
 msgid "Communication ID is required"
@@ -1487,6 +1527,21 @@ msgstr "Confirmer l'écrasement"
 msgid "Connect your support email"
 msgstr "Connectez votre e-mail de support"
 
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:30
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:12
+msgid "Consumed"
+msgstr "Consommés"
+
+#: desk/src/components/kb-credits/CreditsBalanceBar.vue:84
+#, python-format
+msgid "Consumption has passed {0}% of the allocation."
+msgstr "La consommation a dépassé {0} % de la dotation."
+
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:163
+#, python-format
+msgid "Consumption has passed {0}% of the allocation. A 30-credit recharge is available during the year."
+msgstr "La consommation a dépassé {0} % de la dotation. Une recharge de 30 crédits est possible en cours d'année."
+
 #. Label of the contact (Link) field in DocType 'HD Organization Contact Item'
 #. Label of the contact (Link) field in DocType 'HD Ticket'
 #: desk/src/components/layouts/Sidebar.vue:614
@@ -1502,7 +1557,7 @@ msgstr "Contact"
 #. Label of the contact_html (HTML) field in DocType 'HD Customer'
 #: helpdesk/helpdesk/doctype/hd_customer/hd_customer.json
 msgid "Contact HTML"
-msgstr "HTML du Contact"
+msgstr "HTML du contact"
 
 #: desk/src/components/desk/global/NewContactDialog.vue:185
 msgid "Contact created successfully."
@@ -1538,6 +1593,37 @@ msgstr "Contenu"
 msgid "Content Type"
 msgstr "Type de contenu"
 
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:113
+#: desk/src/components/kb-credits-portal/QualificationList.vue:26
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:71
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:93
+msgid "Contest"
+msgstr "Contester"
+
+#: desk/src/components/kb-credits-portal/QualificationList.vue:21
+msgid "Contest the announced weight"
+msgstr "Contester le poids annoncé"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:121
+msgid "Contest the layer"
+msgstr "Contester la couche"
+
+#: desk/src/components/kb-credits-portal/LayerContestDialog.vue:6
+msgid "Contest the responsibility layer"
+msgstr "Contester la couche de responsabilité"
+
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:89
+msgid "Contest the statement"
+msgstr "Contester le relevé"
+
+#: desk/src/components/kb-credits/QualificationItem.vue:73
+msgid "Contested"
+msgstr "Contestée"
+
+#: desk/src/utils.ts:31 desk/src/utils.ts:280
+msgid "Copied to clipboard."
+msgstr "Copié dans le presse-papiers."
+
 #: desk/src/components/modals/ShortcutsModal.vue:93
 msgid "Copy ticket URL"
 msgstr "Copier l'URL du ticket"
@@ -1556,8 +1642,7 @@ msgstr "Colonne `name` introuvable dans tabHD Ticket"
 
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.py:830
 msgid "Could not send an acknowledgement email due to: {0}"
-msgstr ""
-"Impossible d'envoyer l'e-mail d'accusé de réception en raison de : {0}"
+msgstr "Impossible d'envoyer l'e-mail d'accusé de réception en raison de : {0}"
 
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.py:169
 msgid "Could not send feedback email,due to: {0}"
@@ -1596,21 +1681,18 @@ msgstr "Créer un article"
 
 #: desk/src/components/Settings/Teams/TeamsList.vue:5
 msgid "Create and manage teams and assign agents to specific teams."
-msgstr ""
-"Créez et gérez des équipes et affectez des agents à des équipes précises."
+msgstr "Créez et gérez des équipes et affectez des agents à des équipes précises."
 
 #: desk/src/components/Settings/FieldDependency/FieldDependencyList.vue:13
-msgid ""
-"Create field dependencies to dynamically update options based on user "
-"selections. Learn more about field dependencies"
-msgstr ""
-"Créez des dépendances entre champs pour mettre à jour dynamiquement les "
-"options selon les choix de l'utilisateur. En savoir plus sur les dépendances"
-" entre champs"
+msgid "Create field dependencies to dynamically update options based on user selections. Learn more about field dependencies"
+msgstr "Créez des dépendances entre champs pour mettre à jour dynamiquement les options selon les choix de l'utilisateur. En savoir plus sur les dépendances entre champs"
 
 #: desk/src/components/Settings/Sla/SlaHolidays.vue:57
 msgid "Create new business holiday"
 msgstr "Créer un nouveau jour férié d'entreprise"
+
+msgid "Created On"
+msgstr "Créé le"
 
 #: desk/src/components/Settings/FieldDependency/FieldDependencyList.vue:69
 msgid "Created by"
@@ -1620,11 +1702,41 @@ msgstr "Créé par"
 msgid "Creating a ticket"
 msgstr "Création d'un ticket"
 
+#: desk/src/components/kb-credits-portal/MovementsTable.vue:14
+#: desk/src/components/kb-credits/CreditsBalanceBar.vue:5
+#: desk/src/components/kb-credits/TicketCreditsSection.vue:11
+msgid "Credits"
+msgstr "Crédits"
+
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:92
+msgid "Credits charged for waiting on your reply: {0}"
+msgstr "Crédits facturés pour attente de votre réponse : {0}"
+
+#: desk/src/components/kb-credits-portal/TicketCreditsBlock.vue:69
+msgid "Credits counted on this ticket"
+msgstr "Crédits décomptés sur ce ticket"
+
 #. Label of the criterion_section (Section Break) field in DocType 'HD
 #. Escalation Rule'
 #: helpdesk/helpdesk/doctype/hd_escalation_rule/hd_escalation_rule.json
 msgid "Criterion"
 msgstr "Critère"
+
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:150
+msgid "Critical level"
+msgstr "Niveau critique"
+
+#: desk/src/components/kb-credits-portal/TicketCreditsBlock.vue:41
+msgid "Critical priority (P1) granted automatically: payroll or legal declaration blocked before a deadline."
+msgstr "Priorité critique (P1) accordée automatiquement : paie ou déclaration légale bloquée avant une échéance."
+
+#: desk/src/components/kb-credits-portal/TicketCreditsBlock.vue:26
+msgid "Current balance"
+msgstr "Solde actuel"
+
+#: desk/src/components/kb-credits-portal/LayerContestDialog.vue:18
+msgid "Current layer: {0}"
+msgstr "Couche actuelle : {0}"
 
 #: desk/src/components/layouts/Sidebar.vue:627
 msgid "Custom Actions"
@@ -1671,6 +1783,14 @@ msgstr "Portail client"
 msgid "Customer created successfully."
 msgstr "Client crée avec succès."
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:59
+msgid "Customer not notified yet: the 48 h have not started."
+msgstr "Client pas encore prévenu : les 48 h n'ont pas commencé."
+
+#: desk/src/components/kb-credits/QualificationItem.vue:223
+msgid "Customer not notified yet: the 48 h tacit period has not started."
+msgstr "Client pas encore prévenu : le délai tacite de 48 h n'a pas commencé."
+
 #: desk/src/components/layouts/Sidebar.vue:357
 msgid "Customer portal"
 msgstr "Portail client"
@@ -1678,6 +1798,11 @@ msgstr "Portail client"
 #: desk/src/pages/desk/customer/CustomerDialog.vue:82
 msgid "Customer updated successfully."
 msgstr "Client mis à jour avec succès."
+
+#: desk/src/pages/desk/customer/Customers.vue:5
+#: desk/src/pages/desk/customer/Customers.vue:103
+msgid "Customers"
+msgstr "Clients"
 
 #: desk/src/components/layouts/Sidebar.vue:595
 msgid "Customers & Contacts"
@@ -1692,12 +1817,8 @@ msgid "Customizations"
 msgstr "Personnalisations"
 
 #: desk/src/components/Settings/EmailNotifications/NotificationList.vue:5
-msgid ""
-"Customize your email notification preferences to stay informed about "
-"important updates and activities."
-msgstr ""
-"Personnalisez vos préférences de notification par e-mail pour rester informé"
-" des mises à jour et activités importantes."
+msgid "Customize your email notification preferences to stay informed about important updates and activities."
+msgstr "Personnalisez vos préférences de notification par e-mail pour rester informé des mises à jour et activités importantes."
 
 #. Option for the 'Color' (Select) field in DocType 'HD Agent Status'
 #. Option for the 'Color' (Select) field in DocType 'HD Ticket Status'
@@ -1728,17 +1849,27 @@ msgstr "Date"
 
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.py:29
 msgid "Day count for auto closing tickets cannot be negative or zero"
-msgstr ""
-"Le nombre de jours avant fermeture automatique ne peut pas être négatif ou "
-"nul"
+msgstr "Le nombre de jours avant fermeture automatique ne peut pas être négatif ou nul"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentSchedule.vue:38
+#: Rules/AssignmentSchedule.vue:38 desk/src/components/Settings/Assignment
 msgid "Days"
-msgstr "Journées"
+msgstr "Jours"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:269
+msgid "Deadline passed on {0}"
+msgstr "Échéance dépassée le {0}"
+
+#: desk/src/components/kb-credits-portal/TicketCreditsBlock.vue:43
+msgid "Deadline: {0}"
+msgstr "Échéance : {0}"
+
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:49
+msgid "Deemed accepted on {0} without a contest."
+msgstr "Réputé accepté le {0}, sans contestation."
 
 #: desk/src/components/Settings/EmailAccountCard.vue:53
 msgid "Default Inbox"
-msgstr "Boîte de Réception par Défaut"
+msgstr "Boîte de réception par défaut"
 
 #. Label of the default_priority (Link) field in DocType 'HD Service Level
 #. Agreement'
@@ -1757,11 +1888,11 @@ msgstr "SLA par défaut"
 
 #: desk/src/components/Settings/EmailAccountCard.vue:56
 msgid "Default Sending"
-msgstr "Envoi par Défaut"
+msgstr "Envoi par défaut"
 
 #: desk/src/components/Settings/EmailAccountCard.vue:50
 msgid "Default Sending and Inbox"
-msgstr "Boîte d’Envois et de Réception par Défaut"
+msgstr "Boîte d'envois et de réception par défaut"
 
 #. Label of the default_ticket_status (Link) field in DocType 'HD Service
 #. Level
@@ -1807,12 +1938,9 @@ msgstr "Statut de ticket par défaut"
 msgid "Default ticket type"
 msgstr "Type de ticket par défaut"
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeRules.vue:9
-msgid ""
-"Define who receives the tickets and how they’re distributed among agents."
-msgstr ""
-"Définissez qui reçoit les tickets et comment ils sont répartis entre les "
-"agents."
+#: Rules/AssigneeRules.vue:9 desk/src/components/Settings/Assignment
+msgid "Define who receives the tickets and how they’re distributed among agents."
+msgstr "Définissez qui reçoit les tickets et comment ils sont répartis entre les agents."
 
 #: desk/src/components/ListViewBuilder.vue:233
 #: desk/src/components/ListViewBuilder.vue:237
@@ -1843,6 +1971,18 @@ msgstr "Supprimer la catégorie ?"
 msgid "Delete {0}"
 msgstr "Supprimer {0}"
 
+#: desk/src/pages/ticket/Tickets.vue:542
+msgid "Delete {0}?"
+msgstr "Supprimer {0} ?"
+
+#: desk/src/components/kb-credits-portal/LegalFreezeBanner.vue:11
+msgid "Deployment freeze"
+msgstr "Gel des déploiements"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:182
+msgid "Deployment freeze: no non-urgent deployment during these windows."
+msgstr "Gel des déploiements : aucun déploiement non urgent pendant ces fenêtres."
+
 #. Label of the description (Text) field in DocType 'HD Article Category'
 #. Label of the description (Text Editor) field in DocType 'HD Holiday'
 #. Label of the description (Data) field in DocType 'HD Service Holiday List'
@@ -1852,8 +1992,8 @@ msgstr "Supprimer {0}"
 #. Label of the description (Small Text) field in DocType 'HD Ticket Priority'
 #. Label of the description (Small Text) field in DocType 'HD Ticket Type'
 #. Label of a field in the tickets Web Form
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:105
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:106
+#: Rules/AssignmentRuleView.vue:105 Rules/AssignmentRuleView.vue:106
+#: desk/src/components/Settings/Assignment
 #: desk/src/components/Settings/Holiday/HolidayView.vue:53
 #: desk/src/components/Settings/Holiday/HolidayView.vue:54
 #: desk/src/components/Settings/Sla/SlaPolicyView.vue:56
@@ -1879,6 +2019,10 @@ msgstr "Modèle de description"
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
 msgid "Description Weight"
 msgstr "Poids de la description"
+
+#: desk/src/components/kb-credits-portal/MovementsTable.vue:16
+msgid "Detail"
+msgstr "Détail"
 
 #: desk/src/pages/ticket/TicketNew.vue:90
 #: desk/src/pages/ticket/TicketNew.vue:115
@@ -1924,12 +2068,8 @@ msgid "Disabled"
 msgstr "Désactivé"
 
 #: desk/src/components/Settings/General/components/WorkflowKnowledgebaseSettings.vue:29
-msgid ""
-"Disables all email notifications for the ticket - including creation, "
-"updates, and alerts."
-msgstr ""
-"Désactive toutes les notifications par e-mail pour le ticket, y compris la "
-"création, les mises à jour et les alertes."
+msgid "Disables all email notifications for the ticket - including creation, updates, and alerts."
+msgstr "Désactive toutes les notifications par e-mail pour le ticket, y compris la création, les mises à jour et les alertes."
 
 #: desk/src/components/TextEditor.vue:41
 #: desk/src/components/ticket-agent/BulkReplyModal.vue:24
@@ -1946,18 +2086,13 @@ msgid "Discard changes?"
 msgstr "Abandonner les modifications ?"
 
 #: desk/src/components/Settings/General/components/TicketSettings.vue:203
-msgid ""
-"Display a customizable banner message when customers raise tickets outside "
-"your working hours."
-msgstr ""
-"Afficher un message personnalisable lorsque les clients créent des tickets "
-"en dehors de vos heures ouvrées."
+msgid "Display a customizable banner message when customers raise tickets outside your working hours."
+msgstr "Afficher un message personnalisable lorsque les clients créent des tickets en dehors de vos heures ouvrées."
 
 #. Description of the 'Ignore Restrictions' (Check) field in DocType 'HD Team'
 #: helpdesk/helpdesk/doctype/hd_team/hd_team.json
 msgid "Do not apply filters and restrictions to agents of this team"
-msgstr ""
-"Ne pas appliquer de filtres ni de restrictions aux agents de cette équipe"
+msgstr "Ne pas appliquer de filtres ni de restrictions aux agents de cette équipe"
 
 #. Label of the do_not_restrict_tickets_without_an_agent_group (Check) field
 #. in
@@ -1975,7 +2110,7 @@ msgstr "Ne pas restreindre les tickets sans équipe"
 #: helpdesk/helpdesk/doctype/hd_form_script/hd_form_script.json
 #: helpdesk/helpdesk/doctype/hd_view/hd_view.json
 msgid "DocType"
-msgstr "Type de Document"
+msgstr "DocType"
 
 #: desk/src/components/layouts/Sidebar.vue:371
 msgid "Docs"
@@ -1991,6 +2126,14 @@ msgstr "Type de document"
 msgid "Domain"
 msgstr "Domaine"
 
+#: desk/src/components/kb-credits/TicketCreditsSection.vue:268
+msgid "Done"
+msgstr "Terminé"
+
+#: desk/src/components/kb-credits/QualificationItem.vue:215
+msgid "Downgraded from {0}"
+msgstr "Requalifié depuis {0}"
+
 #: desk/src/components/ticket/ExportModal.vue:32
 msgid "Download"
 msgstr "Télécharger"
@@ -2001,9 +2144,21 @@ msgstr "Télécharger"
 msgid "Draft"
 msgstr "Brouillon"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleListItem.vue:72
+#: desk/src/components/ticket-agent/TicketSLA.vue:115
+#: desk/src/components/ticket-agent/TicketSLA.vue:204
+#: desk/src/components/ticket/TicketAgentDetails.vue:66
+#: desk/src/components/ticket/TicketAgentDetails.vue:117
+#: desk/src/components/ticket/TicketCustomerSidebar.vue:166
+#: desk/src/components/ticket/TicketCustomerSidebar.vue:201
+msgid "Due in {0}"
+msgstr "Échéance dans {0}"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:193
+msgid "Due {0}"
+msgstr "Échéance le {0}"
+
+#: Rules/AssignmentRuleListItem.vue:72 Rules/AssignmentRuleListItem.vue:138
 #: desk/src/components/Settings/Assignment
-#: Rules/AssignmentRuleListItem.vue:138
 #: desk/src/components/Settings/Holiday/HolidayListItem.vue:50
 #: desk/src/components/Settings/Holiday/HolidayListItem.vue:90
 #: desk/src/components/Settings/SavedReplies/SavedRepliesList.vue:197
@@ -2014,7 +2169,7 @@ msgstr "Brouillon"
 msgid "Duplicate"
 msgstr "Dupliquer"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleListItem.vue:53
+#: Rules/AssignmentRuleListItem.vue:53 desk/src/components/Settings/Assignment
 msgid "Duplicate Assignment Rule"
 msgstr "Dupliquer la règle d'affectation"
 
@@ -2071,17 +2226,12 @@ msgstr "L'intégration ERPNext n'est pas activée"
 
 #: desk/src/components/erpnext-integration/ERPNextIntegrationSettings.vue:203
 #: helpdesk/helpdesk/doctype/erpnext_hd_settings/erpnext_hd_settings.py:19
-msgid ""
-"ERPNext is not installed on your site. Please install ERPNext to enable this"
-" setting"
-msgstr ""
-"ERPNext n'est pas installé sur votre site. Veuillez installer ERPNext pour "
-"activer ce paramètre"
+msgid "ERPNext is not installed on your site. Please install ERPNext to enable this setting"
+msgstr "ERPNext n'est pas installé sur votre site. Veuillez installer ERPNext pour activer ce paramètre"
 
 #: desk/src/components/Settings/InviteAgents.vue:4
 msgid "Easily invite new agents, managers, or admins."
-msgstr ""
-"Invitez facilement de nouveaux agents, gestionnaires ou administrateurs."
+msgstr "Invitez facilement de nouveaux agents, gestionnaires ou administrateurs."
 
 #: desk/src/pages/home/Home.vue:36
 #: desk/src/pages/knowledge-base/Article.vue:626
@@ -2115,7 +2265,7 @@ msgstr "Modifier votre compte e-mail"
 #: desk/src/pages/SearchAgent.vue:184
 #: helpdesk/helpdesk/doctype/hd_desk_account_request/hd_desk_account_request.json
 msgid "Email"
-msgstr "Courriel"
+msgstr "E-mail"
 
 #. Label of the email_account (Link) field in DocType 'HD Ticket'
 #. Label of a Link in the Helpdesk Workspace
@@ -2123,7 +2273,7 @@ msgstr "Courriel"
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
 #: helpdesk/helpdesk/workspace/helpdesk/helpdesk.json
 msgid "Email Account"
-msgstr "Compte Email"
+msgstr "Compte e-mail"
 
 #: desk/src/components/Settings/EmailAccountList.vue:3
 msgid "Email Accounts"
@@ -2133,9 +2283,7 @@ msgstr "Comptes de messagerie"
 #. Label of the acknowledgement_email_content (Text) field in DocType 'HD
 #. Settings'
 #. Label of the reply_email_to_agent_content (Text) field in DocType 'HD
-#. Settings'
 #. Label of the reply_via_agent_email_content (Text) field in DocType 'HD
-#. Settings'
 #: desk/src/components/Settings/EmailNotifications/Notification.vue:61
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
 msgid "Email Content"
@@ -2143,7 +2291,7 @@ msgstr "Contenu de l'e-mail"
 
 #: desk/src/components/desk/global/NewContactDialog.vue:110
 msgid "Email Id"
-msgstr "Identifiant e-mail"
+msgstr "Adresse e-mail"
 
 #. Label of the email_customisations_tab (Tab Break) field in DocType 'HD
 #. Settings'
@@ -2154,7 +2302,7 @@ msgstr "Notifications par e-mail"
 
 #: desk/src/components/Settings/Profile/UserEmailSettings.vue:3
 msgid "Email Settings"
-msgstr "Paramètres de messagerie"
+msgstr "Paramètres d'e-mail"
 
 #: desk/src/components/Settings/EmailAdd.vue:309
 msgid "Email account created"
@@ -2229,16 +2377,12 @@ msgstr "Activer les avis pour le portail client"
 #. Label of the enable_email_ticket_feedback (Check) field in DocType 'HD
 #. Settings'
 #. Label of the send_acknowledgement_email (Check) field in DocType 'HD
-#. Settings'
 #. Label of the enable_reply_email_to_agent (Check) field in DocType 'HD
-#. Settings'
 #. Label of the enable_reply_email_via_agent (Check) field in DocType 'HD
-#. Settings'
 #. Label of the enabled (Check) field in DocType 'HD Stopword'
 #. Label of the enabled (Check) field in DocType 'HD Ticket Status'
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:16
+#: Rules/AssignmentRuleView.vue:16 Rules/AssignmentRulesListView.vue:31
 #: desk/src/components/Settings/Assignment
-#: Rules/AssignmentRulesListView.vue:31
 #: desk/src/components/Settings/EmailNotifications/Notification.vue:31
 #: desk/src/components/Settings/FieldDependency/FieldDependency.vue:13
 #: desk/src/components/Settings/FieldDependency/FieldDependencyList.vue:70
@@ -2267,7 +2411,7 @@ msgstr "Date de fin"
 #. Label of the end_time (Time) field in DocType 'HD Service Day'
 #: helpdesk/helpdesk/doctype/hd_service_day/hd_service_day.json
 msgid "End Time"
-msgstr "Heure de Fin"
+msgstr "Heure de fin"
 
 #: helpdesk/helpdesk/doctype/hd_service_holiday_list/hd_service_holiday_list.js:22
 msgid "Enter a name for this HD Service Holiday List."
@@ -2289,6 +2433,22 @@ msgstr "Saisissez le nom de la marque"
 msgid "Enter the new name for the team"
 msgstr "Saisissez le nouveau nom de l'équipe"
 
+#: desk/src/components/ticket-agent/TicketDetailsTab.vue:314
+msgid "Enter {0}"
+msgstr "Saisir : {0}"
+
+#: desk/src/components/view-controls/Filter.vue:68
+#: desk/src/components/view-controls/Filter.vue:103
+#: desk/src/components/view-controls/Filter.vue:242
+#: desk/src/components/view-controls/Filter.vue:263
+#: desk/src/components/view-controls/Filter.vue:280
+#: desk/src/components/view-controls/Filter.vue:291
+#: desk/src/components/view-controls/Filter.vue:302
+#: desk/src/components/view-controls/Filter.vue:318
+#: desk/src/components/view-controls/Filter.vue:333
+msgid "Equals"
+msgstr "Égal à"
+
 #: helpdesk/api/knowledge_base.py:86
 msgid "Error moving article to category"
 msgstr "Erreur lors du déplacement de l'article vers la catégorie"
@@ -2303,11 +2463,20 @@ msgstr "Erreur lors de la mise à jour du client"
 
 #: helpdesk/overrides/email_account.py:142
 msgid "Error while connecting to email account {0}"
-msgstr "Erreur lors de la connexion au compte Email {0}"
+msgstr "Erreur lors de la connexion au compte e-mail {0}"
 
 #: helpdesk/helpdesk/doctype/hd_escalation_rule/hd_escalation_rule.py:43
 msgid "Escalation rule already exists for this criteria"
 msgstr "Une règle d'escalade existe déjà pour ces critères"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:85
+msgid "Estimated above 10 credits: this request is handled on a separate quote. No credit is consumed."
+msgstr "Estimation supérieure à 10 crédits : cette demande fait l'objet d'un devis séparé. Aucun crédit n'est consommé."
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:52
+#: desk/src/components/kb-credits/RequalifyDialog.vue:35
+msgid "Estimated weight"
+msgstr "Poids estimé"
 
 #: desk/src/components/ticket/ExportModal.vue:11
 #: desk/src/components/ticket/ExportModal.vue:19
@@ -2322,6 +2491,19 @@ msgstr "Exotel"
 #: desk/src/components/layouts/Sidebar.vue:143
 msgid "Expand"
 msgstr "Développer"
+
+#: desk/src/pages/ticket/TicketCustomerTemplateFields.vue:84
+#: desk/src/pages/ticket/TicketCustomerTemplateFields.vue:101
+msgid "Expected First Response"
+msgstr "Première réponse attendue"
+
+#: desk/src/pages/ticket/TicketCustomerTemplateFields.vue:108
+msgid "Expected Resolution"
+msgstr "Résolution attendue"
+
+#: desk/src/components/kb-credits-portal/QualificationList.vue:24
+msgid "Explain why this code or weight does not match your request."
+msgstr "Expliquez pourquoi ce code ou ce poids ne correspond pas à votre demande."
 
 #: desk/src/components/layouts/Sidebar.vue:557
 msgid "Explore customer portal"
@@ -2338,7 +2520,7 @@ msgstr "Exporter les {0} enregistrement(s)"
 
 #: desk/src/components/ticket/ExportModal.vue:7
 msgid "Export Type"
-msgstr "Type d'Exportation"
+msgstr "Type d'exportation"
 
 #. Label of the is_external_link (Check) field in DocType 'HD Action'
 #: helpdesk/helpdesk/doctype/hd_action/hd_action.json
@@ -2352,6 +2534,11 @@ msgstr "Lien externe"
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
 msgid "Failed"
 msgstr "Échoué"
+
+#: desk/src/components/ticket-agent/TicketSLA.vue:162
+#: desk/src/components/ticket-agent/TicketSLA.vue:239
+msgid "Failed by {0}"
+msgstr "Dépassé de {0}"
 
 #: desk/src/pages/knowledge-base/KnowledgeBaseAgent.vue:278
 msgid "Failed to create category"
@@ -2394,8 +2581,7 @@ msgstr "Échec de la mise à jour des assignations."
 msgid "Failed to update Assignees."
 msgstr "Échec de la mise à jour des assignations."
 
-#: desk/src/components/Settings/Assignment
-#: Rules/AssignmentRuleListItem.vue:232
+#: Rules/AssignmentRuleListItem.vue:232 desk/src/components/Settings/Assignment
 msgid "Failed to update assignment rule {0}."
 msgstr "Échec de la mise à jour de la règle d'assignation {0}."
 
@@ -2466,6 +2652,10 @@ msgstr "Tendance des avis"
 msgid "Feedback email has been sent to the customer"
 msgstr "L'e-mail d'avis a été envoyé au client"
 
+#: desk/src/pages/dashboard/Dashboard.vue:271
+msgid "Feedback insights will appear once responses are collected."
+msgstr "Les avis apparaîtront ici dès que des réponses auront été recueillies."
+
 #: desk/src/components/knowledge-base/ArticleFeedback.vue:79
 msgid "Feedback submitted successfully."
 msgstr "Avis envoyé avec succès."
@@ -2512,6 +2702,10 @@ msgstr "Dépendance de champ mise à jour avec succès."
 msgid "Fields"
 msgstr "Champ"
 
+#: desk/src/components/view-controls/Filter.vue:6
+msgid "Filter"
+msgstr "Filtrer"
+
 #. Label of the filters_tab (Tab Break) field in DocType 'HD View'
 #. Label of the filters (Code) field in DocType 'HD View'
 #: desk/src/components/view-controls/filter/Filter.vue:150
@@ -2531,12 +2725,17 @@ msgstr "Prénom"
 #. Label of the first_responded_on (Datetime) field in DocType 'HD Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
 msgid "First Responded On"
-msgstr "Première Réponse Le"
+msgstr "Première réponse le"
+
+#: desk/src/components/ticket-agent/TicketSLA.vue:40
+#: desk/src/components/ticket/TicketAgentDetails.vue:148
+msgid "First Response"
+msgstr "Première réponse"
 
 #. Option for the 'SLA Status' (Select) field in DocType 'HD Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
 msgid "First Response Due"
-msgstr "Première Réponse due"
+msgstr "Première réponse attendue"
 
 #. Label of the first_response_failed_by (Duration) field in DocType 'HD
 #. Ticket'
@@ -2557,6 +2756,10 @@ msgstr "Temps de première réponse"
 msgid "First Response Time for Tickets"
 msgstr "Temps de première réponse des tickets"
 
+#: desk/src/components/view-controls/Filter.vue:134
+msgid "First name"
+msgstr "Prénom"
+
 #: desk/src/components/desk/global/NewContactDialog.vue:246
 msgid "First name should not be empty"
 msgstr "Le prénom ne doit pas être vide"
@@ -2566,9 +2769,19 @@ msgstr "Le prénom ne doit pas être vide"
 msgid "Form"
 msgstr "Formulaire"
 
+#: desk/src/components/layouts/Sidebar.vue:151
+msgid "Frappe Helpdesk"
+msgstr "Helpdesk"
+
 #: desk/src/components/layouts/Sidebar.vue:637
 msgid "Frappe Helpdesk Mobile"
 msgstr "Frappe Helpdesk Mobile"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:35
+#: desk/src/components/kb-credits/QualificationItem.vue:137
+#: desk/src/components/kb-credits/grid.ts:34
+msgid "Free"
+msgstr "Gratuit"
 
 #. Option for the 'Workday' (Select) field in DocType 'HD Service Day'
 #. Option for the 'Weekly Off' (Select) field in DocType 'HD Service Holiday
@@ -2609,6 +2822,15 @@ msgstr "L'expéditeur est requis"
 msgid "Fulfilled"
 msgstr "Complété"
 
+#: desk/src/components/ticket-agent/TicketSLA.vue:139
+#: desk/src/components/ticket-agent/TicketSLA.vue:228
+#: desk/src/components/ticket/TicketAgentDetails.vue:75
+#: desk/src/components/ticket/TicketAgentDetails.vue:122
+#: desk/src/components/ticket/TicketCustomerSidebar.vue:177
+#: desk/src/components/ticket/TicketCustomerSidebar.vue:208
+msgid "Fulfilled in {0}"
+msgstr "Respecté en {0}"
+
 #: desk/src/components/Settings/General/General.vue:6
 #: desk/src/components/layouts/Sidebar.vue:528
 #: desk/src/components/modals/ShortcutsModal.vue:76
@@ -2618,7 +2840,7 @@ msgstr "Général"
 #. Label of a Link in the Helpdesk Workspace
 #: helpdesk/helpdesk/workspace/helpdesk/helpdesk.json
 msgid "General Settings"
-msgstr "Paramètres Généraux"
+msgstr "Paramètres généraux"
 
 #: helpdesk/helpdesk/doctype/hd_article_category/hd_article_category.py:40
 msgid "General category can't be deleted"
@@ -2630,11 +2852,8 @@ msgstr "Le nom de la catégorie Général ne peut pas être modifié"
 
 #: helpdesk/api/knowledge_base.py:56
 #: helpdesk/helpdesk/doctype/hd_article_category/hd_article_category.py:23
-msgid ""
-"General is a reserved category name. Please use a different name to proceed."
-msgstr ""
-"« General » est un nom de catégorie réservé. Veuillez utiliser un autre nom "
-"pour continuer."
+msgid "General is a reserved category name. Please use a different name to proceed."
+msgstr "« General » est un nom de catégorie réservé. Veuillez utiliser un autre nom pour continuer."
 
 #: desk/src/components/layouts/Sidebar.vue:578
 msgid "Getting Started"
@@ -2671,10 +2890,19 @@ msgstr "Parfait ! Tous vos tickets respectent le SLA"
 msgid "Green"
 msgstr "Vert"
 
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:10
+msgid "Grid code"
+msgstr "Code de la grille"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:17
+#: desk/src/components/kb-credits/RequalifyDialog.vue:25
+msgid "Grid weight"
+msgstr "Poids de la grille"
+
 #. Label of the group_by_tab (Tab Break) field in DocType 'HD View'
 #: helpdesk/helpdesk/doctype/hd_view/hd_view.json
 msgid "Group By"
-msgstr "Regrouper par"
+msgstr "Grouper par"
 
 #. Label of the group_by_field (Data) field in DocType 'HD View'
 #: helpdesk/helpdesk/doctype/hd_view/hd_view.json
@@ -2907,9 +3135,7 @@ msgid "Headings Weight"
 msgstr "Poids des titres"
 
 #: desk/src/components/Settings/SavedReplies/SavedReplyView.vue:100
-msgid ""
-"Hello {{ contact }}, \\n\\nWe are sorry for the inconvenience, we will get "
-"back to you soon. \\n\\nRegards, \\n{{ full_name }}"
+msgid "Hello {{ contact }}, \\n\\nWe are sorry for the inconvenience, we will get back to you soon. \\n\\nRegards, \\n{{ full_name }}"
 msgstr ""
 "Bonjour {{ contact }}, \n"
 "\n"
@@ -2943,21 +3169,24 @@ msgid "Helpdesk Reports"
 msgstr "Rapports Helpdesk"
 
 #: helpdesk/helpdesk/doctype/hd_service_holiday_list/hd_service_holiday_list.js:53
-msgid ""
-"Here, your weekly offs are pre-populated based on the previous selections. "
-"You can add more rows to also add public and national holidays individually."
-msgstr ""
-"Vos jours de repos hebdomadaires sont pré-remplis à partir des sélections "
-"précédentes. Vous pouvez ajouter d'autres lignes pour saisir "
-"individuellement les jours fériés publics et nationaux."
+msgid "Here, your weekly offs are pre-populated based on the previous selections. You can add more rows to also add public and national holidays individually."
+msgstr "Vos jours de repos hebdomadaires sont pré-remplis à partir des sélections précédentes. Vous pouvez ajouter d'autres lignes pour saisir individuellement les jours fériés publics et nationaux."
 
 #: desk/src/pages/home/Home.vue:79
 msgid "Hey"
 msgstr "Bonjour"
 
+#: desk/src/components/CommunicationArea.vue:49
+msgid "Hi John, we are looking into this issue."
+msgstr "Bonjour, nous étudions votre demande."
+
 #: desk/src/components/HistoryBox.vue:10
 msgid "Hide "
 msgstr "Cacher "
+
+#: desk/src/components/HistoryBox.vue:12
+msgid "Hide +{0} changes from"
+msgstr "Masquer +{0} modifications de"
 
 #. Label of the cond_hidden (Code) field in DocType 'HD Action'
 #: helpdesk/helpdesk/doctype/hd_action/hd_action.json
@@ -2988,13 +3217,13 @@ msgstr "Mettre en attente"
 #. Agreement'
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.json
 msgid "Holiday List"
-msgstr "Liste de vacances"
+msgstr "Calendrier des jours fériés"
 
 #. Label of the holiday_list_name (Data) field in DocType 'HD Service Holiday
 #. List'
 #: helpdesk/helpdesk/doctype/hd_service_holiday_list/hd_service_holiday_list.json
 msgid "Holiday List Name"
-msgstr "Nom de la Liste de Vacances"
+msgstr "Nom du calendrier des jours fériés"
 
 #: desk/src/components/Settings/Holiday/HolidayView.vue:355
 msgid "Holiday list created successfully."
@@ -3019,7 +3248,7 @@ msgstr "Liste de jours fériés mise à jour avec succès."
 #: desk/src/components/Settings/Holiday/HolidayView.vue:172
 #: helpdesk/helpdesk/doctype/hd_service_holiday_list/hd_service_holiday_list.json
 msgid "Holidays"
-msgstr "Jours Fériés"
+msgstr "Jours fériés"
 
 #: desk/src/pages/home/Home.vue:5
 msgid "Home"
@@ -3049,45 +3278,29 @@ msgstr "Icône"
 
 #. Description of the 'Enabled' (Check) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"If enabled, a ticket creation acknowledgement email will be sent to the user"
-" right after creating an email ticket"
-msgstr ""
-"Si activé, un e-mail d'accusé de réception sera envoyé à l'utilisateur juste"
-" après la création d'un ticket par e-mail"
+msgid "If enabled, a ticket creation acknowledgement email will be sent to the user right after creating an email ticket"
+msgstr "Si activé, un e-mail d'accusé de réception sera envoyé à l'utilisateur juste après la création d'un ticket par e-mail"
 
 #. Description of the 'Enabled' (Check) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"If enabled, an email is sent to all of the recipients associated with an "
-"agent's reply"
-msgstr ""
-"Si activé, un e-mail est envoyé à tous les destinataires associés à la "
-"réponse d'un agent"
+msgid "If enabled, an email is sent to all of the recipients associated with an agent's reply"
+msgstr "Si activé, un e-mail est envoyé à tous les destinataires associés à la réponse d'un agent"
 
 #. Description of the 'Enabled' (Check) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"If enabled, an email will be sent to all of the assigned agents after a "
-"reply from one of the contacts"
-msgstr ""
-"Si activé, un e-mail sera envoyé à tous les agents assignés après la réponse"
-" d'un des contacts"
+msgid "If enabled, an email will be sent to all of the assigned agents after a reply from one of the contacts"
+msgstr "Si activé, un e-mail sera envoyé à tous les agents assignés après la réponse d'un des contacts"
 
 #. Description of the 'Allow anyone to create tickets' (Check) field in
 #. DocType
 #. 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"If enabled, anyone will be able to create tickets (without any permission). "
-msgstr ""
-"Si activé, tout le monde pourra créer des tickets (sans aucune permission). "
+msgid "If enabled, anyone will be able to create tickets (without any permission). "
+msgstr "Si activé, tout le monde pourra créer des tickets (sans aucune permission). "
 
 #. Description of the 'Enabled' (Check) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"If enabled, feedback email will be sent to the customer when you mark a "
-"ticket as the status selected below.\n"
+msgid "If enabled, feedback email will be sent to the customer when you mark a ticket as the status selected below.\n"
 msgstr ""
 "Si activé, un e-mail d'avis sera envoyé au client lorsque vous marquerez un ticket avec le statut sélectionné ci-dessous.\n"
 "\n"
@@ -3095,12 +3308,14 @@ msgstr ""
 #. Description of the 'Enable feedback for Customer Portal' (Check) field in
 #. DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"If enabled, the feedback dialog will be shown, when a user tries to close a "
-"ticket. \n"
+msgid "If enabled, the feedback dialog will be shown, when a user tries to close a ticket. \n"
 msgstr ""
 "Si activé, la boîte de dialogue d'avis s'affichera lorsqu'un utilisateur tentera de fermer un ticket. \n"
 "\n"
+
+#: desk/src/components/kb-credits-portal/QualificationList.vue:25
+msgid "If the ambiguity persists, the lower category applies: the doubt benefits you."
+msgstr "Si l'ambiguïté persiste, la catégorie inférieure s'applique : le doute vous profite."
 
 #: desk/src/components/knowledge-base/ArticleFeedback.vue:15
 msgid "If your issue isn't resolved, raise a support ticket"
@@ -3124,20 +3339,64 @@ msgstr "Image supprimée avec succès."
 
 #. Description of the 'Logo' (Attach Image) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"Image to be used in various places, including Login and Signup pages. An "
-"image with transparent background and 160 x 32 is preferred"
-msgstr ""
-"Image utilisée à divers endroits, notamment sur les pages de connexion et "
-"d'inscription. Une image au fond transparent de 160 x 32 est recommandée"
+msgid "Image to be used in various places, including Login and Signup pages. An image with transparent background and 160 x 32 is preferred"
+msgstr "Image utilisée à divers endroits, notamment sur les pages de connexion et d'inscription. Une image au fond transparent de 160 x 32 est recommandée"
 
 #: desk/src/components/Settings/General/components/Branding.vue:83
 msgid "Image updated successfully."
 msgstr "Image mise à jour avec succès."
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:69
+msgid "Imminent tacit acceptances"
+msgstr "Acceptations tacites imminentes"
+
+#: desk/src/components/view-controls/Filter.vue:246
+#: desk/src/components/view-controls/Filter.vue:267
+#: desk/src/components/view-controls/Filter.vue:282
+#: desk/src/components/view-controls/Filter.vue:295
+#: desk/src/components/view-controls/Filter.vue:309
+msgid "In"
+msgstr "Dans"
+
+#: desk/src/utils.ts:156
+msgid "In 1 hour"
+msgstr "Dans 1 heure"
+
+#: desk/src/utils.ts:152
+msgid "In 1 minute"
+msgstr "Dans 1 minute"
+
+#: desk/src/utils.ts:170
+msgid "In 1 year"
+msgstr "Dans 1 an"
+
 #: desk/src/pages/call-logs/CallLogModal.vue:217
 msgid "In Progress"
 msgstr "En Cours"
+
+#: desk/src/utils.ts:164
+msgid "In {0} days"
+msgstr "Dans {0} jours"
+
+#: desk/src/utils.ts:158
+msgid "In {0} hours"
+msgstr "Dans {0} heures"
+
+#: desk/src/utils.ts:154
+msgid "In {0} minutes"
+msgstr "Dans {0} minutes"
+
+#: desk/src/utils.ts:168
+msgid "In {0} months"
+msgstr "Dans {0} mois"
+
+#: desk/src/utils.ts:166
+msgid "In {0} weeks"
+msgstr "Dans {0} semaines"
+
+#: desk/src/utils.ts:172
+msgid "In {0} years"
+msgstr "Dans {0} ans"
 
 #: desk/src/components/Settings/Agents.vue:126
 msgid "Inactive"
@@ -3155,6 +3414,10 @@ msgstr "Boîte de réception"
 msgid "Incoming"
 msgstr "Entrant"
 
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:92
+msgid "Indicate the movements you dispute and why."
+msgstr "Indiquez les mouvements que vous contestez et pourquoi."
+
 #: desk/src/pages/call-logs/CallLogModal.vue:212
 msgid "Initiated"
 msgstr "Initié"
@@ -3170,12 +3433,18 @@ msgstr "Envoyer l'e-mail immédiatement"
 
 #: helpdesk/utils.py:32
 msgid "Insufficient Permission for {0}"
-msgstr "Autorisation Insuffisante Pour {0}"
+msgstr "Autorisation insuffisante pour {0}"
 
 #. Label of the integer_value (Int) field in DocType 'HD Ticket Priority'
 #: helpdesk/helpdesk/doctype/hd_ticket_priority/hd_ticket_priority.json
 msgid "Integer value"
 msgstr "Valeur entière"
+
+#: desk/src/components/kb-credits-portal/TicketCreditsBlock.vue:11
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:7
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:229
+msgid "Intervention credits"
+msgstr "Crédits d'intervention"
 
 #: desk/src/components/layouts/Sidebar.vue:570
 #: desk/src/components/layouts/Sidebar.vue:573
@@ -3190,19 +3459,16 @@ msgstr "Disponibilité invalide"
 msgid "Invalid email"
 msgstr "E-mail invalide"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:478
+#: Rules/AssignmentRuleView.vue:478 desk/src/components/Settings/Assignment
 #: desk/src/components/Settings/Holiday/HolidayView.vue:325
 #: desk/src/components/Settings/Sla/SlaPolicyView.vue:384
 msgid "Invalid fields, check if all are filled in and values are correct."
-msgstr ""
-"Champs invalides, vérifiez que tous sont renseignés et que les valeurs sont "
-"correctes."
+msgstr "Champs invalides, vérifiez que tous sont renseignés et que les valeurs sont correctes."
 
 #: desk/src/pages/desk/contact/ContactDialog.vue:283
 #: desk/src/pages/desk/contact/ContactDialog.vue:284
 msgid "Invalid file type, only PNG and JPG images are allowed"
-msgstr ""
-"Type de fichier invalide, seules les images PNG et JPG sont autorisées"
+msgstr "Type de fichier invalide, seules les images PNG et JPG sont autorisées"
 
 #: helpdesk/api/settings/email_notifications.py:112
 msgid "Invalid notification"
@@ -3217,7 +3483,7 @@ msgstr "Numéro de téléphone invalide"
 msgid "Invite Agents"
 msgstr "Inviter des agents"
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeSearch.vue:87
+#: Rules/AssigneeSearch.vue:87 desk/src/components/Settings/Assignment
 msgid "Invite agent"
 msgstr "Inviter un agent"
 
@@ -3233,6 +3499,17 @@ msgstr "Inviter en tant qu'utilisateur"
 msgid "Invite by email"
 msgstr "Inviter par email"
 
+#: desk/src/components/view-controls/Filter.vue:248
+#: desk/src/components/view-controls/Filter.vue:257
+#: desk/src/components/view-controls/Filter.vue:269
+#: desk/src/components/view-controls/Filter.vue:284
+#: desk/src/components/view-controls/Filter.vue:297
+#: desk/src/components/view-controls/Filter.vue:311
+#: desk/src/components/view-controls/Filter.vue:320
+#: desk/src/components/view-controls/Filter.vue:335
+msgid "Is"
+msgstr "Est"
+
 #. Label of the is_active (Check) field in DocType 'HD Agent'
 #: helpdesk/helpdesk/doctype/hd_agent/hd_agent.json
 msgid "Is Active"
@@ -3246,7 +3523,7 @@ msgstr "Est le portail client"
 #. Label of the is_default (Check) field in DocType 'HD View'
 #: helpdesk/helpdesk/doctype/hd_view/hd_view.json
 msgid "Is Default"
-msgstr "Est Défaut"
+msgstr "Est défaut"
 
 #. Label of the is_standard (Check) field in DocType 'HD Form Script'
 #. Label of the is_standard (Check) field in DocType 'HD View'
@@ -3276,9 +3553,21 @@ msgstr "Est épinglé"
 msgid "Is setup complete"
 msgstr "Configuration terminée"
 
+#: desk/src/components/view-controls/Filter.vue:426
+msgid "John Doe"
+msgstr "Jean Dupont"
+
+#: desk/src/components/view-controls/Filter.vue:414
+msgid "John, Jane, Doe"
+msgstr "Jean, Jeanne, Dupont"
+
 #: desk/src/components/command-palette/CP.vue:114
 msgid "Jump to"
 msgstr "Aller à"
+
+#: desk/src/utils.ts:150 desk/src/utils.ts:176
+msgid "Just now"
+msgstr "À l'instant"
 
 #: desk/src/pages/knowledge-base/Article.vue:672
 msgid "KB"
@@ -3308,7 +3597,7 @@ msgstr "Raccourcis clavier"
 #: desk/src/pages/knowledge-base/NewArticle.vue:169
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
 msgid "Knowledge Base"
-msgstr "Base de Connaissances"
+msgstr "Base de connaissances"
 
 #. Label of the button_label (Data) field in DocType 'HD Action'
 #. Label of the label (Data) field in DocType 'HD Ticket Feedback Option'
@@ -3329,7 +3618,7 @@ msgstr "Libellé (vue client)"
 #. Option for the 'Type' (Select) field in DocType 'HD Field Layout'
 #: helpdesk/helpdesk/doctype/hd_field_layout/hd_field_layout.json
 msgid "Landing Page"
-msgstr "Page de destination"
+msgstr "Page d'accueil"
 
 #: desk/src/components/Settings/Preferences/components/LanguageTimezoneSetting.vue:6
 msgid "Language"
@@ -3339,9 +3628,13 @@ msgstr "Langue"
 msgid "Language & Time"
 msgstr "Langue et heure"
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeRules.vue:102
+#: Rules/AssigneeRules.vue:102 desk/src/components/Settings/Assignment
 msgid "Last"
 msgstr "Dernier"
+
+#: desk/src/components/view-controls/Filter.vue:638
+msgid "Last 14 Days"
+msgstr "14 derniers jours"
 
 #: desk/src/pages/home/components/RecentFeedback.vue:372
 #: desk/src/pages/home/components/RecentFeedback.vue:401
@@ -3360,6 +3653,10 @@ msgstr "3 derniers mois"
 #: desk/src/pages/dashboard/Dashboard.vue:524
 msgid "Last 30 Days"
 msgstr "30 derniers jours"
+
+#: desk/src/components/view-controls/Filter.vue:645
+msgid "Last 6 Months"
+msgstr "6 derniers mois"
 
 #: desk/src/pages/dashboard/Dashboard.vue:493
 #: desk/src/pages/dashboard/Dashboard.vue:495
@@ -3386,6 +3683,9 @@ msgstr "Dernière réponse de l'agent"
 msgid "Last Customer Response"
 msgstr "Dernière réponse du client"
 
+msgid "Last Modified"
+msgstr "Dernière modification"
+
 #: desk/src/pages/home/components/RecentFeedback.vue:368
 #: desk/src/pages/home/components/RecentFeedback.vue:400
 msgid "Last Month"
@@ -3393,12 +3693,20 @@ msgstr "Mois dernier"
 
 #: desk/src/components/desk/global/NewContactDialog.vue:126
 msgid "Last Name"
-msgstr "Nom de Famille"
+msgstr "Nom de famille"
+
+#: desk/src/components/view-controls/Filter.vue:644
+msgid "Last Quarter"
+msgstr "Trimestre dernier"
 
 #: desk/src/pages/home/components/RecentFeedback.vue:364
 #: desk/src/pages/home/components/RecentFeedback.vue:399
 msgid "Last Week"
 msgstr "Semaine dernière"
+
+#: desk/src/components/view-controls/Filter.vue:646
+msgid "Last Year"
+msgstr "Année dernière"
 
 #: desk/src/pages/home/components/AgentTicketsCard.vue:35
 #: desk/src/pages/home/components/AvgTimeCard.vue:50
@@ -3409,7 +3717,7 @@ msgstr "Semaine dernière"
 msgid "Last month"
 msgstr "Le mois dernier"
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeRules.vue:95
+#: Rules/AssigneeRules.vue:95 desk/src/components/Settings/Assignment
 msgid "Last user assigned by this rule"
 msgstr "Dernier utilisateur attribué par cette règle"
 
@@ -3419,25 +3727,54 @@ msgstr "Dernier utilisateur attribué par cette règle"
 msgid "Last week"
 msgstr "La semaine dernière"
 
+#: desk/src/components/kb-credits/QualificationItem.vue:11
+#: desk/src/components/kb-credits/QualificationItem.vue:42
+msgid "Layer"
+msgstr "Couche"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:92
+msgid "Layer can be contested until {0}"
+msgstr "Couche contestable jusqu'au {0}"
+
+#: desk/src/components/kb-credits-portal/LayerContestDialog.vue:23
+msgid "Layer you consider applicable"
+msgstr "Couche que vous estimez applicable"
+
 #. Label of the layout (Code) field in DocType 'HD Field Layout'
 #: helpdesk/helpdesk/doctype/hd_field_layout/hd_field_layout.json
 msgid "Layout"
 msgstr "Mise en page"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:135
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:212
+#: Rules/AssignmentRuleView.vue:135 Rules/AssignmentRuleView.vue:212
+#: desk/src/components/Settings/Assignment
 msgid "Learn about conditions"
 msgstr "En savoir plus sur les conditions"
+
+#: desk/src/components/kb-credits/TicketCreditsSection.vue:57
+msgid "Legal P1"
+msgstr "P1 calendaire"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:133
+msgid "Legal deadline {0}"
+msgstr "Échéance légale {0}"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:70
+msgid "Less than 24 h before the weight is deemed accepted."
+msgstr "Moins de 24 h avant que le poids soit réputé accepté."
 
 #. Description of the 'Apply outside working hours' (Check) field in DocType
 #. 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"Let customers know they're raising a ticket outside working hours, and when "
-"they can expect a reply."
-msgstr ""
-"Informez les clients qu'ils créent un ticket en dehors des heures ouvrées et"
-" indiquez quand ils peuvent espérer une réponse."
+msgid "Let customers know they're raising a ticket outside working hours, and when they can expect a reply."
+msgstr "Informez les clients qu'ils créent un ticket en dehors des heures ouvrées et indiquez quand ils peuvent espérer une réponse."
+
+#: desk/src/components/view-controls/Filter.vue:244
+#: desk/src/components/view-controls/Filter.vue:255
+#: desk/src/components/view-controls/Filter.vue:265
+#: desk/src/components/view-controls/Filter.vue:293
+#: desk/src/components/view-controls/Filter.vue:307
+msgid "Like"
+msgstr "Contient"
 
 #. Option for the 'Source Type' (Select) field in DocType 'HD Support Search
 #. Source'
@@ -3490,7 +3827,14 @@ msgstr "Charger plus"
 
 #: desk/src/components/ticket-agent/AssignTo.vue:93
 msgid "Loading..."
-msgstr "Chargement en Cours ..."
+msgstr "Chargement en cours ..."
+
+#: desk/src/components/kb-credits/TicketCreditsSection.vue:32
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:31
+#: desk/src/pages/kb-credits/CustomerCredits.vue:27
+#: desk/src/pages/kb-credits/CustomerCredits.vue:67
+msgid "Loading…"
+msgstr "Chargement…"
 
 #: desk/src/components/ticket/ActivityHeader.vue:65
 msgid "Log a Call"
@@ -3499,7 +3843,7 @@ msgstr "Enregistrer un appel"
 #: desk/src/components/layouts/Sidebar.vue:344
 #: desk/src/components/layouts/Sidebar.vue:395
 msgid "Log out"
-msgstr "Déconnexion"
+msgstr "Se déconnecter"
 
 #: desk/src/components/layouts/Sidebar.vue:375
 msgid "Login to Frappe Cloud"
@@ -3511,12 +3855,19 @@ msgstr "Se connecter à Frappe Cloud"
 msgid "Logo"
 msgstr "Logo"
 
+#: desk/src/components/kb-credits/QualificationItem.vue:240
+msgid "Lower category"
+msgstr "Catégorie inférieure"
+
 #. Description of the 'Integer value' (Int) field in DocType 'HD Ticket
 #. Priority'
 #: helpdesk/helpdesk/doctype/hd_ticket_priority/hd_ticket_priority.json
 msgid "Lower the Integer value, higher is the priority of the issue"
-msgstr ""
-"Plus la valeur entière est faible, plus la priorité du problème est élevée"
+msgstr "Plus la valeur entière est faible, plus la priorité du problème est élevée"
+
+#: desk/src/components/ticket/TicketAgentDetails.vue:164
+msgid "Mail"
+msgstr "E-mail"
 
 #: desk/src/pages/ticket/Tickets.vue:501
 msgid "Make Private"
@@ -3543,24 +3894,16 @@ msgid "Manage general settings of your app."
 msgstr "Gérez les paramètres généraux de votre application."
 
 #: desk/src/components/Settings/SavedReplies/SavedRepliesList.vue:5
-msgid ""
-"Manage pre-defined responses that can be used to respond to customer "
-"queries."
-msgstr ""
-"Gérez des réponses prédéfinies utilisables pour répondre aux demandes des "
-"clients."
+msgid "Manage pre-defined responses that can be used to respond to customer queries."
+msgstr "Gérez des réponses prédéfinies utilisables pour répondre aux demandes des clients."
 
 #: desk/src/components/Settings/Profile/Profile.vue:130
 msgid "Manage your account emails and email signature for communication."
-msgstr ""
-"Gérez les e-mails de votre compte et votre signature e-mail pour vos "
-"communications."
+msgstr "Gérez les e-mails de votre compte et votre signature e-mail pour vos communications."
 
 #: desk/src/components/Settings/EmailAccountList.vue:5
-msgid ""
-"Manage your email accounts and configure incoming and outgoing settings."
-msgstr ""
-"Gérez vos comptes e-mail et configurez les paramètres entrants et sortants."
+msgid "Manage your email accounts and configure incoming and outgoing settings."
+msgstr "Gérez vos comptes e-mail et configurez les paramètres entrants et sortants."
 
 #: desk/src/components/Settings/Profile/UserEmailSettings.vue:25
 msgid "Manage your email signature."
@@ -3581,7 +3924,7 @@ msgstr "Tout marquer comme lu"
 
 #: desk/src/components/layouts/Sidebar.vue:608
 msgid "Masters"
-msgstr "Données de Base"
+msgstr "Données de base"
 
 #: desk/src/components/Settings/Teams/NewTeam.vue:38
 msgid "Members"
@@ -3594,7 +3937,7 @@ msgstr "Membres ({0})"
 #. Option for the 'Type' (Select) field in DocType 'HD Notification'
 #: helpdesk/helpdesk/doctype/hd_notification/hd_notification.json
 msgid "Mention"
-msgstr "Mentionner"
+msgstr "Mention"
 
 #: desk/src/pages/knowledge-base/KnowledgeBaseAgent.vue:158
 msgid "Merge"
@@ -3604,6 +3947,14 @@ msgstr "Fusionner"
 #: desk/src/components/ticket/TicketAgentSidebar.vue:18
 msgid "Merge Ticket"
 msgstr "Fusionner le ticket"
+
+#: desk/src/components/knowledge-base/MergeCategoryModal.vue:3
+msgid "Merge with another category"
+msgstr "Fusionner avec une autre catégorie"
+
+#: desk/src/components/ticket/TicketMergeModal.vue:2
+msgid "Merge with another ticket"
+msgstr "Fusionner avec un autre ticket"
 
 #. Label of the merged_with (Link) field in DocType 'HD Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
@@ -3638,14 +3989,30 @@ msgstr "Lundi"
 msgid "Monthly"
 msgstr "Mensuel"
 
+#: desk/src/pages/kb-credits/CustomerCredits.vue:91
+msgid "Monthly statements"
+msgstr "Relevés mensuels"
+
 #: desk/src/pages/knowledge-base/Article.vue:636
 #: desk/src/pages/knowledge-base/KnowledgeBaseAgent.vue:191
 msgid "Move To"
 msgstr "Déménager à"
 
+#: desk/src/components/kb-credits-portal/MovementsTable.vue:11
+msgid "Movement"
+msgstr "Mouvement"
+
+#: desk/src/pages/kb-credits/CustomerCredits.vue:83
+msgid "Movement history"
+msgstr "Historique des mouvements"
+
 #: desk/src/pages/dashboard/Dashboard.vue:249
 msgid "My Dashboard"
 msgstr "Mon tableau de bord"
+
+#: desk/src/components/ViewModal.vue:18
+msgid "My Open Tickets"
+msgstr "Mes tickets ouverts"
 
 #: desk/src/pages/dashboard/Dashboard.vue:302
 msgid "My Organization"
@@ -3665,12 +4032,18 @@ msgstr "Mon équipe"
 msgid "My Tickets"
 msgstr "Mes tickets"
 
+#: desk/src/components/kb-credits-portal/TicketCreditsBlock.vue:17
+#: desk/src/pages/kb-credits/CustomerCredits.vue:7
+#: desk/src/pages/kb-credits/CustomerCredits.vue:130
+msgid "My credits"
+msgstr "Mes crédits"
+
 #. Label of the category_name (Data) field in DocType 'HD Article Category'
 #. Label of the organization_name (Data) field in DocType 'HD Organization'
 #. Label of the brand_name (Data) field in DocType 'HD Settings'
 #. Label of the team_name (Data) field in DocType 'HD Team'
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:46
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:47
+#: Rules/AssignmentRuleView.vue:46 Rules/AssignmentRuleView.vue:47
+#: desk/src/components/Settings/Assignment
 #: desk/src/components/Settings/FieldDependency/FieldDependencyList.vue:68
 #: desk/src/components/Settings/Holiday/HolidayView.vue:37
 #: desk/src/components/Settings/Holiday/HolidayView.vue:38
@@ -3692,11 +4065,8 @@ msgstr "Poids du nom"
 #. Description of the 'Label (customer view)' (Data) field in DocType 'HD
 #. Ticket Status'
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.json
-msgid ""
-"Name shown on the customer portal<br> (e.g., Replied → Awaiting Response)."
-msgstr ""
-"Nom affiché sur le portail client<br> (par ex. Répondu → En attente de "
-"réponse)."
+msgid "Name shown on the customer portal<br> (e.g., Replied → Awaiting Response)."
+msgstr "Nom affiché sur le portail client<br> (par ex. Répondu → En attente de réponse)."
 
 #: desk/src/components/modals/ShortcutsModal.vue:105
 msgid "Navigation"
@@ -3707,8 +4077,9 @@ msgstr "Navigation"
 msgid "Negative first"
 msgstr "Négatifs d'abord"
 
+#: Rules/AssignmentRulesList.vue:19
 #: desk/src/components/SavedRepliesSelectorModal.vue:16
-#: desk/src/components/Settings/Assignment Rules/AssignmentRulesList.vue:19
+#: desk/src/components/Settings/Assignment
 #: desk/src/components/Settings/EmailAccountList.vue:12
 #: desk/src/components/Settings/FieldDependency/FieldDependencyList.vue:27
 #: desk/src/components/Settings/Holiday/Holidays.vue:12
@@ -3725,11 +4096,11 @@ msgstr "Nouveau"
 msgid "New Article"
 msgstr "Nouvel article"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:4
+#: Rules/AssignmentRuleView.vue:4 desk/src/components/Settings/Assignment
 msgid "New Assignment Rule"
 msgstr "Nouvelle règle d'affectation"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleListItem.vue:59
+#: Rules/AssignmentRuleListItem.vue:59 desk/src/components/Settings/Assignment
 msgid "New Assignment Rule Name"
 msgstr "Nom de la nouvelle règle d'affectation"
 
@@ -3751,7 +4122,7 @@ msgstr "Nom de la nouvelle liste de jours fériés"
 
 #: desk/src/components/Settings/Profile/components/ChangePasswordModal.vue:8
 msgid "New Password"
-msgstr "Nouveau Mot de Passe"
+msgstr "Nouveau mot de passe"
 
 #: desk/src/components/Settings/Sla/SlaPolicyView.vue:3
 msgid "New SLA Policy"
@@ -3782,16 +4153,21 @@ msgstr "Nouvelle équipe"
 msgid "New Ticket"
 msgstr "Nouveau ticket"
 
+#: desk/src/components/ticket/TicketSplitModal.vue:11
+msgid "New Ticket Subject"
+msgstr "Objet du nouveau ticket"
+
 #: desk/src/components/Settings/Teams/RenameTeamModal.vue:53
 msgid "New and old title cannot be same"
 msgstr "L'ancien et le nouveau titre ne peuvent pas être identiques"
 
 #: desk/src/components/erpnext-integration/ERPNextIntegrationSettings.vue:86
-msgid ""
-"New and updated customers sync automatically between Helpdesk and ERPNext."
-msgstr ""
-"Les clients nouveaux et modifiés sont synchronisés automatiquement entre le "
-"Helpdesk et ERPNext."
+msgid "New and updated customers sync automatically between Helpdesk and ERPNext."
+msgstr "Les clients nouveaux et modifiés sont synchronisés automatiquement entre le Helpdesk et ERPNext."
+
+#: desk/src/components/kb-credits/RequalifyDialog.vue:19
+msgid "New grid code"
+msgstr "Nouveau code de la grille"
 
 #: desk/src/components/Settings/NewTeamModal.vue:4
 msgid "New team"
@@ -3803,9 +4179,39 @@ msgstr "Le nouveau titre est requis"
 
 #: desk/src/components/Settings/General/General.vue:50
 msgid "New users will have to be manually registered by system managers."
-msgstr ""
-"Les nouveaux utilisateurs devront être enregistrés manuellement par les "
-"gestionnaires du système."
+msgstr "Les nouveaux utilisateurs devront être enregistrés manuellement par les administrateurs système."
+
+#: desk/src/components/view-controls/Filter.vue:658
+msgid "Next 14 Days"
+msgstr "14 prochains jours"
+
+#: desk/src/components/view-controls/Filter.vue:659
+msgid "Next 30 Days"
+msgstr "30 prochains jours"
+
+#: desk/src/components/view-controls/Filter.vue:664
+msgid "Next 6 Months"
+msgstr "6 prochains mois"
+
+#: desk/src/components/view-controls/Filter.vue:657
+msgid "Next 7 Days"
+msgstr "7 prochains jours"
+
+#: desk/src/components/view-controls/Filter.vue:662
+msgid "Next Month"
+msgstr "Mois prochain"
+
+#: desk/src/components/view-controls/Filter.vue:663
+msgid "Next Quarter"
+msgstr "Trimestre prochain"
+
+#: desk/src/components/view-controls/Filter.vue:661
+msgid "Next Week"
+msgstr "Semaine prochaine"
+
+#: desk/src/components/view-controls/Filter.vue:665
+msgid "Next Year"
+msgstr "Année prochaine"
 
 #: desk/src/components/modals/ShortcutsModal.vue:107
 msgid "Next ticket"
@@ -3839,6 +4245,14 @@ msgstr "Aucun SLA trouvé"
 msgid "No Team"
 msgstr "Aucune équipe"
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:145
+msgid "No account near the remedy cap."
+msgstr "Aucun compte proche du plafond de remèdes."
+
+#: desk/src/components/ticket/TicketAgentActivities.vue:162
+msgid "No activity found"
+msgstr "Aucune activité"
+
 #: desk/src/pages/home/components/RecentFeedback.vue:206
 msgid "No additional comments"
 msgstr "Aucun commentaire supplémentaire"
@@ -3847,26 +4261,37 @@ msgstr "Aucun commentaire supplémentaire"
 msgid "No agents found"
 msgstr "Aucun agent trouvé"
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:48
+msgid "No announcement awaiting validation."
+msgstr "Aucune annonce en attente de validation."
+
+#: desk/src/components/SearchArticles.vue:57
+msgid "No answers found"
+msgstr "Aucune réponse trouvée"
+
 #: desk/src/pages/knowledge-base/KnowledgeBaseAgent.vue:425
-msgid ""
-"No articles found for the applied filters. Try adjusting or clearing your "
-"filters."
-msgstr ""
-"Aucun article ne correspond aux filtres appliqués. Essayez de les modifier "
-"ou de les effacer."
+msgid "No articles found for the applied filters. Try adjusting or clearing your filters."
+msgstr "Aucun article ne correspond aux filtres appliqués. Essayez de les modifier ou de les effacer."
 
 #: desk/src/pages/knowledge-base/KnowledgeBaseAgent.vue:428
 msgid "No articles found in the following category."
 msgstr "Aucun article trouvé dans la catégorie suivante."
 
-#: desk/src/components/Settings/Assignment
-#: Rules/AssignmentRulesListView.vue:20
+#: Rules/AssignmentRulesListView.vue:20 desk/src/components/Settings/Assignment
 msgid "No assignment rule found"
 msgstr "Aucune règle d'assignation trouvée"
 
 #: desk/src/pages/home/components/AvgTimeMetrics.vue:105
 msgid "No average metrics"
 msgstr "Aucun indicateur moyen"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:113
+msgid "No calendar P1 in progress."
+msgstr "Aucun P1 calendaire en cours."
+
+#: desk/src/components/ticket/TicketAgentActivities.vue:160
+msgid "No calls made"
+msgstr "Aucun appel"
 
 #: desk/src/components/knowledge-base/CategoryFolderContainer.vue:17
 msgid "No categories available"
@@ -3880,41 +4305,73 @@ msgstr "Aucune modification effectuée"
 msgid "No changes to save"
 msgstr "Aucune modification à enregistrer"
 
+#: desk/src/pages/dashboard/Dashboard.vue:286
+msgid "No channel data"
+msgstr "Aucune donnée par canal"
+
 #: desk/src/pages/home/Home.vue:88
 msgid "No charts added"
 msgstr "Aucun graphique ajouté"
 
+#: desk/src/components/ticket/TicketAgentActivities.vue:159
+msgid "No comments found"
+msgstr "Aucun commentaire"
+
+#: desk/src/pages/desk/contact/Contacts.vue:77
+msgid "No contacts found"
+msgstr "Aucun contact"
+
 #: desk/src/pages/desk/contact/Contacts.vue:82
-msgid ""
-"No contacts found for the applied filters. Try adjusting or clearing your "
-"filters."
-msgstr ""
-"Aucun contact ne correspond aux filtres appliqués. Essayez de les modifier "
-"ou de les effacer."
+msgid "No contacts found for the applied filters. Try adjusting or clearing your filters."
+msgstr "Aucun contact ne correspond aux filtres appliqués. Essayez de les modifier ou de les effacer."
+
+#: desk/src/components/kb-credits/CreditsBalanceBar.vue:44
+msgid "No credit account for this customer."
+msgstr "Aucun compte de crédits pour ce client."
+
+#: desk/src/pages/desk/customer/Customers.vue:88
+msgid "No customers found"
+msgstr "Aucun client"
 
 #: desk/src/pages/desk/customer/Customers.vue:91
-msgid ""
-"No customers found for the applied filters. Try adjusting or clearing your "
-"filters."
-msgstr ""
-"Aucun client ne correspond aux filtres appliqués. Essayez de les modifier ou"
-" de les effacer."
+msgid "No customers found for the applied filters. Try adjusting or clearing your filters."
+msgstr "Aucun client ne correspond aux filtres appliqués. Essayez de les modifier ou de les effacer."
 
 #: desk/src/components/Settings/EmailAccountList.vue:46
 msgid "No email account found"
 msgstr "Aucun compte e-mail trouvé"
 
+#: desk/src/components/ticket/TicketAgentActivities.vue:158
+msgid "No email communications"
+msgstr "Aucun échange d'e-mails"
+
 #: desk/src/pages/home/components/RecentFeedback.vue:283
 msgid "No feedback"
+msgstr "Aucun avis"
+
+#: desk/src/pages/dashboard/Dashboard.vue:270
+msgid "No feedback data"
 msgstr "Aucun avis"
 
 #: desk/src/components/view-controls/filter/FilterFieldList.vue:46
 msgid "No fields found"
 msgstr "Aucun champ trouvé"
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:72
+msgid "No imminent tacit acceptance."
+msgstr "Aucune acceptation tacite imminente."
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:184
+msgid "No legal window open."
+msgstr "Aucune fenêtre légale ouverte."
+
 #: desk/src/components/Settings/Teams/TeamEdit.vue:94
 msgid "No members found"
 msgstr "Aucun membre trouvé"
+
+#: desk/src/components/kb-credits-portal/MovementsTable.vue:62
+msgid "No movement yet."
+msgstr "Aucun mouvement pour l'instant."
 
 #: desk/src/pages/MobileNotifications.vue:68
 msgid "No new notifications"
@@ -3922,8 +4379,7 @@ msgstr "Aucune nouvelle notification"
 
 #: desk/src/pages/home/components/PendingTickets.vue:258
 msgid "No new tickets assigned to you in the last 7 days"
-msgstr ""
-"Aucun nouveau ticket ne vous a été assigné au cours des 7 derniers jours"
+msgstr "Aucun nouveau ticket ne vous a été assigné au cours des 7 derniers jours"
 
 #: desk/src/components/ticket-agent/TicketNavigation.vue:25
 msgid "No next ticket"
@@ -3933,6 +4389,14 @@ msgstr "Aucun ticket suivant"
 msgid "No one"
 msgstr "Personne"
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:94
+msgid "No open contest."
+msgstr "Aucune contestation en cours."
+
+#: desk/src/components/SearchMultiSelect.vue:176
+msgid "No options found"
+msgstr "Aucune option trouvée"
+
 #: desk/src/pages/home/components/PendingTickets.vue:261
 msgid "No pending tickets"
 msgstr "Aucun ticket en attente"
@@ -3940,6 +4404,14 @@ msgstr "Aucun ticket en attente"
 #: desk/src/components/ticket-agent/TicketNavigation.vue:10
 msgid "No previous ticket"
 msgstr "Aucun ticket précédent"
+
+#: desk/src/pages/dashboard/Dashboard.vue:282
+msgid "No priority data"
+msgstr "Aucune donnée de priorité"
+
+#: desk/src/components/kb-credits/TicketCreditsSection.vue:83
+msgid "No qualification on this ticket yet."
+msgstr "Aucune qualification sur ce ticket pour l'instant."
 
 #: desk/src/pages/home/components/PendingTickets.vue:94
 msgid "No reason"
@@ -3953,7 +4425,7 @@ msgstr "Aucun ticket récemment assigné"
 msgid "No results"
 msgstr "Aucun résultat"
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeSearch.vue:79
+#: Rules/AssigneeSearch.vue:79 desk/src/components/Settings/Assignment
 msgid "No results found"
 msgstr "Aucun résultat trouvé"
 
@@ -3962,25 +4434,33 @@ msgstr "Aucun résultat trouvé"
 msgid "No saved replies found"
 msgstr "Aucune réponse enregistrée trouvée"
 
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:82
+msgid "No statement issued yet. The monthly statement is issued on the 1st of each month."
+msgstr "Aucun relevé émis pour l'instant. Le relevé mensuel est émis le 1er de chaque mois."
+
+#: desk/src/pages/dashboard/Dashboard.vue:274
+msgid "No team data"
+msgstr "Aucune donnée par équipe"
+
+#: desk/src/pages/dashboard/Dashboard.vue:266
+msgid "No ticket activity"
+msgstr "Aucune activité sur les tickets"
+
+#: desk/src/pages/dashboard/Dashboard.vue:278
+msgid "No ticket type data"
+msgstr "Aucune donnée par type de ticket"
+
 #: desk/src/pages/ticket/Tickets.vue:192
 msgid "No tickets found"
 msgstr "Aucun ticket trouvé"
 
 #: desk/src/pages/ticket/Tickets.vue:202
-msgid ""
-"No tickets found for the applied filters. Try adjusting or clearing your "
-"filters."
-msgstr ""
-"Aucun ticket ne correspond aux filtres appliqués. Essayez de les modifier ou"
-" de les effacer."
+msgid "No tickets found for the applied filters. Try adjusting or clearing your filters."
+msgstr "Aucun ticket ne correspond aux filtres appliqués. Essayez de les modifier ou de les effacer."
 
 #: desk/src/pages/ticket/Tickets.vue:198
-msgid ""
-"No tickets found for this view. Try adjusting your filters or creating a new"
-" view."
-msgstr ""
-"Aucun ticket trouvé pour cette vue. Essayez de modifier vos filtres ou de "
-"créer une nouvelle vue."
+msgid "No tickets found for this view. Try adjusting your filters or creating a new view."
+msgstr "Aucun ticket trouvé pour cette vue. Essayez de modifier vos filtres ou de créer une nouvelle vue."
 
 #: desk/src/components/Settings/SavedReplies/components/PreviewDialog.vue:99
 msgid "No tickets found to preview."
@@ -3990,21 +4470,55 @@ msgstr "Aucun ticket à prévisualiser."
 msgid "No tickets selected"
 msgstr "Aucun ticket sélectionné"
 
+#: desk/src/pages/dashboard/Dashboard.vue:122
+#: desk/src/pages/dashboard/Dashboard.vue:147
+msgid "No {0} available."
+msgstr "Aucune donnée disponible : {0}."
+
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:154
+msgid "Normal level"
+msgstr "Niveau normal"
+
 #: helpdesk/api/ticket.py:76 helpdesk/utils.py:182
 msgid "Not Allowed"
-msgstr "Non Autorisé"
+msgstr "Non autorisé"
 
 #: desk/src/pages/home/components/PendingTickets.vue:69
 msgid "Not Assigned"
 msgstr "Non assigné"
 
+#: desk/src/components/view-controls/Filter.vue:243
+#: desk/src/components/view-controls/Filter.vue:264
+#: desk/src/components/view-controls/Filter.vue:281
+#: desk/src/components/view-controls/Filter.vue:292
+#: desk/src/components/view-controls/Filter.vue:319
+#: desk/src/components/view-controls/Filter.vue:334
+msgid "Not Equals"
+msgstr "Différent de"
+
+#: desk/src/components/view-controls/Filter.vue:247
+#: desk/src/components/view-controls/Filter.vue:268
+#: desk/src/components/view-controls/Filter.vue:283
+#: desk/src/components/view-controls/Filter.vue:296
+#: desk/src/components/view-controls/Filter.vue:310
+msgid "Not In"
+msgstr "Non inclus"
+
+#: desk/src/components/view-controls/Filter.vue:245
+#: desk/src/components/view-controls/Filter.vue:256
+#: desk/src/components/view-controls/Filter.vue:266
+#: desk/src/components/view-controls/Filter.vue:294
+#: desk/src/components/view-controls/Filter.vue:308
+msgid "Not Like"
+msgstr "Pas comme"
+
 #: desk/src/pages/call-logs/CallLogModal.vue:10
 msgid "Not Saved"
-msgstr "Non Sauvegardé"
+msgstr "Non sauvegardé"
 
 #: desk/src/components/view-controls/filter/FilterValueEditor.vue:203
 msgid "Not Set"
-msgstr "Non Défini"
+msgstr "Non défini"
 
 #: helpdesk/helpdesk/report/ticket_analytics/ticket_analytics.py:250
 #: helpdesk/helpdesk/report/ticket_summary/ticket_summary.py:270
@@ -4015,6 +4529,14 @@ msgstr "Non précisé"
 #: desk/src/components/erpnext-integration/ERPNextIntegrationSettings.vue:14
 msgid "Not installed"
 msgstr "Non installé"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:163
+msgid "Not specified"
+msgstr "Non précisée"
+
+#: desk/src/pages/kb-credits/CustomerCredits.vue:76
+msgid "Nothing is waiting for your reply."
+msgstr "Rien n'attend votre réponse."
 
 #. Label of a Link in the Helpdesk Workspace
 #: helpdesk/helpdesk/workspace/helpdesk/helpdesk.json
@@ -4027,14 +4549,26 @@ msgstr "Paramètres de notification"
 msgid "Notifications"
 msgstr "Notifications"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:146
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:227
+#: desk/src/utils.ts:107 desk/src/utils.ts:127
+msgid "Now"
+msgstr "Maintenant"
+
+#: desk/src/components/kb-credits-portal/MovementsTable.vue:44
+msgid "Offered"
+msgstr "Offert"
+
+#: Rules/AssignmentRuleView.vue:146 Rules/AssignmentRuleView.vue:227
+#: desk/src/components/Settings/Assignment
 msgid "Old Condition"
 msgstr "Ancienne condition"
 
 #: desk/src/components/Settings/Sla/SlaPolicyView.vue:88
 msgid "Old Conditions"
 msgstr "Anciennes conditions"
+
+#: desk/src/components/ticket-agent/TicketSLA.vue:179
+msgid "On Hold"
+msgstr "En suspens"
 
 #. Label of the on_hold_since (Datetime) field in DocType 'HD Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
@@ -4046,9 +4580,25 @@ msgstr "En attente depuis"
 msgid "On click (Javascript)"
 msgstr "Au clic (Javascript)"
 
+#: desk/src/components/kb-credits/grid.ts:35
+msgid "On quote"
+msgstr "Sur devis"
+
 #: desk/src/components/Settings/EmailNotifications/ShareFeedback.vue:20
 msgid "On ticket status"
 msgstr "Selon le statut du ticket"
+
+#: desk/src/components/kb-credits/QualificationItem.vue:212
+msgid "On-site"
+msgstr "Sur site"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:73
+msgid "On-site intervention"
+msgstr "Intervention sur site"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:57
+msgid "On-site intervention — travel fee: {0} (not in credits)"
+msgstr "Intervention sur site : frais de déplacement de {0} (hors crédits)"
 
 #: helpdesk/api/ticket.py:75
 msgid "Only administrators can delete tickets."
@@ -4059,18 +4609,15 @@ msgid "Only one default view is allowed per user for {0}"
 msgstr "Une seule vue par défaut est autorisée par utilisateur pour {0}"
 
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.py:29
-msgid ""
-"Only the 'color' and 'order' fields of the 'Closed' status can be modified."
-msgstr ""
-"Seuls les champs « color » et « order » du statut « Closed » peuvent être "
-"modifiés."
+msgid "Only the 'color' and 'order' fields of the 'Closed' status can be modified."
+msgstr "Seuls les champs « color » et « order » du statut « Closed » peuvent être modifiés."
 
 #. Option for the 'Category' (Select) field in DocType 'HD Ticket Status'
 #. Option in a Select field in the tickets Web Form
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.json
 #: helpdesk/helpdesk/web_form/tickets/tickets.json
 msgid "Open"
-msgstr "Ouvrir"
+msgstr "Ouvert"
 
 #: desk/src/components/modals/ShortcutsModal.vue:78
 msgid "Open command palette"
@@ -4080,6 +4627,10 @@ msgstr "Ouvrir la palette de commandes"
 msgid "Open comment box"
 msgstr "Ouvrir la zone de commentaire"
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:91
+msgid "Open contests"
+msgstr "Contestations en cours"
+
 #: desk/src/components/modals/ShortcutsModal.vue:81
 msgid "Open help"
 msgstr "Ouvrir l'aide"
@@ -4087,6 +4638,10 @@ msgstr "Ouvrir l'aide"
 #: desk/src/components/Settings/EmailEdit.vue:37
 msgid "Open in Desk"
 msgstr "Ouvrir dans Desk"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:181
+msgid "Open legal windows"
+msgstr "Fenêtres légales ouvertes"
 
 #: desk/src/components/modals/ShortcutsModal.vue:99
 msgid "Open reply box"
@@ -4107,22 +4662,26 @@ msgstr ""
 "En pause : le SLA est suspendu. <br>\n"
 "Résolu : le minuteur du SLA s'arrête."
 
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:11
+msgid "Opening"
+msgstr "Solde d'ouverture"
+
 #. Label of the opening_date (Date) field in DocType 'HD Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
 msgid "Opening Date"
-msgstr "Date d'Ouverture"
+msgstr "Date d'ouverture"
 
 #. Label of the opening_time (Time) field in DocType 'HD Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
 msgid "Opening Time"
-msgstr "Horaire d'Ouverture"
+msgstr "Horaire d'ouverture"
 
 #. Option for the 'Color' (Select) field in DocType 'HD Agent Status'
 #. Option for the 'Color' (Select) field in DocType 'HD Ticket Status'
 #: helpdesk/helpdesk/doctype/hd_agent_status/hd_agent_status.json
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.json
 msgid "Orange"
-msgstr "orange"
+msgstr "Orange"
 
 #. Label of the order (Int) field in DocType 'HD Ticket Status'
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.json
@@ -4155,9 +4714,22 @@ msgstr "Sortant"
 msgid "Outside working hours notice"
 msgstr "Avis hors heures ouvrées"
 
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue
+msgid "Outside working hours: weight × {0}"
+msgstr "Hors heures ouvrées : poids × {0}"
+
+#: desk/src/components/ticket-agent/TicketSLA.vue:149
+#: desk/src/components/ticket-agent/TicketSLA.vue:192
+msgid "Overdue by {0}"
+msgstr "En retard de {0}"
+
 #: desk/src/components/Settings/SavedReplies/SavedRepliesList.vue:105
 msgid "Owner"
 msgstr "Responsable"
+
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:116
+msgid "Pack {0}"
+msgstr "Pack {0}"
 
 #: desk/src/pages/InvalidPage.vue:11
 msgid "Page not found"
@@ -4169,13 +4741,11 @@ msgstr "Champ parent"
 
 #: helpdesk/api/settings/field_dependency.py:47
 msgid "Parent field, child field, and parent-child mapping are required."
-msgstr ""
-"Le champ parent, le champ enfant et la correspondance parent-enfant sont "
-"requis."
+msgstr "Le champ parent, le champ enfant et la correspondance parent-enfant sont requis."
 
 #: desk/src/components/Settings/Profile/Profile.vue:144
 msgid "Password"
-msgstr "Mot de Passe"
+msgstr "Mot de passe"
 
 #: desk/src/components/Settings/Profile/components/ChangePasswordModal.vue:104
 msgid "Password must be at least 8 characters"
@@ -4183,9 +4753,7 @@ msgstr "Le mot de passe doit contenir au moins 8 caractères"
 
 #: desk/src/components/Settings/Profile/components/ChangePasswordModal.vue:107
 msgid "Password must contain lowercase, uppercase, number, and symbol"
-msgstr ""
-"Le mot de passe doit contenir une minuscule, une majuscule, un chiffre et un"
-" symbole"
+msgstr "Le mot de passe doit contenir une minuscule, une majuscule, un chiffre et un symbole"
 
 #: desk/src/components/Settings/Profile/components/ChangePasswordModal.vue:87
 msgid "Password updated successfully."
@@ -4242,6 +4810,10 @@ msgstr "Pourcentage du total des tickets par type"
 msgid "Period"
 msgstr "Période"
 
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:13
+msgid "Period from {0} to {1}"
+msgstr "Période du {0} au {1}"
+
 #. Option for the 'Scope' (Select) field in DocType 'HD Saved Reply'
 #: desk/src/components/SavedRepliesSelectorModal.vue:170
 #: desk/src/components/Settings/SavedReplies/SavedRepliesList.vue:330
@@ -4289,13 +4861,13 @@ msgstr "Épinglé"
 msgid "Placeholder"
 msgstr "Texte indicatif"
 
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue
+msgid "Planned intervention"
+msgstr "Intervention prévue le"
+
 #: helpdesk/helpdesk/doctype/hd_ticket_priority/hd_ticket_priority.py:21
-msgid ""
-"Please add this priority in the <a href='/app/hd-service-level-"
-"agreement'>required SLA documents</a>"
-msgstr ""
-"Veuillez ajouter cette priorité dans les <a href='/app/hd-service-level-"
-"agreement'>documents SLA requis</a>"
+msgid "Please add this priority in the <a href='/app/hd-service-level-agreement'>required SLA documents</a>"
+msgstr "Veuillez ajouter cette priorité dans les <a href='/app/hd-service-level-agreement'>documents SLA requis</a>"
 
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:341
 msgid "Please add {0} priority in {1} SLA"
@@ -4324,9 +4896,7 @@ msgstr "Veuillez saisir un numéro de téléphone valide"
 
 #: desk/src/components/Settings/InviteAgents.vue:185
 msgid "Please enter at least one valid email to send an invite."
-msgstr ""
-"Veuillez saisir au moins une adresse e-mail valide pour envoyer une "
-"invitation."
+msgstr "Veuillez saisir au moins une adresse e-mail valide pour envoyer une invitation."
 
 #: desk/src/components/Settings/Teams/NewTeam.vue:129
 #: desk/src/pages/call-logs/CallLogModal.vue:264
@@ -4356,19 +4926,25 @@ msgid "Please provide saved_reply_id"
 msgstr "Veuillez fournir saved_reply_id"
 
 #: desk/src/components/Settings/General/General.vue:239
-msgid ""
-"Please select at least one restriction option for teams in the settings."
-msgstr ""
-"Veuillez sélectionner au moins une option de restriction pour les équipes "
-"dans les paramètres."
+msgid "Please select at least one restriction option for teams in the settings."
+msgstr "Veuillez sélectionner au moins une option de restriction pour les équipes dans les paramètres."
 
 #: helpdesk/helpdesk/doctype/hd_service_holiday_list/hd_service_holiday_list.py:41
 msgid "Please select weekly off day"
 msgstr "Veuillez sélectionnez les jours de congé hebdomadaires"
 
+#: desk/src/components/SearchArticles.vue:71
+msgid "Please wait while we search for the answers"
+msgstr "Veuillez patienter pendant la recherche des réponses"
+
 #: desk/src/components/Settings/Sla/SlaPolicyList.vue:32
 msgid "Policy name"
 msgstr "Nom de la politique"
+
+#: desk/src/components/ticket-agent/TicketSLA.vue:33
+#: desk/src/components/ticket/TicketAgentDetails.vue:164
+msgid "Portal"
+msgstr "Portail"
 
 #: desk/src/pages/home/components/RecentFeedback.vue:388
 #: desk/src/pages/home/components/RecentFeedback.vue:411
@@ -4446,9 +5022,8 @@ msgstr "Les priorités"
 #. Label of the priority (Link) field in DocType 'HD Ticket'
 #. Label of the priority (Link) field in DocType 'HD Ticket Type'
 #. Label of a field in the tickets Web Form
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:59
-#: desk/src/components/Settings/Assignment
-#: Rules/AssignmentRulesListView.vue:30 desk/src/pages/SearchAgent.vue:68
+#: Rules/AssignmentRuleView.vue:59 Rules/AssignmentRulesListView.vue:30
+#: desk/src/components/Settings/Assignment desk/src/pages/SearchAgent.vue:68
 #: desk/src/pages/SearchAgent.vue:69
 #: desk/src/pages/home/components/PendingTickets.vue:35
 #: helpdesk/helpdesk/doctype/hd_escalation_rule/hd_escalation_rule.json
@@ -4463,6 +5038,10 @@ msgstr "Priorité"
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:86
 msgid "Priority <u>{0}</u> must be included in the SLA {1}."
 msgstr "La priorité <u>{0}</u> doit être incluse dans le SLA {1}."
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:111
+msgid "Priority cannot be lowered while the incident is open."
+msgstr "La priorité ne peut pas être abaissée tant que l'incident est ouvert."
 
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:75
 msgid "Priority {0} has been repeated."
@@ -4493,7 +5072,7 @@ msgstr "Profil mis à jour avec succès."
 #. Label of the public (Check) field in DocType 'HD View'
 #: helpdesk/helpdesk/doctype/hd_view/hd_view.json
 msgid "Public"
-msgstr "Publique"
+msgstr "Public"
 
 #: desk/src/components/layouts/Sidebar.vue:301
 #: desk/src/pages/ticket/Tickets.vue:392
@@ -4525,8 +5104,7 @@ msgstr "Récupérer les e-mails"
 
 #: desk/src/components/Settings/EmailEdit.vue:407
 msgid "Pulling emails, this may take a few minutes."
-msgstr ""
-"Récupération des e-mails en cours, cela peut prendre quelques minutes."
+msgstr "Récupération des e-mails en cours, cela peut prendre quelques minutes."
 
 #: helpdesk/helpdesk/report/ticket_analytics/ticket_analytics.js:36
 msgid "Quarterly"
@@ -4545,12 +5123,16 @@ msgstr "Chaîne de caractères du lien de requête"
 
 #: desk/src/pages/call-logs/CallLogModal.vue:213
 msgid "Queued"
-msgstr "Dans la file d'attente"
+msgstr "En file d'attente"
 
 #. Label of the raised_by (Data) field in DocType 'HD Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
 msgid "Raised By (Email)"
-msgstr "Créé par (Email)"
+msgstr "Créé par (E-mail)"
+
+#: desk/src/components/IconPicker.vue:45
+msgid "Random"
+msgstr "Aléatoire"
 
 #: helpdesk/helpdesk/report/ticket_analytics/ticket_analytics.js:31
 msgid "Range"
@@ -4599,11 +5181,15 @@ msgstr "Réactions"
 #. Label of the read (Check) field in DocType 'HD Notification'
 #: helpdesk/helpdesk/doctype/hd_notification/hd_notification.json
 msgid "Read"
-msgstr "Lire"
+msgstr "Lecture"
 
 #: desk/src/pages/home/components/PendingTickets.vue:41
 msgid "Reason"
 msgstr "Raison"
+
+#: desk/src/components/kb-credits-portal/QualificationList.vue:23
+msgid "Reason for the contest"
+msgstr "Motif de la contestation"
 
 #: desk/src/pages/home/components/PendingTickets.vue:226
 msgid "Recent"
@@ -4617,6 +5203,10 @@ msgstr "Tickets récents"
 #: desk/src/components/Settings/Telephony/TwilioSettings.vue:29
 msgid "Record Calls"
 msgstr "Enregistrer les appels"
+
+#: desk/src/components/kb-credits/RequalifyDialog.vue:52
+msgid "Recorded on the qualification and visible to the customer."
+msgstr "Enregistré sur la qualification et visible par le client."
 
 #: desk/src/components/Settings/Holiday/HolidayView.vue:114
 msgid "Recurring Holidays"
@@ -4646,6 +5236,10 @@ msgstr "Référence"
 msgid "Reference Ticket"
 msgstr "Ticket de référence"
 
+#: desk/src/components/kb-credits-portal/LayerContestDialog.vue:33
+msgid "Reference instance test, log extract, audit trail… Describe precisely what shows the origin of the problem."
+msgstr "Test sur instance témoin, extrait de log, journal d'audit… Décrivez précisément ce qui montre l'origine du problème."
+
 #. Label of the references_tab (Tab Break) field in DocType 'HD Customer'
 #. Label of the references_section (Section Break) field in DocType 'HD
 #. Notification'
@@ -4666,10 +5260,23 @@ msgstr "Actualiser les applications"
 msgid "Regenerate Search Index"
 msgstr "Régénérer l'index de recherche"
 
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:68
+#: desk/src/components/kb-credits/QualificationItem.vue:210
+msgid "Regularisation"
+msgstr "Régularisation"
+
+#: desk/src/components/kb-credits/CreditsBalanceBar.vue:7
+msgid "Remaining / allocated credits for the period"
+msgstr "Crédits restants / alloués sur la période"
+
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:13
+msgid "Remedies"
+msgstr "Remèdes"
+
 #: desk/src/components/Settings/General/components/LogoUpload.vue:48
 #: desk/src/components/Settings/Profile/UserEmailSettings.vue:75
 msgid "Remove"
-msgstr "Supprimer"
+msgstr "Retirer"
 
 #: desk/src/components/Settings/General/components/Branding.vue:110
 msgid "Remove Logo"
@@ -4703,6 +5310,10 @@ msgstr "Renommer (⌘ + ⏎)"
 msgid "Rename team"
 msgstr "Renommer l'équipe"
 
+#: desk/src/components/SearchArticles.vue:59
+msgid "Rephrase the question and try again with some keywords"
+msgstr "Reformulez la question avec quelques mots-clés et réessayez"
+
 #. Option in a Select field in the tickets Web Form
 #: helpdesk/helpdesk/web_form/tickets/tickets.json
 msgid "Replied"
@@ -4714,7 +5325,7 @@ msgstr "Répondre"
 
 #: desk/src/components/EmailArea.vue:59
 msgid "Reply All"
-msgstr "Répondre à Tous"
+msgstr "Répondre à tous"
 
 #. Label of the reply_from_agent_section (Section Break) field in DocType 'HD
 #. Settings'
@@ -4741,6 +5352,27 @@ msgstr "Réponse du contact"
 msgid "Reply on a ticket"
 msgstr "Répondre à un ticket"
 
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:65
+msgid "Requalified downwards from {0}"
+msgstr "Requalifié à la baisse depuis {0}"
+
+#: desk/src/components/kb-credits/RequalifyDialog.vue:167
+msgid "Requalified: {0} credit(s)"
+msgstr "Requalifié : {0} crédit(s)"
+
+#: desk/src/components/kb-credits/QualificationItem.vue:237
+#: desk/src/components/kb-credits/RequalifyDialog.vue:64
+msgid "Requalify"
+msgstr "Requalifier"
+
+#: desk/src/components/kb-credits/RequalifyDialog.vue:4
+msgid "Requalify downwards"
+msgstr "Requalifier à la baisse"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:92
+msgid "Requalify downwards or apply the lower category: the doubt benefits the customer."
+msgstr "Requalifiez à la baisse ou appliquez la catégorie inférieure : le doute profite au client."
+
 #. Label of the request_key (Data) field in DocType 'HD Desk Account Request'
 #. Label of the request_key (Data) field in DocType 'HD Portal Signup Request'
 #: helpdesk/helpdesk/doctype/hd_desk_account_request/hd_desk_account_request.json
@@ -4756,6 +5388,9 @@ msgstr "Requis"
 #: desk/src/components/SelectDropdown.vue:47 desk/src/pages/home/Home.vue:19
 msgid "Reset"
 msgstr "Réinitialiser"
+
+msgid "Reset Changes"
+msgstr "Réinitialiser les modifications"
 
 #: desk/src/components/Settings/EmailNotifications/Notification.vue:89
 #: desk/src/components/Settings/General/components/TicketSettings.vue:252
@@ -4783,17 +5418,17 @@ msgstr "Résolution de"
 #. Label of the resolution_date (Datetime) field in DocType 'HD Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
 msgid "Resolution Date"
-msgstr "Date de Résolution"
+msgstr "Date de résolution"
 
 #. Label of the resolution_details (Text Editor) field in DocType 'HD Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
 msgid "Resolution Details"
-msgstr "Détails de la Résolution"
+msgstr "Détails de la résolution"
 
 #. Option for the 'SLA Status' (Select) field in DocType 'HD Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
 msgid "Resolution Due"
-msgstr "Résolution due le"
+msgstr "Résolution attendue"
 
 #. Label of the resolution_failed_by (Duration) field in DocType 'HD Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
@@ -4837,12 +5472,8 @@ msgid "Response Result Key Path"
 msgstr "Chemin de la clé du résultat de réponse"
 
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:65
-msgid ""
-"Response Time for {0} priority in row {1} can't be greater than Resolution "
-"Time."
-msgstr ""
-"Le temps de réponse pour la {0} priorité dans la ligne {1} ne peut pas être "
-"supérieur au temps de résolution."
+msgid "Response Time for {0} priority in row {1} can't be greater than Resolution Time."
+msgstr "Le temps de réponse pour la {0} priorité dans la ligne {1} ne peut pas être supérieur au temps de résolution."
 
 #. Label of the response_and_resolution_time_section (Section Break) field in
 #. DocType 'HD Service Level Agreement'
@@ -4854,6 +5485,14 @@ msgstr "Réponse et résolution"
 #: desk/src/components/Settings/SavedReplies/SavedReplyView.vue:407
 msgid "Response is required"
 msgstr "La réponse est requise"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:38
+msgid "Responsibility layer"
+msgstr "Couche de responsabilité"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:30
+msgid "Responsibility layer: {0}"
+msgstr "Couche de responsabilité : {0}"
 
 #. Label of the assign_within_team (Check) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
@@ -4876,9 +5515,7 @@ msgstr "Restreindre les tickets par équipe"
 
 #: desk/src/components/Settings/General/components/TicketSettings.vue:38
 msgid "Restrict tickets to be viewed and managed by team members only."
-msgstr ""
-"Limiter la consultation et la gestion des tickets aux seuls membres de "
-"l'équipe."
+msgstr "Limiter la consultation et la gestion des tickets aux seuls membres de l'équipe."
 
 #: desk/src/components/Settings/SavedReplies/SavedReplyView.vue:83
 msgid "Restrict visibility to these teams"
@@ -4928,12 +5565,8 @@ msgid "Rows"
 msgstr "Lignes"
 
 #: desk/src/components/erpnext-integration/ERPNextIntegrationSettings.vue:108
-msgid ""
-"Run an initial sync to reconcile existing records. New ones update "
-"automatically."
-msgstr ""
-"Lancez une synchronisation initiale pour réconcilier les enregistrements "
-"existants. Les nouveaux se mettent à jour automatiquement."
+msgid "Run an initial sync to reconcile existing records. New ones update automatically."
+msgstr "Lancez une synchronisation initiale pour réconcilier les enregistrements existants. Les nouveaux se mettent à jour automatiquement."
 
 #. Label of the sla (Link) field in DocType 'HD Ticket'
 #. Label of the sla_tab (Tab Break) field in DocType 'HD Ticket'
@@ -4965,6 +5598,10 @@ msgstr "Correspondance des SLA"
 msgid "SLA Status"
 msgstr "Statut SLA"
 
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:15
+msgid "SLA breaches"
+msgstr "Manquements SLA"
+
 #: desk/src/components/Settings/Sla/SlaPolicyView.vue:430
 msgid "SLA policy created successfully."
 msgstr "Politique SLA créée avec succès."
@@ -4985,6 +5622,15 @@ msgstr "Statut de la politique SLA mis à jour avec succès."
 msgid "SLA policy updated successfully."
 msgstr "Politique SLA mise à jour avec succès."
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:143
+#, python-format
+msgid "SLA remedy credits received ≥ 80% of the annual cap."
+msgstr "Crédits-remèdes SLA reçus ≥ 80 % du plafond annuel."
+
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:86
+msgid "SLA remedy credits received: {0}"
+msgstr "Crédits-remèdes SLA reçus : {0}"
+
 #: desk/src/components/Settings/Sla/SlaPolicyView.vue:478
 msgid "SLA set as default cannot be disabled"
 msgstr "La SLA définie par défaut ne peut pas être désactivée"
@@ -4994,12 +5640,8 @@ msgid "SLA set as default cannot be disabled."
 msgstr "La SLA définie par défaut ne peut pas être désactivée."
 
 #: desk/src/components/Settings/Sla/SlaPolicies.vue:11
-msgid ""
-"SLAs align your team and customers with defined timelines for a reliable "
-"experience. Learn more about SLA "
-msgstr ""
-"Les SLA alignent votre équipe et vos clients sur des délais définis, pour "
-"une expérience fiable. En savoir plus sur les SLA "
+msgid "SLAs align your team and customers with defined timelines for a reliable experience. Learn more about SLA "
+msgstr "Les SLA alignent votre équipe et vos clients sur des délais définis, pour une expérience fiable. En savoir plus sur les SLA "
 
 #. Option for the 'Workday' (Select) field in DocType 'HD Service Day'
 #. Option for the 'Weekly Off' (Select) field in DocType 'HD Service Holiday
@@ -5010,8 +5652,8 @@ msgid "Saturday"
 msgstr "Samedi"
 
 #. Button label of the email-feedback Web Form
-#: desk/src/components/ListViewBuilder.vue:704
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:20
+#: Rules/AssignmentRuleView.vue:20 desk/src/components/ListViewBuilder.vue:704
+#: desk/src/components/Settings/Assignment
 #: desk/src/components/Settings/EmailNotifications/Notification.vue:39
 #: desk/src/components/Settings/FieldDependency/FieldDependency.vue:19
 #: desk/src/components/Settings/General/General.vue:15
@@ -5079,10 +5721,10 @@ msgid "Script"
 msgstr "Script"
 
 #. Label of the search_tab (Tab Break) field in DocType 'HD Settings'
+#: Rules/AssigneeSearch.vue:29 Rules/AssignmentRulesList.vue:38
 #: desk/src/components/SavedRepliesSelectorModal.vue:27
 #: desk/src/components/Settings/Agents.vue:24
-#: desk/src/components/Settings/Assignment Rules/AssigneeSearch.vue:29
-#: desk/src/components/Settings/Assignment Rules/AssignmentRulesList.vue:38
+#: desk/src/components/Settings/Assignment
 #: desk/src/components/Settings/Holiday/Holidays.vue:28
 #: desk/src/components/Settings/SavedReplies/SavedRepliesList.vue:26
 #: desk/src/components/Settings/Sla/SlaPolicies.vue:41
@@ -5110,6 +5752,10 @@ msgstr "Nom du paramètre de recherche"
 #: desk/src/components/ticket-agent/AssignTo.vue:62
 msgid "Search agents..."
 msgstr "Rechercher des agents..."
+
+#: desk/src/components/IconPicker.vue:40
+msgid "Search by keyword"
+msgstr "Rechercher par mot-clé"
 
 #: desk/src/components/view-controls/filter/Filter.vue:90
 msgid "Search fields..."
@@ -5141,8 +5787,7 @@ msgstr "Rechercher des tickets, commentaires et communications..."
 
 #: desk/src/components/command-palette/CP.vue:12
 msgid "Search tickets, emails, comments, or #234 to navigate to ticket"
-msgstr ""
-"Recherchez des tickets, e-mails, commentaires, ou #234 pour aller au ticket"
+msgstr "Recherchez des tickets, e-mails, commentaires, ou #234 pour aller au ticket"
 
 #: desk/src/components/view-controls/filter/FilterValueEditor.vue:33
 msgid "Search..."
@@ -5188,9 +5833,30 @@ msgstr "Sélectionner le fuseau horaire"
 msgid "Select a Default Priority."
 msgstr "Sélectionnez une priorité par défaut."
 
+#: desk/src/components/view-controls/Filter.vue:424
+msgid "Select a Value"
+msgstr "Choisir une valeur"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:158
+#: desk/src/components/kb-credits/RequalifyDialog.vue:125
+msgid "Select a code"
+msgstr "Choisissez un code"
+
+#: desk/src/components/kb-credits-portal/LayerContestDialog.vue:95
+msgid "Select a layer"
+msgstr "Choisissez une couche"
+
 #: desk/src/pages/ticket/TicketFeedback.vue:26
 msgid "Select a rating"
 msgstr "Sélectionner une note"
+
+#: desk/src/components/view-controls/Filter.vue:425
+msgid "Select an Option"
+msgstr "Choisir une option"
+
+#: desk/src/components/SearchComplete.vue:3
+msgid "Select an option"
+msgstr "Choisissez une option"
 
 #: desk/src/pages/home/components/AvgTimeMetrics.vue:37
 #: desk/src/pages/home/components/RecentFeedback.vue:151
@@ -5217,6 +5883,14 @@ msgstr "Sélectionnez votre jour de repos hebdomadaire"
 msgid "Send"
 msgstr "Envoyer"
 
+#: desk/src/components/CommunicationArea.vue:47
+msgid "Send (Ctrl + ⏎)"
+msgstr "Envoyer (Ctrl + ⏎)"
+
+#: desk/src/components/CommunicationArea.vue:47
+msgid "Send (⌘ + ⏎)"
+msgstr "Envoyer (⌘ + ⏎)"
+
 #: desk/src/components/Settings/InviteAgents.vue:37
 msgid "Send Invites"
 msgstr "Envoyer des invitations"
@@ -5231,37 +5905,29 @@ msgstr "Envoyer la réponse"
 msgid "Send feedback when"
 msgstr "Envoyer l'avis lorsque"
 
+#: desk/src/components/kb-credits-portal/LayerContestDialog.vue:50
+msgid "Send the contest"
+msgstr "Envoyer la contestation"
+
 #: desk/src/components/ticket-agent/BulkReplyModal.vue:33
 msgid "Send to {0} tickets"
 msgstr "Envoyer à {0} tickets"
 
 #: desk/src/components/Settings/EmailNotifications/NotificationList.vue:78
-msgid ""
-"Sent to all of the agents assigned to the ticket whenever a contact has "
-"replied."
-msgstr ""
-"Envoyé à tous les agents assignés au ticket dès qu'un contact a répondu."
+msgid "Sent to all of the agents assigned to the ticket whenever a contact has replied."
+msgstr "Envoyé à tous les agents assignés au ticket dès qu'un contact a répondu."
 
 #: desk/src/components/Settings/EmailNotifications/NotificationList.vue:85
-msgid ""
-"Sent to all of the recipients associated with the ticket whenever an agent "
-"has replied."
-msgstr ""
-"Envoyé à tous les destinataires associés au ticket dès qu'un agent a "
-"répondu."
+msgid "Sent to all of the recipients associated with the ticket whenever an agent has replied."
+msgstr "Envoyé à tous les destinataires associés au ticket dès qu'un agent a répondu."
 
 #: desk/src/components/Settings/EmailNotifications/NotificationList.vue:73
 msgid "Sent to the user right after creating an email ticket."
-msgstr ""
-"Envoyé à l'utilisateur juste après la création d'un ticket par e-mail."
+msgstr "Envoyé à l'utilisateur juste après la création d'un ticket par e-mail."
 
 #: desk/src/components/Settings/EmailNotifications/NotificationList.vue:66
-msgid ""
-"Sent to the user who has raised the ticket after the ticket is closed or "
-"resolved."
-msgstr ""
-"Envoyé à l'utilisateur ayant créé le ticket une fois celui-ci fermé ou "
-"résolu."
+msgid "Sent to the user who has raised the ticket after the ticket is closed or resolved."
+msgstr "Envoyé à l'utilisateur ayant créé le ticket une fois celui-ci fermé ou résolu."
 
 #: desk/src/components/layouts/Sidebar.vue:618
 msgid "Service Level Agreement"
@@ -5292,8 +5958,7 @@ msgstr "Définir le numéro de téléphone"
 
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:56
 msgid "Set Resolution Time for Priority {0} in row {1}."
-msgstr ""
-"Définissez le temps de résolution pour la priorité {0} à la ligne {1}."
+msgstr "Définissez le temps de résolution pour la priorité {0} à la ligne {1}."
 
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:48
 msgid "Set Response Time for Priority {0} in row {1}."
@@ -5309,46 +5974,24 @@ msgid "Set status"
 msgstr "Définir le statut"
 
 #: desk/src/components/Settings/Sla/SlaPolicyView.vue:231
-msgid ""
-"Set the default status assigned when a ticket is created, and the status to "
-"apply when a ticket is reopened. If not specified, the default status from "
-"HD Settings will be used."
-msgstr ""
-"Définissez le statut attribué par défaut à la création d'un ticket, ainsi "
-"que le statut appliqué lors de sa réouverture. Sans précision, le statut par"
-" défaut des paramètres du Helpdesk sera utilisé."
+msgid "Set the default status assigned when a ticket is created, and the status to apply when a ticket is reopened. If not specified, the default status from HD Settings will be used."
+msgstr "Définissez le statut attribué par défaut à la création d'un ticket, ainsi que le statut appliqué lors de sa réouverture. Sans précision, le statut par défaut des paramètres du Helpdesk sera utilisé."
 
 #: desk/src/components/Settings/Sla/SlaHolidays.vue:9
-msgid ""
-"Set working days, hours, and holidays by selecting a predefined schedule or "
-"creating a new one."
-msgstr ""
-"Définissez les jours ouvrés, les heures et les congés en sélectionnant un "
-"calendrier prédéfini ou en en créant un nouveau."
+msgid "Set working days, hours, and holidays by selecting a predefined schedule or creating a new one."
+msgstr "Définissez les jours ouvrés, les heures et les congés en sélectionnant un calendrier prédéfini ou en en créant un nouveau."
 
 #: desk/src/components/Settings/Profile/Profile.vue:115
 msgid "Set your availability so your team knows when you're reachable."
-msgstr ""
-"Indiquez votre disponibilité pour que votre équipe sache quand vous êtes "
-"joignable."
+msgstr "Indiquez votre disponibilité pour que votre équipe sache quand vous êtes joignable."
 
 #: desk/src/components/Settings/Holiday/Holidays.vue:5
-msgid ""
-"Set your team’s working days, hours, and holidays using a template or custom"
-" schedule."
-msgstr ""
-"Définissez les jours et heures de travail ainsi que les jours fériés de "
-"votre équipe, à partir d'un modèle ou d'un planning personnalisé."
+msgid "Set your team’s working days, hours, and holidays using a template or custom schedule."
+msgstr "Définissez les jours et heures de travail ainsi que les jours fériés de votre équipe, à partir d'un modèle ou d'un planning personnalisé."
 
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:125
-msgid ""
-"Setting <strong>{0}</strong> as the default SLA removes <strong>{1}</strong>"
-" as the default SLA. You’ll need to add a condition in <strong>{1}</strong> "
-"for the SLA to work."
-msgstr ""
-"Définir <strong>{0}</strong> comme SLA par défaut retire ce rôle à "
-"<strong>{1}</strong>. Vous devrez ajouter une condition dans "
-"<strong>{1}</strong> pour que ce SLA fonctionne."
+msgid "Setting <strong>{0}</strong> as the default SLA removes <strong>{1}</strong> as the default SLA. You’ll need to add a condition in <strong>{1}</strong> for the SLA to work."
+msgstr "Définir <strong>{0}</strong> comme SLA par défaut retire ce rôle à <strong>{1}</strong>. Vous devrez ajouter une condition dans <strong>{1}</strong> pour que ce SLA fonctionne."
 
 #: desk/src/components/layouts/Sidebar.vue:574
 msgid "Setting up"
@@ -5373,6 +6016,14 @@ msgstr "Paramètres mis à jour"
 #: desk/src/components/Settings/EmailNotifications/ShareFeedback.vue:77
 msgid "Settings updated successfully."
 msgstr "Paramètres mis à jour avec succès."
+
+#: desk/src/components/kb-credits/QualificationItem.vue:236
+msgid "Settle"
+msgstr "Décompter"
+
+#: desk/src/components/kb-credits/TicketCreditsSection.vue:90
+msgid "Settled"
+msgstr "Réglé"
 
 #. Label of the setup_section (Section Break) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
@@ -5410,6 +6061,10 @@ msgstr "Raccourcis"
 msgid "Show "
 msgstr "Afficher "
 
+#: desk/src/components/HistoryBox.vue:13
+msgid "Show +{0} changes from"
+msgstr "Afficher +{0} modifications de"
+
 #. Label of the different_view (Check) field in DocType 'HD Ticket Status'
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.json
 msgid "Show end users a different view"
@@ -5423,6 +6078,10 @@ msgstr "Afficher dans la barre latérale"
 msgid "Show keyboard shortcuts"
 msgstr "Afficher les raccourcis clavier"
 
+#: desk/src/components/kb-credits-portal/MovementsTable.vue:69
+msgid "Show more"
+msgstr "Afficher plus"
+
 #: desk/src/pages/home/components/PendingTickets.vue:154
 msgid "Showing {0} of {1} {2}"
 msgstr "Affichage de {0} sur {1} {2}"
@@ -5434,12 +6093,8 @@ msgstr "Signature"
 #. Description of the 'Condition' (Code) field in DocType 'HD Service Level
 #. Agreement'
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.json
-msgid ""
-"Simple Python Expression, Example: doc.status == 'Open' and doc.ticket_type "
-"== 'Bug'"
-msgstr ""
-"Expression Python simple, exemple : doc.status == 'Open' and doc.ticket_type"
-" == 'Bug'"
+msgid "Simple Python Expression, Example: doc.status == 'Open' and doc.ticket_type == 'Bug'"
+msgstr "Expression Python simple, exemple : doc.status == 'Open' and doc.ticket_type == 'Bug'"
 
 #. Label of the skip_email_workflow (Check) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
@@ -5450,34 +6105,35 @@ msgstr "Ignorer le flux d'e-mails"
 msgid "Skip email workflow"
 msgstr "Ignorer le flux d'e-mails"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:617
+#: Rules/AssignmentRuleView.vue:617 desk/src/components/Settings/Assignment
 msgid "Some error occurred while renaming assignment rule"
 msgstr "Une erreur s'est produite lors du renommage de la règle d'affectation"
 
 #: desk/src/components/Settings/Holiday/HolidayView.vue:399
 msgid "Some error occurred while renaming holiday list"
-msgstr ""
-"Une erreur s'est produite lors du renommage de la liste de jours fériés"
+msgstr "Une erreur s'est produite lors du renommage de la liste de jours fériés"
 
 #: desk/src/components/Settings/SavedReplies/SavedReplyView.vue:368
 msgid "Some error occurred while renaming saved reply"
 msgstr "Une erreur s'est produite lors du renommage de la réponse enregistrée"
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:601
+#: Rules/AssignmentRuleView.vue:601 desk/src/components/Settings/Assignment
 msgid "Some error occurred while updating assignment rule"
-msgstr ""
-"Une erreur s'est produite lors de la mise à jour de la règle d'affectation"
+msgstr "Une erreur s'est produite lors de la mise à jour de la règle d'affectation"
 
 #: desk/src/components/Settings/Holiday/HolidayView.vue:389
 msgid "Some error occurred while updating holiday list"
-msgstr ""
-"Une erreur s'est produite lors de la mise à jour de la liste de jours fériés"
+msgstr "Une erreur s'est produite lors de la mise à jour de la liste de jours fériés"
 
 #: desk/src/components/view-controls/SortBy.vue:10
 #: desk/src/components/view-controls/SortBy.vue:22
 #: desk/src/components/view-controls/SortBy.vue:231
 msgid "Sort"
 msgstr "Trier"
+
+#: desk/src/components/ticket/TicketAgentDetails.vue:163
+msgid "Source"
+msgstr "Source"
 
 #. Label of the source_doctype (Link) field in DocType 'HD Support Search
 #. Source'
@@ -5514,11 +6170,21 @@ msgstr "Le ticket source n'existe pas"
 msgid "Split and Merge"
 msgstr "Scinder et fusionner"
 
+#: desk/src/components/ticket/TicketSplitModal.vue:33
+msgid "Split into new ticket"
+msgstr "Scinder en un nouveau ticket"
+
+#: desk/src/components/ticket/TicketSplitModal.vue:2
+msgid "Split ticket"
+msgstr "Scinder le ticket"
+
+#: desk/src/components/ViewBreadcrumbs.vue:48
+msgid "Standard"
+msgstr "Standard"
+
 #: helpdesk/helpdesk/doctype/hd_form_script/hd_form_script.js:9
 msgid "Standard Form Scripts can't be modified, duplicate the script instead."
-msgstr ""
-"Les scripts de formulaire standards ne peuvent pas être modifiés ; dupliquez"
-" plutôt le script."
+msgstr "Les scripts de formulaire standards ne peuvent pas être modifiés ; dupliquez plutôt le script."
 
 #: helpdesk/helpdesk/doctype/hd_view/hd_view.py:55
 msgid "Standard Views cannot be deleted."
@@ -5536,11 +6202,12 @@ msgid "Start Time"
 msgstr "Heure de début"
 
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:100
-msgid ""
-"Start Time can't be greater than or equal to End Time in row <u>{0}</u>."
-msgstr ""
-"L'heure de début ne peut pas être supérieure ou égale à l'heure de fin à la "
-"ligne <u>{0}</u>."
+msgid "Start Time can't be greater than or equal to End Time in row <u>{0}</u>."
+msgstr "L'heure de début ne peut pas être supérieure ou égale à l'heure de fin à la ligne <u>{0}</u>."
+
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:159
+msgid "Statement from {0} to {1}. Without a written and reasoned contest within 15 days, it is deemed accepted and settles the account."
+msgstr "Relevé du {0} au {1}. Sans contestation écrite et motivée sous 15 jours, il est réputé accepté et vaut arrêté de compte."
 
 #. Label of the status (Select) field in DocType 'HD Article'
 #. Label of the status_section (Section Break) field in DocType 'HD Settings'
@@ -5663,7 +6330,11 @@ msgstr "Assistance/Support"
 #. Name of a report
 #: helpdesk/helpdesk/report/support_hour_distribution/support_hour_distribution.json
 msgid "Support Hour Distribution"
-msgstr "Répartition des Heures de Support"
+msgstr "Répartition des heures de support"
+
+#: desk/src/components/knowledge-base/CategoryModal.vue:12
+msgid "Support Issues"
+msgstr "Demandes de support"
 
 #. Label of a Link in the Helpdesk Workspace
 #: helpdesk/helpdesk/workspace/helpdesk/helpdesk.json
@@ -5674,19 +6345,15 @@ msgstr "Politique de support"
 #: helpdesk/helpdesk/doctype/hd_service_holiday_list/hd_service_holiday_list.json
 #: helpdesk/helpdesk/doctype/hd_ticket_type/hd_ticket_type.json
 msgid "Support Team"
-msgstr "Équipe de Support"
+msgstr "Équipe support"
 
 #: desk/src/components/Settings/Preferences/components/ThemeSwitcher.vue:11
 msgid "Switch between light, dark, or system theme"
 msgstr "Basculer entre le thème clair, sombre ou système"
 
 #: desk/src/components/Settings/Profile/UserEmailSettings.vue:44
-msgid ""
-"Switch between outgoing email accounts when sending emails from your "
-"configured accounts."
-msgstr ""
-"Basculez entre les comptes e-mail sortants lors de l'envoi depuis vos "
-"comptes configurés."
+msgid "Switch between outgoing email accounts when sending emails from your configured accounts."
+msgstr "Basculez entre les comptes e-mail sortants lors de l'envoi depuis vos comptes configurés."
 
 #: helpdesk/helpdesk/doctype/erpnext_hd_settings/erpnext_hd_settings.js:16
 #: helpdesk/helpdesk/doctype/erpnext_hd_settings/erpnext_hd_settings.js:18
@@ -5694,13 +6361,8 @@ msgid "Sync Customers"
 msgstr "Synchroniser les clients"
 
 #: helpdesk/helpdesk/doctype/erpnext_hd_settings/erpnext_hd_settings.js:22
-msgid ""
-"Sync all customers between ERPNext and Helpdesk? The sync runs in the "
-"background and can take a few minutes depending on the number of customers."
-msgstr ""
-"Synchroniser tous les clients entre ERPNext et le Helpdesk ? La "
-"synchronisation s'exécute en arrière-plan et peut prendre quelques minutes "
-"selon le nombre de clients."
+msgid "Sync all customers between ERPNext and Helpdesk? The sync runs in the background and can take a few minutes depending on the number of customers."
+msgstr "Synchroniser tous les clients entre ERPNext et le Helpdesk ? La synchronisation s'exécute en arrière-plan et peut prendre quelques minutes selon le nombre de clients."
 
 #: desk/src/components/erpnext-integration/ERPNextIntegrationSettings.vue:216
 msgid "Sync completed successfully"
@@ -5772,11 +6434,19 @@ msgstr "Système"
 #: helpdesk/helpdesk/doctype/hd_ticket_type/hd_ticket_type.json
 #: helpdesk/helpdesk/doctype/hd_view/hd_view.json
 msgid "System Manager"
-msgstr "Gestionnaire système"
+msgstr "Responsable système"
 
 #: helpdesk/helpdesk/doctype/hd_ticket_type/hd_ticket_type.py:12
 msgid "System types can not be deleted"
 msgstr "Les types système ne peuvent pas être supprimés"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:271
+msgid "Tacit acceptance in {0} h ({1})"
+msgstr "Acceptation tacite dans {0} h ({1})"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:56
+msgid "Tacit acceptance on {0}"
+msgstr "Acceptation tacite le {0}"
 
 #: helpdesk/helpdesk/doctype/hd_email_feedback/hd_email_feedback.py:22
 msgid "Tampered Access"
@@ -5867,6 +6537,10 @@ msgstr "L'équipe ne verra que ses propres tickets."
 msgid "Teams"
 msgstr "Équipes"
 
+#: desk/src/components/kb-credits-portal/LayerContestDialog.vue:31
+msgid "Technical element"
+msgstr "Élément technique"
+
 #: desk/src/components/Settings/Telephony/Telephony.vue:6
 msgid "Telephony"
 msgstr "Téléphonie"
@@ -5889,7 +6563,7 @@ msgstr "Modèle"
 #. Label of the template_name (Data) field in DocType 'HD Ticket Template'
 #: helpdesk/helpdesk/doctype/hd_ticket_template/hd_ticket_template.json
 msgid "Template Name"
-msgstr "Nom du Modèle"
+msgstr "Nom du modèle"
 
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.py:12
 msgid "The 'Closed' status cannot be renamed."
@@ -5897,13 +6571,19 @@ msgstr "Le statut « Closed » ne peut pas être renommé."
 
 #: helpdesk/extends/assignment_rule.py:20
 msgid "The Assign Condition JSON '{0}' is invalid: </br> {1}"
-msgstr ""
-"Le JSON de la condition d'assignation « {0} » est invalide : </br> {1}"
+msgstr "Le JSON de la condition d'assignation « {0} » est invalide : </br> {1}"
 
 #: helpdesk/extends/assignment_rule.py:28
 msgid "The Unassign Condition JSON '{0}' is invalid: </br> {1}"
-msgstr ""
-"Le JSON de la condition de désassignation « {0} » est invalide : </br> {1}"
+msgstr "Le JSON de la condition de désassignation « {0} » est invalide : </br> {1}"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue
+msgid "The after-hours multiplier depends on this time, not on the announcement time."
+msgstr "Le multiplicateur hors heures ouvrées dépend de cette heure, pas de l'heure de l'annonce."
+
+#: desk/src/components/kb-credits/RequalifyDialog.vue:14
+msgid "The announced weight is a ceiling: codes that would exceed it are disabled."
+msgstr "Le poids annoncé est un plafond : les codes qui le dépasseraient sont désactivés."
 
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:147
 msgid "The assignment condition '{0}' is invalid: {1}"
@@ -5913,19 +6593,22 @@ msgstr "La condition d'assignation « {0} » est invalide : {1}"
 msgid "The assignment condition json '{0}' is invalid: {1}"
 msgstr "Le JSON de la condition d'assignation « {0} » est invalide : {1}"
 
+#: desk/src/components/kb-credits/grid.ts:74
+msgid "The estimated weight for {0} must be {1}."
+msgstr "Le poids estimé pour {0} doit être {1}."
+
 #: desk/src/components/Settings/General/components/TicketSettings.vue:13
-msgid ""
-"The feedback dialog will be shown, when a user tries to close a ticket from "
-"the customer portal."
-msgstr ""
-"La boîte de dialogue d'avis s'affichera lorsqu'un utilisateur tentera de "
-"fermer un ticket depuis le portail client."
+msgid "The feedback dialog will be shown, when a user tries to close a ticket from the customer portal."
+msgstr "La boîte de dialogue d'avis s'affichera lorsqu'un utilisateur tentera de fermer un ticket depuis le portail client."
 
 #: helpdesk/helpdesk/doctype/hd_service_holiday_list/hd_service_holiday_list.py:54
 msgid "The holiday on {0} is not between From Date and To Date"
-msgstr ""
-"Le jour de vacances {0} n’est pas compris entre la Date Initiale et la Date "
-"Finale"
+msgstr "Le jour de vacances {0} n'est pas compris entre la Date Initiale et la Date Finale"
+
+#: desk/src/components/kb-credits-portal/LayerContestDialog.vue:12
+#, python-format
+msgid "The layer says where the malfunction comes from and changes what is counted: a customisation delivered by KB costs 0 credits, a core / customisation interaction 50% of the weight."
+msgstr "La couche indique d'où vient le dysfonctionnement et change ce qui est décompté : une personnalisation livrée par KB coûte 0 crédit, une interaction cœur / personnalisation 50 % du poids."
 
 #: desk/src/components/Settings/General/components/TicketSettings.vue:187
 msgid "The number of days must be 1 or more"
@@ -5933,16 +6616,11 @@ msgstr "Le nombre de jours doit être supérieur ou égal à 1"
 
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.py:40
 msgid "The status for sending feedback must be of <u>Resolved</u> category."
-msgstr ""
-"Le statut d'envoi de l'avis doit appartenir à la catégorie <u>Résolu</u>."
+msgstr "Le statut d'envoi de l'avis doit appartenir à la catégorie <u>Résolu</u>."
 
 #: desk/src/components/Settings/General/components/TicketSettings.vue:83
-msgid ""
-"The ticket status will automatically change whenever the agent respond to a "
-"ticket."
-msgstr ""
-"Le statut du ticket changera automatiquement dès qu'un agent répondra à un "
-"ticket."
+msgid "The ticket status will automatically change whenever the agent respond to a ticket."
+msgstr "Le statut du ticket changera automatiquement dès qu'un agent répondra à un ticket."
 
 #: desk/src/components/Settings/Preferences/components/ThemeSwitcher.vue:6
 msgid "Theme"
@@ -5956,28 +6634,42 @@ msgstr "Aucune catégorie n'est publiée pour le moment."
 msgid "There should be at least 1 assignment rule for ticket"
 msgstr "Il doit y avoir au moins une règle d'assignation pour le ticket"
 
+#: desk/src/components/SearchArticles.vue:7
+msgid "These articles may already cover what you are looking for"
+msgstr "Ces articles répondent peut-être déjà à votre question"
+
 #: helpdesk/extends/assignment_rule.py:51
-msgid ""
-"This Assignment Rule is linked to the Team {0}.</br> User {1} is added in "
-"the Assignment Rule but not in the linked Team. Please add the user in the "
-"{2} to ensure proper team structure."
-msgstr ""
-"Cette règle d'assignation est liée à l'équipe {0}.</br> L'utilisateur {1} "
-"figure dans la règle d'assignation mais pas dans l'équipe liée. Veuillez "
-"l'ajouter à {2} pour garantir une structure d'équipe cohérente."
+msgid "This Assignment Rule is linked to the Team {0}.</br> User {1} is added in the Assignment Rule but not in the linked Team. Please add the user in the {2} to ensure proper team structure."
+msgstr "Cette règle d'assignation est liée à l'équipe {0}.</br> L'utilisateur {1} figure dans la règle d'assignation mais pas dans l'équipe liée. Veuillez l'ajouter à {2} pour garantir une structure d'équipe cohérente."
+
+#: desk/src/components/view-controls/Filter.vue:653
+msgid "This Month"
+msgstr "Ce mois-ci"
+
+#: desk/src/components/view-controls/Filter.vue:654
+msgid "This Quarter"
+msgstr "Ce trimestre"
+
+#: desk/src/components/view-controls/Filter.vue:652
+msgid "This Week"
+msgstr "Cette semaine"
+
+#: desk/src/components/view-controls/Filter.vue:655
+msgid "This Year"
+msgstr "Cette année"
 
 #: desk/src/components/ticket/TicketMergeModal.vue:79
 #: desk/src/components/ticket/TicketSplitModal.vue:24
 msgid "This action is irreversible."
 msgstr "Cette action est irréversible."
 
-#: desk/src/components/ticket/TicketCustomerSidebar.vue:68
-msgid ""
-"This date is calculated based on configured SLAs, working hours, and "
-"holidays."
-msgstr ""
-"Cette date est calculée à partir des SLA configurés, des heures ouvrées et "
-"des jours fériés."
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:32
+msgid "This code puts the ticket on quote — no credits are consumed."
+msgstr "Ce code place le ticket sur devis : aucun crédit n'est consommé."
+
+#: desk/src/components/ticket/TicketCustomerSidebar.vue:72
+msgid "This date is calculated based on configured SLAs, working hours, and holidays."
+msgstr "Cette date est calculée à partir des SLA configurés, des heures ouvrées et des jours fériés."
 
 #. Description of a DocType
 #: helpdesk/helpdesk/doctype/hd_ticket_template/hd_ticket_template.json
@@ -5987,48 +6679,38 @@ msgstr "Ce doctype sera abandonné à l'avenir"
 #. Description of the 'Instantly send e-mail' (Check) field in DocType 'HD
 #. Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"This field is used to send an email instantly without adding it into the "
-"queue. If this field is checked, the email will be sent immediately after "
-"clicking the \"Send\" button, instead of being added to the email queue for "
-"later processing."
-msgstr ""
-"Ce champ permet d'envoyer un e-mail immédiatement sans passer par la file "
-"d'attente. S'il est coché, l'e-mail sera envoyé dès le clic sur le bouton « "
-"Envoyer », au lieu d'être placé dans la file d'attente pour un traitement "
-"ultérieur."
+msgid "This field is used to send an email instantly without adding it into the queue. If this field is checked, the email will be sent immediately after clicking the \"Send\" button, instead of being added to the email queue for later processing."
+msgstr "Ce champ permet d'envoyer un e-mail immédiatement sans passer par la file d'attente. S'il est coché, l'e-mail sera envoyé dès le clic sur le bouton « Envoyer », au lieu d'être placé dans la file d'attente pour un traitement ultérieur."
 
 #. Description of the 'Skip e-mail workflow' (Check) field in DocType 'HD
 #. Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"This field is used to skip email-related workflows for tickets. If this "
-"field is checked, no emails will be sent related to tickets, such as new "
-"ticket creation, status updates, or notifications."
-msgstr ""
-"Ce champ permet d'ignorer les flux liés aux e-mails pour les tickets. S'il "
-"est coché, aucun e-mail ne sera envoyé au sujet des tickets, qu'il s'agisse "
-"de création, de mise à jour de statut ou de notifications."
+msgid "This field is used to skip email-related workflows for tickets. If this field is checked, no emails will be sent related to tickets, such as new ticket creation, status updates, or notifications."
+msgstr "Ce champ permet d'ignorer les flux liés aux e-mails pour les tickets. S'il est coché, aucun e-mail ne sera envoyé au sujet des tickets, qu'il s'agisse de création, de mise à jour de statut ou de notifications."
 
 #: helpdesk/www/helpdesk/index.py:26
 msgid "This method is only meant for developer mode"
 msgstr "Cette méthode est uniquement destinée au mode développeur"
 
+#: desk/src/components/kb-credits-portal/TicketCreditsBlock.vue:52
+msgid "This request is handled on a separate quote: no credit is consumed."
+msgstr "Cette demande fait l'objet d'un devis séparé : aucun crédit n'est consommé."
+
 #: helpdesk/helpdesk/doctype/hd_ticket/api.py:373
-msgid ""
-"This ticket (#{0}) has been merged with ticket <a href = "
-"'/helpdesk/tickets/{1}'>#{1}</a>."
-msgstr ""
-"Ce ticket (n°{0}) a été fusionné avec le ticket <a href = "
-"'/helpdesk/tickets/{1}'>n°{1}</a>."
+msgid "This ticket (#{0}) has been merged with ticket <a href = '/helpdesk/tickets/{1}'>#{1}</a>."
+msgstr "Ce ticket (n°{0}) a été fusionné avec le ticket <a href = '/helpdesk/tickets/{1}'>n°{1}</a>."
 
 #: helpdesk/helpdesk/doctype/hd_ticket/api.py:514
-msgid ""
-"This ticket has been split to a new ticket. Please follow up on ticket <a "
-"href={0}>#{1}</a>."
-msgstr ""
-"Ce ticket a été scindé vers un nouveau ticket. Veuillez poursuivre sur le "
-"ticket <a href={0}>n°{1}</a>."
+msgid "This ticket has been split to a new ticket. Please follow up on ticket <a href={0}>#{1}</a>."
+msgstr "Ce ticket a été scindé vers un nouveau ticket. Veuillez poursuivre sur le ticket <a href={0}>n°{1}</a>."
+
+#: desk/src/components/kb-credits-portal/TicketCreditsBlock.vue:62
+msgid "This ticket has not been qualified yet. The weight will be announced to you before any intervention."
+msgstr "Ce ticket n'est pas encore qualifié. Le poids vous sera annoncé avant toute intervention."
+
+#: desk/src/components/kb-credits/TicketCreditsSection.vue:47
+msgid "This ticket is on quote — no credits are consumed."
+msgstr "Ce ticket est sur devis : aucun crédit n'est consommé."
 
 #: desk/src/pages/ticket/Tickets.vue:544
 msgid "This view is public, and will be removed for all users."
@@ -6036,8 +6718,11 @@ msgstr "Cette vue est publique et sera supprimée pour tous les utilisateurs."
 
 #: desk/src/components/ListViewBuilder.vue:699
 msgid "This view is public. Changes made will be visible to everyone."
-msgstr ""
-"Cette vue est publique. Les modifications seront visibles par tout le monde."
+msgstr "Cette vue est publique. Les modifications seront visibles par tout le monde."
+
+#: desk/src/components/knowledge-base/MergeCategoryModal.vue:13
+msgid "This will move all articles of the"
+msgstr "Tous les articles de la catégorie"
 
 #: desk/src/components/Settings/General/components/TicketSettings.vue:249
 msgid "This will reset the content to the default message."
@@ -6065,6 +6750,14 @@ msgstr "Jeudi"
 msgid "Ticket"
 msgstr "Ticket"
 
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:18
+msgid "Ticket #{0}"
+msgstr "Ticket n° {0}"
+
+#: desk/src/components/ticket-agent/TicketSLA.vue:13
+msgid "Ticket #{0} copied to clipboard"
+msgstr "Ticket n° {0} copié dans le presse-papiers"
+
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.py:817
 msgid "Ticket #{0}: We've received your request"
 msgstr "Ticket n°{0} : nous avons bien reçu votre demande"
@@ -6080,6 +6773,10 @@ msgstr "Analyse des tickets"
 #: helpdesk/helpdesk/workspace/helpdesk/helpdesk.json
 msgid "Ticket Configuration"
 msgstr "Configuration des tickets"
+
+#: desk/src/components/ticket/TicketCustomerSidebar.vue:224
+msgid "Ticket ID"
+msgstr "N° de ticket"
 
 #: desk/src/components/ticket-agent/TicketDetailsTab.vue:55
 msgid "Ticket Info"
@@ -6114,7 +6811,7 @@ msgstr "Priorité du ticket"
 msgid "Ticket Reopen status"
 msgstr "Statut de réouverture du ticket"
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeRules.vue:18
+#: Rules/AssigneeRules.vue:18 desk/src/components/Settings/Assignment
 msgid "Ticket Routing"
 msgstr "Routage des tickets"
 
@@ -6163,6 +6860,10 @@ msgstr "Ticket fermé avec succès."
 msgid "Ticket deleted successfully."
 msgstr "Ticket supprimé avec succès."
 
+#: desk/src/components/ticket/TicketCustomerSidebar.vue:5
+msgid "Ticket details"
+msgstr "Détails du ticket"
+
 #: helpdesk/helpdesk/doctype/hd_email_feedback/hd_email_feedback.py:21
 msgid "Ticket does not exist."
 msgstr "Le ticket n'existe pas."
@@ -6188,6 +6889,14 @@ msgstr "Aucun ticket trouvé pour la clé fournie."
 msgid "Ticket not found."
 msgstr "Ticket introuvable."
 
+#: desk/src/pages/dashboard/Dashboard.vue:283
+msgid "Ticket priorities will be reflected here once assigned."
+msgstr "Les priorités des tickets apparaîtront ici dès qu'elles seront attribuées."
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:210
+msgid "Ticket put on quote — no credits will be consumed."
+msgstr "Ticket placé sur devis : aucun crédit ne sera consommé."
+
 #. Label of the raised_outside_working_hours (Check) field in DocType 'HD
 #. Ticket'
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json
@@ -6205,6 +6914,10 @@ msgstr "Statut du ticket"
 #: desk/src/components/ticket/TicketMergeModal.vue:189
 msgid "Ticket to merged with is required"
 msgstr "Le ticket avec lequel fusionner est requis"
+
+#: desk/src/pages/dashboard/Dashboard.vue:267
+msgid "Ticket trends will appear here once tickets are created."
+msgstr "L'évolution des tickets apparaîtra ici dès que des tickets seront créés."
 
 #. Label of the ticket_type (Link) field in DocType 'HD Escalation Rule'
 #. Label of the to_ticket_type (Link) field in DocType 'HD Escalation Rule'
@@ -6268,6 +6981,22 @@ msgstr "Les tickets doivent remplir les conditions suivantes :"
 msgid "Tickets that are awaiting your response"
 msgstr "Tickets en attente de votre réponse"
 
+#: desk/src/pages/dashboard/Dashboard.vue:279
+msgid "Tickets will be categorized by type once created."
+msgstr "Les tickets seront classés par type dès leur création."
+
+#: desk/src/pages/dashboard/Dashboard.vue:287
+msgid "Tickets will be grouped by channel once received."
+msgstr "Les tickets seront regroupés par canal dès leur réception."
+
+#: desk/src/pages/dashboard/Dashboard.vue:275
+msgid "Tickets will be grouped by team once available."
+msgstr "Les tickets seront regroupés par équipe dès que possible."
+
+#: desk/src/components/view-controls/Filter.vue:326
+msgid "Timespan"
+msgstr "Période"
+
 #: desk/src/components/Settings/Preferences/components/LanguageTimezoneSetting.vue:22
 msgid "Timezone"
 msgstr "Fuseau horaire"
@@ -6325,8 +7054,7 @@ msgstr "Le destinataire est requis"
 
 #: desk/src/components/Settings/EmailEdit.vue:268
 msgid "To know more about setting up email accounts, click"
-msgstr ""
-"Pour en savoir plus sur la configuration des comptes de messagerie, cliquez"
+msgstr "Pour en savoir plus sur la configuration des comptes de messagerie, cliquez"
 
 #: desk/src/pages/dashboard/Dashboard.vue:472
 #: desk/src/pages/dashboard/Dashboard.vue:474
@@ -6336,6 +7064,10 @@ msgstr "Aujourd'hui"
 #: desk/src/components/layouts/Sidebar.vue:262
 msgid "Toggle theme"
 msgstr "Changer de thème"
+
+#: desk/src/components/view-controls/Filter.vue:650
+msgid "Tomorrow"
+msgstr "Demain"
 
 #: helpdesk/helpdesk/report/ticket_search_analysis/ticket_search_analysis.py:35
 msgid "Top Result"
@@ -6376,6 +7108,11 @@ msgstr "Total des tickets par équipe"
 msgid "Total tickets by type"
 msgstr "Total des tickets par type"
 
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:79
+#: desk/src/components/kb-credits/QualificationItem.vue:213
+msgid "Travel fee"
+msgstr "Frais de déplacement"
+
 #. Option for the 'Workday' (Select) field in DocType 'HD Service Day'
 #. Option for the 'Weekly Off' (Select) field in DocType 'HD Service Holiday
 #. List'
@@ -6415,11 +7152,9 @@ msgstr "URL/Méthode"
 
 #: helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.py:650
 msgid "Unable to send email. Please setup default outgoing email account."
-msgstr ""
-"Impossible d'envoyer l'e-mail. Veuillez configurer un compte e-mail sortant "
-"par défaut."
+msgstr "Impossible d'envoyer l'e-mail. Veuillez configurer un compte e-mail sortant par défaut."
 
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:199
+#: Rules/AssignmentRuleView.vue:199 desk/src/components/Settings/Assignment
 msgid "Unassignment Condition"
 msgstr "Condition de désaffectation"
 
@@ -6436,9 +7171,20 @@ msgstr "Accès non autorisé."
 msgid "Unavailable"
 msgstr "Indisponible"
 
+msgid "Unclassified"
+msgstr "Non classé"
+
 #: desk/src/components/layouts/Sidebar.vue:587
 msgid "Understanding ticket view"
 msgstr "Comprendre la vue des tickets"
+
+#: desk/src/components/kb-credits/QualificationItem.vue:211
+msgid "Unfounded P1"
+msgstr "P1 infondé"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:86
+msgid "Unfounded P1 (manager only)"
+msgstr "P1 infondé (Responsable Support uniquement)"
 
 #: desk/src/pages/ticket/Tickets.vue:468
 msgid "Unpin View"
@@ -6452,8 +7198,8 @@ msgstr "Dépublier"
 msgid "Unsaved"
 msgstr "Non enregistré"
 
-#: desk/src/components/Settings/Assignment Rules/AssigneeSearch.vue:164
-#: desk/src/components/Settings/Assignment Rules/AssignmentRuleView.vue:449
+#: Rules/AssigneeSearch.vue:164 Rules/AssignmentRuleView.vue:449
+#: desk/src/components/Settings/Assignment
 #: desk/src/components/Settings/EmailNotifications/Notification.vue:101
 #: desk/src/components/Settings/FieldDependency/FieldDependency.vue:66
 #: desk/src/components/Settings/Holiday/HolidayView.vue:190
@@ -6485,9 +7231,13 @@ msgstr "Mettre à jour le compte"
 msgid "Update status to"
 msgstr "Mettre le statut à"
 
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:12
+msgid "Updated at {0}"
+msgstr "Mis à jour à {0}"
+
 #: desk/src/components/Settings/General/components/LogoUpload.vue:41
 msgid "Upload"
-msgstr "Charger"
+msgstr "Téléverser"
 
 #: desk/src/components/Settings/Profile/Profile.vue:198
 msgid "Upload Photo"
@@ -6545,6 +7295,14 @@ msgstr "Utilisateurs"
 msgid "Valid From"
 msgstr "Valide à partir de"
 
+#: desk/src/components/kb-credits-portal/MovementsTable.vue:53
+msgid "Valid until {0}"
+msgstr "Valable jusqu'au {0}"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:101
+msgid "Validate"
+msgstr "Valider"
+
 #: desk/src/components/view-controls/filter/FilterValueEditor.vue:90
 msgid "Value"
 msgstr "Valeur"
@@ -6559,6 +7317,10 @@ msgstr "Via le portail client"
 #: desk/src/components/Settings/Teams/TeamEdit.vue:241
 msgid "View Assignment rule"
 msgstr "Voir la règle d'assignation"
+
+#: desk/src/components/ViewModal.vue:4
+msgid "View Name"
+msgstr "Nom de la vue"
 
 #: desk/src/pages/ticket/Tickets.vue:652
 msgid "View {0}"
@@ -6580,6 +7342,10 @@ msgstr "Violet"
 msgid "Was this article Helpful?"
 msgstr "Cet article vous a-t-il été utile ?"
 
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:152
+msgid "Watch level"
+msgstr "Niveau de vigilance"
+
 #. Option for the 'Workday' (Select) field in DocType 'HD Service Day'
 #. Option for the 'Weekly Off' (Select) field in DocType 'HD Service Holiday
 #. List'
@@ -6597,17 +7363,39 @@ msgstr "Hebdomadaire"
 #: helpdesk/helpdesk/doctype/hd_holiday/hd_holiday.json
 #: helpdesk/helpdesk/doctype/hd_service_holiday_list/hd_service_holiday_list.json
 msgid "Weekly Off"
-msgstr "Jours de Congé Hebdomadaire"
+msgstr "Jours de congé hebdomadaire"
+
+#: desk/src/components/kb-credits-portal/QualificationList.vue:63
+msgid "Weight validated: we can proceed with the intervention."
+msgstr "Poids validé : nous pouvons procéder à l'intervention."
 
 #. Description of the 'Auto update status' (Check) field in DocType 'HD
 #. Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
-msgid ""
-"When enabled, the ticket status will automatically change to the status "
-"selected below whenever the agent responds to a ticket.\n"
+msgid "When enabled, the ticket status will automatically change to the status selected below whenever the agent responds to a ticket.\n"
 msgstr ""
 "Si activé, le statut du ticket passera automatiquement au statut sélectionné ci-dessous dès qu'un agent répondra à un ticket.\n"
 "\n"
+
+#: desk/src/components/view-controls/ColumnSettings.vue:113
+msgid "Width"
+msgstr "Largeur"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue
+msgid "Within working hours: no multiplier"
+msgstr "En heures ouvrées : aucun multiplicateur"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:76
+msgid "Without a reply from you, this weight is deemed accepted 48 working hours after you were notified."
+msgstr "Sans réponse de votre part, ce poids est réputé accepté 48 heures ouvrées après que vous en avez été prévenu."
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:73
+msgid "Without a reply from you, this weight is deemed accepted on {0}."
+msgstr "Sans réponse de votre part, ce poids sera réputé accepté le {0}."
+
+#: desk/src/pages/kb-credits/CustomerCredits.vue:95
+msgid "Without a written and reasoned contest within 15 days, a statement is deemed accepted and settles the account."
+msgstr "Sans contestation écrite et motivée sous 15 jours, un relevé est réputé accepté et vaut arrêté de compte."
 
 #. Label of the word (Data) field in DocType 'HD Stopword'
 #. Label of the word (Data) field in DocType 'HD Synonyms'
@@ -6640,7 +7428,7 @@ msgstr "La journée de travail {0} a été répétée."
 #. Label of the workflow_tab (Tab Break) field in DocType 'HD Settings'
 #: helpdesk/helpdesk/doctype/hd_settings/hd_settings.json
 msgid "Workflow"
-msgstr "Workflow"
+msgstr "Flux de travail"
 
 #: desk/src/components/Settings/General/components/WorkflowKnowledgebaseSettings.vue:4
 msgid "Workflow & Knowledge Base Settings"
@@ -6667,6 +7455,10 @@ msgstr "Rédigez votre signature d'e-mail ici."
 msgid "Write your reply..."
 msgstr "Rédigez votre réponse..."
 
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:91
+msgid "Written and reasoned contest"
+msgstr "Contestation écrite et motivée"
+
 #: helpdesk/helpdesk/report/ticket_analytics/ticket_analytics.js:37
 msgid "Yearly"
 msgstr "Annuel"
@@ -6676,12 +7468,19 @@ msgstr "Annuel"
 #: helpdesk/helpdesk/doctype/hd_agent_status/hd_agent_status.json
 #: helpdesk/helpdesk/doctype/hd_ticket_status/hd_ticket_status.json
 msgid "Yellow"
-msgstr "jaune"
+msgstr "Jaune"
+
+#: desk/src/components/view-controls/Filter.vue:423
+msgid "Yes"
+msgstr "Oui"
+
+#: desk/src/components/view-controls/Filter.vue:648
+msgid "Yesterday"
+msgstr "Hier"
 
 #: helpdesk/api/dashboard.py:36
 msgid "You are not allowed to view this dashboard data."
-msgstr ""
-"Vous n'êtes pas autorisé à consulter les données de ce tableau de bord."
+msgstr "Vous n'êtes pas autorisé à consulter les données de ce tableau de bord."
 
 #: helpdesk/utils.py:181
 msgid "You are not permitted to access this resource."
@@ -6705,8 +7504,7 @@ msgstr "Vous êtes maintenant en ligne."
 
 #: desk/src/components/telephony/CallUI.vue:33
 msgid "You can change the default calling medium from the settings"
-msgstr ""
-"Vous pouvez modifier le moyen d'appel par défaut depuis les paramètres"
+msgstr "Vous pouvez modifier le moyen d'appel par défaut depuis les paramètres"
 
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:138
 msgid "You cannot disable the default SLA."
@@ -6715,6 +7513,10 @@ msgstr "Vous ne pouvez pas désactiver le SLA par défaut."
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:41
 msgid "You cannot set more than one Default Priority."
 msgstr "Vous ne pouvez pas définir plus d'une priorité par défaut."
+
+#: desk/src/pages/kb-credits/CustomerCredits.vue:42
+msgid "You do not have an active credit account yet. Contact KB support to subscribe to a support pack."
+msgstr "Vous n'avez pas encore de compte de crédits actif. Contactez le support KB pour souscrire un pack de support."
 
 #: helpdesk/api/assignment_rule.py:8
 msgid "You do not have permission to access Assignment Rules"
@@ -6726,9 +7528,7 @@ msgstr "Vous n'avez pas accès à ce ticket, ou il n'existe plus."
 
 #: desk/src/pages/InvalidPage.vue:15
 msgid "You don't have permission to view this page, or it no longer exists."
-msgstr ""
-"Vous n'avez pas la permission de consulter cette page, ou elle n'existe "
-"plus."
+msgstr "Vous n'avez pas la permission de consulter cette page, ou elle n'existe plus."
 
 #: helpdesk/helpdesk/doctype/hd_email_feedback/hd_email_feedback.py:29
 msgid "You have already provided feedback for this ticket."
@@ -6736,19 +7536,33 @@ msgstr "Vous avez déjà donné votre avis sur ce ticket."
 
 #: helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py:132
 msgid "You must set one SLA as Default. Please check the Default SLA option."
-msgstr ""
-"Vous devez définir un SLA par défaut. Veuillez cocher l'option SLA par "
-"défaut."
+msgstr "Vous devez définir un SLA par défaut. Veuillez cocher l'option SLA par défaut."
+
+#: desk/src/components/kb-credits-portal/LayerContestDialog.vue:114
+#: desk/src/components/kb-credits-portal/QualificationList.vue:103
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:175
+msgid "Your contest has been recorded and the Support Manager notified."
+msgstr "Votre contestation est enregistrée et le Responsable Support en est informé."
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:81
+msgid "Your contest: {0}"
+msgstr "Votre contestation : {0}"
 
 #: desk/src/components/Settings/Sla/SlaPolicyView.vue:394
-msgid ""
-"Your old conditions will be overwritten. Are you sure you want to save?"
-msgstr ""
-"Vos anciennes conditions seront écrasées. Voulez-vous vraiment enregistrer ?"
+msgid "Your old conditions will be overwritten. Are you sure you want to save?"
+msgstr "Vos anciennes conditions seront écrasées. Voulez-vous vraiment enregistrer ?"
 
 #: desk/src/pages/home/components/RecentFeedback.vue:51
 msgid "Your performance is"
 msgstr "Votre performance est"
+
+#: desk/src/pages/kb-credits/CustomerCredits.vue:147
+msgid "Your user is not linked to a customer account. Please contact KB support."
+msgstr "Votre utilisateur n'est rattaché à aucun compte client. Contactez le support KB."
+
+#: desk/src/components/kb-credits/QualificationItem.vue:147
+msgid "announced {0}"
+msgstr "annoncé {0}"
 
 #: desk/src/pages/MobileNotifications.vue:46
 msgid "assigned you a ticket"
@@ -6766,6 +7580,19 @@ msgstr "moyenne"
 msgid "back to email event list"
 msgstr "retour à la liste des événements e-mail"
 
+#: desk/src/components/kb-credits/grid.ts:65
+msgid "between {0} and {1} credits"
+msgstr "entre {0} et {1} crédits"
+
+#: desk/src/components/kb-credits-portal/utils.ts:137
+#: desk/src/components/kb-credits/QualificationItem.vue:49
+msgid "capped at the announced weight: {0}"
+msgstr "plafonné au poids annoncé : {0}"
+
+#: desk/src/components/knowledge-base/MergeCategoryModal.vue:15
+msgid "category to the selected category. This change is irreversible!"
+msgstr "seront déplacés vers la catégorie choisie. Cette opération est irréversible !"
+
 #: desk/src/components/HistoryBox.vue:12
 msgid "changes from"
 msgstr "modifications depuis"
@@ -6774,17 +7601,41 @@ msgstr "modifications depuis"
 msgid "created"
 msgstr "créé"
 
+#: desk/src/components/kb-credits/QualificationItem.vue:140
+msgid "credit"
+msgstr "crédit"
+
+#: desk/src/components/kb-credits/RequalifyDialog.vue:11
+msgid "credit(s) announced"
+msgstr "crédit(s) annoncé(s)"
+
+#: desk/src/components/kb-credits/QualificationItem.vue:140
+msgid "credits"
+msgstr "crédits"
+
 #: desk/src/components/Settings/EmailNotifications/NotificationList.vue:42
 msgid "customize {0}"
 msgstr "personnaliser {0}"
+
+#: desk/src/utils.ts:869
+msgid "day"
+msgstr "jour"
 
 #: helpdesk/api/dashboard.py:217 helpdesk/api/dashboard.py:219
 msgid "days"
 msgstr "jours"
 
+#: desk/src/components/kb-credits/TicketCreditsSection.vue:59
+msgid "deadline {0}"
+msgstr "échéance {0}"
+
 #: desk/src/pages/ticket/Tickets.vue:563
 msgid "deleted"
 msgstr "supprimé"
+
+#: desk/src/components/kb-credits-portal/LegalFreezeBanner.vue:34
+msgid "due {0} ({1} h left)"
+msgstr "échéance le {0} (reste {1} h)"
 
 #: desk/src/components/ticket/TicketSplitModal.vue:7
 msgid "emails/ comments"
@@ -6837,6 +7688,30 @@ msgstr "h"
 msgid "in"
 msgstr "dans"
 
+#: desk/src/utils.ts:121
+msgid "in {0} M"
+msgstr "dans {0} mois"
+
+#: desk/src/utils.ts:117
+msgid "in {0} d"
+msgstr "dans {0} j"
+
+#: desk/src/utils.ts:111
+msgid "in {0} h"
+msgstr "dans {0} h"
+
+#: desk/src/utils.ts:109
+msgid "in {0} m"
+msgstr "dans {0} min"
+
+#: desk/src/utils.ts:119
+msgid "in {0} w"
+msgstr "dans {0} sem."
+
+#: desk/src/utils.ts:123
+msgid "in {0} y"
+msgstr "dans {0} an(s)"
+
 #: desk/src/components/ticket-agent/AssignTo.vue:416
 msgid "just now"
 msgstr "juste maintenant"
@@ -6854,6 +7729,22 @@ msgstr "liste"
 #: desk/src/pages/MobileNotifications.vue:43
 msgid "mentioned you in ticket"
 msgstr "vous a mentionné dans le ticket"
+
+#: desk/src/utils.ts:864
+msgid "month"
+msgstr "mois"
+
+#: desk/src/utils.ts:864
+msgid "months"
+msgstr "mois"
+
+#: desk/src/components/kb-credits/QualificationItem.vue:39
+msgid "outside working hours"
+msgstr "hors heures ouvrées"
+
+#: desk/src/components/kb-credits/QualificationItem.vue
+msgid "outside working hours, intervention on {0}"
+msgstr "hors heures ouvrées, intervention prévue le {0}"
 
 #: desk/src/pages/home/components/RecentFeedback.vue:479
 msgid "poor"
@@ -6879,6 +7770,17 @@ msgstr "étoiles"
 msgid "synonym"
 msgstr "synonyme"
 
+#: desk/src/components/kb-credits/QualificationItem.vue:226
+msgid "tacit acceptance on {0}"
+msgstr "acceptation tacite le {0}"
+
+#: desk/src/components/kb-credits/QualificationItem.vue:226
+msgid "tacitly accepted since {0}"
+msgstr "réputé accepté depuis le {0}"
+
+msgid "themselves"
+msgstr "lui-même"
+
 #: desk/src/pages/home/components/PendingTickets.vue:158
 msgid "ticket"
 msgstr "ticket"
@@ -6887,6 +7789,19 @@ msgstr "ticket"
 msgid "to enable this integration."
 msgstr "pour activer cette intégration."
 
+#: desk/src/components/kb-credits/QualificationItem.vue:45
+msgid "unfounded P1 surcharge"
+msgstr "majoration P1 infondé"
+
+#: desk/src/components/kb-credits/CreditsBalanceBar.vue:93
+msgid "until {0}"
+msgstr "jusqu'au {0}"
+
+#: desk/src/components/ticket-agent/TicketSLA.vue:25
+#: desk/src/components/ticket-agent/TicketSLA.vue:31
+msgid "via"
+msgstr "via"
+
 #: desk/src/pages/ticket/MobileTicketAgent.vue:527
 msgid "viewed this"
 msgstr "a consulté ceci"
@@ -6894,6 +7809,52 @@ msgstr "a consulté ceci"
 #: desk/src/pages/knowledge-base/Article.vue:85
 msgid "views"
 msgstr "vues"
+
+#: desk/src/utils.ts:860
+msgid "year"
+msgstr "an"
+
+#: desk/src/utils.ts:860
+msgid "years"
+msgstr "ans"
+
+#: desk/src/components/kb-credits-portal/TicketCreditsBlock.vue:31
+msgid "{0} / {1} credits"
+msgstr "{0} / {1} crédits"
+
+#: desk/src/utils.ts:140
+msgid "{0} M"
+msgstr "{0} mois"
+
+#: desk/src/components/kb-credits-portal/DashboardQualificationRow.vue:33
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:176
+msgid "{0} credit"
+msgstr "{0} crédit"
+
+#: desk/src/components/kb-credits-portal/DashboardQualificationRow.vue:33
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:175
+msgid "{0} credits"
+msgstr "{0} crédits"
+
+#: desk/src/utils.ts:136
+msgid "{0} d"
+msgstr "{0} j"
+
+#: desk/src/utils.ts:191
+msgid "{0} days ago"
+msgstr "Il y a {0} jours"
+
+#: desk/src/utils.ts:131
+msgid "{0} h"
+msgstr "{0} h"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:194
+msgid "{0} h left"
+msgstr "reste {0} h"
+
+#: desk/src/utils.ts:184
+msgid "{0} hours ago"
+msgstr "Il y a {0} heures"
 
 #: desk/src/components/ticket-agent/AssignTo.vue:573
 msgid "{0} is currently away."
@@ -6911,34 +7872,266 @@ msgstr "{0} élément(s) supprimé(s) avec succès"
 msgid "{0} item(s) queued for deletion"
 msgstr "{0} élément(s) en file d'attente pour suppression"
 
+#: desk/src/components/ticket/TicketAgentDetails.vue:104
+msgid "{0} left (On Hold)"
+msgstr "{0} restant (en pause)"
+
+#: desk/src/utils.ts:129
+msgid "{0} m"
+msgstr "{0} min"
+
 #: desk/src/pages/SearchAgent.vue:117
 msgid "{0} matches"
 msgstr "{0} correspondances"
+
+#: desk/src/utils.ts:180
+msgid "{0} minutes ago"
+msgstr "Il y a {0} minutes"
+
+#: desk/src/utils.ts:199
+msgid "{0} months ago"
+msgstr "Il y a {0} mois"
 
 #: desk/src/pages/home/components/RecentFeedback.vue:46
 msgid "{0} reviews"
 msgstr "{0} avis"
 
 #: desk/src/pages/ticket/Tickets.vue:510
-msgid ""
-"{0} view is currently public. Changing it to private will hide it for all "
-"the users."
-msgstr ""
-"La vue {0} est actuellement publique. La rendre privée la masquera pour tous"
-" les utilisateurs."
+msgid "{0} view is currently public. Changing it to private will hide it for all the users."
+msgstr "La vue {0} est actuellement publique. La rendre privée la masquera pour tous les utilisateurs."
 
 #: desk/src/pages/ticket/Tickets.vue:490
-msgid ""
-"{0} view is currently visible in the sidebar. Hiding it will remove it from "
-"the sidebar."
-msgstr ""
-"La vue {0} est actuellement visible dans la barre latérale. La masquer la "
-"retirera de la barre latérale."
+msgid "{0} view is currently visible in the sidebar. Hiding it will remove it from the sidebar."
+msgstr "La vue {0} est actuellement visible dans la barre latérale. La masquer la retirera de la barre latérale."
+
+#: desk/src/utils.ts:138
+msgid "{0} w"
+msgstr "{0} sem."
+
+#: desk/src/utils.ts:195
+msgid "{0} weeks ago"
+msgstr "Il y a {0} semaines"
+
+#: desk/src/utils.ts:142
+msgid "{0} y"
+msgstr "{0} an"
+
+#: desk/src/utils.ts:203
+msgid "{0} years ago"
+msgstr "Il y a {0} ans"
 
 #: desk/src/components/ticket-agent/AssignTo.vue:417
 msgid "{0} · Last active {1}"
 msgstr "{0} · Dernière activité {1}"
 
+#: desk/src/components/kb-credits-portal/QualificationList.vue:86
+msgid "{0} — {1}: {2} credit(s) announced."
+msgstr "{0} — {1} : {2} crédit(s) annoncé(s)."
+
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:62
+#: desk/src/components/kb-credits/CreditsBalanceBar.vue:25
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:172
+#, python-format
+msgid "{0}% consumed"
+msgstr "{0} % consommés"
+
+#: desk/src/utils.ts:236
+msgid "{0}d"
+msgstr "{0}j"
+
+#: desk/src/components/ticket-agent/TicketSLA.vue:263
+msgid "{0}d {1}h"
+msgstr "{0} j {1} h"
+
+#: desk/src/components/ticket-agent/TicketSLA.vue:261
+msgid "{0}mo {1}d"
+msgstr "{0} mois {1} j"
+
+#: desk/src/components/ticket-agent/TicketSLA.vue:259
+msgid "{0}y {1}mo"
+msgstr "{0} an(s) {1} mois"
+
 #: helpdesk/helpdesk/doctype/hd_ticket_comment/hd_ticket_comment.py:156
 msgid "{} people reacted to your comment"
 msgstr "{} personnes ont réagi à votre commentaire"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:187
+msgid "× {0} (outside working hours)"
+msgstr "× {0} (hors heures ouvrées)"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:188
+msgid "× {0} (responsibility layer)"
+msgstr "× {0} (couche de responsabilité)"
+
+#: desk/src/components/kb-credits-portal/utils.ts:130
+msgid "× {0} (unfounded P1 surcharge)"
+msgstr "× {0} (majoration P1 infondé)"
+
+
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:12
+msgid "Allocations & recharges"
+msgstr "Dotations et recharges"
+
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:15
+msgid "Symmetry"
+msgstr "Symétrie"
+
+#: desk/src/components/kb-credits-portal/StatementsTable.vue:16
+msgid "Adjustments & expirations"
+msgstr "Ajustements et expirations"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:118
+msgid "Contested statements"
+msgstr "Relevés contestés"
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:119
+msgid "Answer the customer and correct by a reversing entry if needed: the statement is not deemed accepted while contested."
+msgstr "Répondez au client et corrigez par une contre-écriture si nécessaire : un relevé contesté n'est pas réputé accepté."
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:121
+msgid "No contested statement."
+msgstr "Aucun relevé contesté."
+
+#: desk/src/pages/kb-credits/AgentCreditsDashboard.vue:141
+msgid "Contested on {0}"
+msgstr "Contesté le {0}"
+
+#: desk/src/components/kb-frappe-ui/HelpModal.vue:136
+msgid "Help centre"
+msgstr "Centre d'aide"
+
+#: desk/src/components/kb-frappe-ui/HelpModal.vue:115
+msgid "Help center"
+msgstr "Centre d'aide"
+
+#: desk/src/components/kb-frappe-ui/OnboardingSteps.vue:133
+msgid "You need to complete \"{0}\" first."
+msgstr "Terminez d'abord l'étape « {0} »."
+
+#: desk/src/components/kb-frappe-ui/OnboardingSteps.vue:69
+msgid "Skip"
+msgstr "Ignorer"
+
+#: desk/src/components/kb-frappe-ui/GettingStartedBanner.vue:18
+#: desk/src/components/kb-frappe-ui/HelpModal.vue:113
+#: desk/src/components/kb-frappe-ui/HelpModal.vue:145
+msgid "Getting started"
+msgstr "Prise en main"
+
+#: desk/src/components/kb-frappe-ui/GettingStartedBanner.vue:50
+msgid "Continue"
+msgstr "Continuer"
+
+#: desk/src/components/kb-credits-portal/SlaDegradedBadge.vue:14
+msgid ""
+"Degraded SLA: P1 at 8 working hours until the standby exercise has been "
+"carried out"
+msgstr ""
+"SLA dégradé : P1 à 8 h ouvrées tant que l'exercice d'astreinte n'est pas "
+"réalisé"
+
+msgid ""
+"Dashboard charts will appear here once you start receiving or creating "
+"tickets."
+msgstr ""
+"Les graphiques du tableau de bord apparaîtront ici dès que vous recevrez ou "
+"créerez des tickets."
+
+#: desk/src/components/kb-frappe-ui/OnboardingSteps.vue:33
+msgid "Skip all"
+msgstr "Tout ignorer"
+
+#: desk/src/components/kb-frappe-ui/OnboardingSteps.vue:10
+msgid "Welcome to {0}"
+msgstr "Bienvenue dans {0}"
+
+#: desk/src/components/notifications/Notifications.vue:89
+msgid "You are all caught up!"
+msgstr "Vous êtes à jour !"
+
+#: desk/src/components/kb-credits-portal/QualificationCard.vue:53
+msgid "Projected balance at announcement: {0}"
+msgstr "Solde projeté à l'annonce : {0}"
+
+#: desk/src/components/ListViewBuilder.vue:139
+msgid "{0} of {1}"
+msgstr "{0} sur {1}"
+
+#: desk/src/components/kb-frappe-ui/GettingStartedBanner.vue:30
+msgid "You are all set"
+msgstr "Tout est prêt"
+
+#: desk/src/components/kb-frappe-ui/OnboardingSteps.vue:27
+msgid "Reset all"
+msgstr "Tout réinitialiser"
+
+#: desk/src/components/kb-frappe-ui/OnboardingSteps.vue:13
+msgid "{0}/{1} steps completed"
+msgstr "{0}/{1} étapes terminées"
+
+msgid ""
+"Based on the selected filters no tickets found. Try adjusting the date range"
+" or filters applied."
+msgstr ""
+"Aucun ticket ne correspond aux filtres sélectionnés. Essayez d'élargir la "
+"période ou de modifier les filtres."
+
+#: desk/src/components/kb-frappe-ui/OnboardingSteps.vue:19
+msgid "{0}% completed"
+msgstr "{0} % terminé"
+
+#: desk/src/components/kb-frappe-ui/HelpCenter.vue:11
+msgid "Search articles..."
+msgstr "Rechercher des articles…"
+
+#: desk/src/components/kb-credits/TicketCreditsSection.vue:91
+msgid "Total settled"
+msgstr "Total décompté"
+
+#: desk/src/components/kb-frappe-ui/HelpModal.vue:123
+msgid "Reset onboarding steps"
+msgstr "Réinitialiser les étapes de prise en main"
+
+#: desk/src/pages/home/components/PendingTickets.vue:158
+msgid "tickets"
+msgstr "tickets"
+
+#: desk/src/components/kb-frappe-ui/GettingStartedBanner.vue:21
+msgid "{0}/{1} steps"
+msgstr "{0}/{1} étapes"
+
+#: desk/src/pages/home/components/RecentFeedback.vue:278
+msgid "You haven't received any feedback yet"
+msgstr "Vous n'avez encore reçu aucun avis"
+
+#: desk/src/components/kb-frappe-ui/GettingStartedBanner.vue:45
+msgid "All steps are completed successfully"
+msgstr "Toutes les étapes sont terminées"
+
+#: desk/src/components/kb-frappe-ui/HelpCenter.vue:23
+msgid "All articles"
+msgstr "Tous les articles"
+
+msgid "SLA Fulfilled"
+msgstr "SLA respecté"
+
+#: desk/src/components/kb-frappe-ui/GettingStartedBanner.vue:50
+msgid "Start now"
+msgstr "Commencer"
+
+#: desk/src/utils.ts:391
+msgid "{0} s"
+msgstr "{0} s"
+
+#: desk/src/utils.ts:143 desk/src/utils.ts:397
+msgid "{0} yrs"
+msgstr "{0} ans"
+
+#: desk/src/components/kb-credits-portal/BalanceCard.vue:28
+msgid "Purchased"
+msgstr "Achetés"
+
+#: desk/src/components/kb-credits/AnnounceQualificationDialog.vue:17
+#: desk/src/components/kb-credits/RequalifyDialog.vue:25
+msgid "Grid weight: {0}"
+msgstr "Poids de la grille : {0}"

@@ -2,7 +2,7 @@
   <div class="flex w-[382px] flex-col border-l gap-4">
     <!-- Ticket ID -->
     <div class="flex items-center justify-between border-b px-5 py-3">
-      <span class="cursor-copy text-lg font-semibold">Ticket details</span>
+      <span class="cursor-copy text-lg font-semibold">{{ __("Ticket details") }}</span>
     </div>
     <!-- user info and sla info -->
     <div class="flex flex-col gap-4 pt-0 px-5 py-3 border-b">
@@ -36,7 +36,9 @@
         class="flex items-center text-base leading-5"
         v-for="field in ticketBasicInfo"
       >
-        <span class="w-[126px] text-sm text-ink-gray-5">{{ field.label }}</span>
+        <span class="w-[126px] text-sm text-ink-gray-5">{{
+          __(field.label)
+        }}</span>
         <span
           class="text-base text-ink-gray-8 flex-1"
           :class="!field.value && 'text-ink-gray-4'"
@@ -51,7 +53,9 @@
         :key="data.label"
         class="flex items-center text-base"
       >
-        <div class="w-[126px] text-ink-gray-5 text-sm">{{ data.title }}</div>
+        <div class="w-[126px] text-ink-gray-5 text-sm">
+          {{ __(data.title) }}
+        </div>
         <div
           class="break-words text-base text-ink-gray-8 flex items-center gap-2"
         >
@@ -83,13 +87,22 @@
       class="border-b text-base text-ink-gray-5"
       :ticket="ticket.data"
     />
+    <!-- kb_credits (F2): announced weight, Validate / Contest. Hidden when
+         the ticket has no customer or the customer no credit account. -->
+    <TicketCreditsBlock
+      :ticket="ticket.data.name"
+      :customer="ticket.data.customer"
+      :sla="ticket.data.sla"
+    />
     <div class="flex flex-col gap-4 pt-0 px-5 py-3 overflow-y-scroll">
       <div
         class="flex items-center text-base leading-5"
         v-for="field in ticketAdditionalInfo"
         :key="field.fieldname"
       >
-        <span class="w-[126px] text-sm text-ink-gray-5">{{ field.label }}</span>
+        <span class="w-[126px] text-sm text-ink-gray-5">{{
+          __(field.label)
+        }}</span>
         <span
           class="text-base text-ink-gray-8 flex-1"
           :class="!field.value && 'text-ink-gray-4'"
@@ -113,6 +126,8 @@
 </template>
 
 <script setup lang="ts">
+import { __ } from "@/translation";
+import TicketCreditsBlock from "@/components/kb-credits-portal/TicketCreditsBlock.vue";
 import { ITicket } from "@/pages/ticket/symbols";
 import { Field } from "@/types";
 import { dateFormat, dateTooltipFormat, formatTime } from "@/utils";
@@ -149,9 +164,9 @@ function firstResponseData() {
     dayjs().isBefore(dayjs(ticket.data.response_by))
   ) {
     firstResponse = {
-      label: `Due in ${formatTime(
+      label: __("Due in {0}", formatTime(
         dayjs(ticket.data.response_by).diff(dayjs(), "s")
-      )}`,
+      )),
       color: "orange",
     };
   } else if (
@@ -160,17 +175,17 @@ function firstResponseData() {
     )
   ) {
     firstResponse = {
-      label: `Fulfilled in ${formatTime(
+      label: __("Fulfilled in {0}", formatTime(
         dayjs(ticket.data.first_responded_on).diff(
           dayjs(ticket.data.creation),
           "s"
         )
-      )}`,
+      )),
       color: "green",
     };
   } else {
     firstResponse = {
-      label: "Failed",
+      label: __("Failed"),
       color: "red",
     };
   }
@@ -184,21 +199,21 @@ function resolutionData() {
     dayjs().isBefore(ticket.data.resolution_by)
   ) {
     resolution = {
-      label: `Due in ${formatTime(
+      label: __("Due in {0}", formatTime(
         dayjs(ticket.data.resolution_by).diff(dayjs(), "s")
-      )}`,
+      )),
       color: "orange",
     };
   } else if (ticket.data.agreement_status === "Fulfilled") {
     resolution = {
-      label: `Fulfilled in ${formatTime(
+      label: __("Fulfilled in {0}", formatTime(
         dayjs(ticket.data.resolution_time, "s")
-      )}`,
+      )),
       color: "green",
     };
   } else {
     resolution = {
-      label: "Failed",
+      label: __("Failed"),
       color: "red",
     };
   }
@@ -207,11 +222,11 @@ function resolutionData() {
 
 const ticketBasicInfo = computed(() => [
   {
-    label: "Ticket ID",
+    label: __("Ticket ID"),
     value: ticket.data.name,
   },
   {
-    label: "Status",
+    label: __("Status"),
     value: ticket.data.status,
     bold: true,
   },
@@ -221,17 +236,17 @@ const ticketAdditionalInfo = computed(() => {
   const fields = [
     {
       fieldname: "subject",
-      label: "Subject",
+      label: __("Subject"),
       value: ticket.data.subject,
     },
     {
       fieldname: "team",
-      label: "Team",
+      label: __("Team"),
       value: ticket.data.agent_group || "-",
     },
     {
       fieldname: "priority",
-      label: "Priority",
+      label: __("Priority"),
       value: ticket.data.priority,
     },
   ];

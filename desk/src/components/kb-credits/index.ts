@@ -4,3 +4,4 @@ export { default as QualificationItem } from "./QualificationItem.vue";
 export { default as RequalifyDialog } from "./RequalifyDialog.vue";
 export { default as TicketCreditsSection } from "./TicketCreditsSection.vue";
 export * from "./types";
+export * from "./grid";

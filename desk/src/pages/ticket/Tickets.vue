@@ -15,7 +15,7 @@
           class="inline-flex"
           :to="{ name: isCustomerPortal ? 'TicketNew' : 'TicketAgentNew' }"
         >
-          <Button label="Create" theme="gray" variant="solid">
+          <Button :label="__('Create')" theme="gray" variant="solid">
             <template #prefix>
               <LucidePlus class="h-4 w-4" />
             </template>
@@ -69,6 +69,7 @@ import { useTicketStatusStore } from "@/stores/ticketStatus";
 import { __ } from "@/translation";
 import { View } from "@/types";
 import { getIcon, isCustomerPortal, shortDuration } from "@/utils";
+import { formatFullDateFr } from "@/components/kb-credits-portal/format";
 import {
   Badge,
   dayjs,
@@ -151,7 +152,7 @@ const options = computed(() => ({
         const status = getStatus(item);
         const label = isCustomerPortal.value
           ? status?.["label_customer"]
-          : status?.["label_agent"];
+          : __(status?.["label_agent"]);
         return h(
           "div",
           { class: "flex items-center gap-1.5 justify-start w-full" },
@@ -229,7 +230,7 @@ function handleResponseByField(row: any, item: string) {
     return h(
       Tooltip,
       {
-        text: dayjs(item).format("LLLL"),
+        text: formatFullDateFr(item),
       },
       h(Badge, {
         label: shortDuration(item),
@@ -271,7 +272,7 @@ function handleResolutionByField(row: any, item: string) {
   return h(
     Tooltip,
     {
-      text: dayjs(item).format("LLLL"),
+      text: formatFullDateFr(item),
     },
     h(Badge, {
       label: shortDuration(item),

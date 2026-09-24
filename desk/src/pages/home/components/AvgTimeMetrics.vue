@@ -46,7 +46,7 @@
     </div>
     <div
       v-if="
-        timeAverages.first_response == '0m' && timeAverages.resolution == '0m'
+        timeAverages.first_response == '0min' && timeAverages.resolution == '0min'
       "
       class="relative flex flex-col mt-5 grow w-full select-none"
     >
@@ -248,13 +248,13 @@ const timeAverages = computed(() => {
         day: true,
         hour: true,
         minute: true,
-      }) || "0m",
+      }) || "0min",
     resolution:
       formatTime(_averageResolution, {
         day: true,
         hour: true,
         minute: true,
-      }) || "0m",
+      }) || "0min",
   };
 });
 
@@ -317,11 +317,11 @@ const chartConfig = computed<EChartsOption>(() => {
       axisLabel: {
         formatter: (value: number) => {
           if (value < 3600) {
-            return (value / 60).toFixed(0) + "m";
+            return (value / 60).toFixed(0) + "min";
           } else if (value < 86400) {
             return (value / 3600).toFixed(0) + "h";
           } else {
-            return (value / 86400).toFixed(0) + "d";
+            return __("{0}d", (value / 86400).toFixed(0));
           }
         },
         margin: 20,

@@ -15,12 +15,12 @@
       v-if="item.modified"
       class="ml-auto whitespace-nowrap pl-2 text-ink-gray-5"
     >
-      {{ dayjs(item.modified).fromNow(true) }}
+      {{ fromNowFr(item.modified, true) }}
     </span>
   </div>
 </template>
 <script setup lang="ts">
-import { dayjs } from "frappe-ui";
+import { fromNowFr } from "@/components/kb-credits-portal/format";
 
 defineProps({
   item: {

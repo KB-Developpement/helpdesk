@@ -148,7 +148,7 @@
       v-model="showHelpModal"
       v-model:articles="articles"
       appName="helpdesk"
-      title="Frappe Helpdesk"
+      :title="__('Frappe Helpdesk')"
       :logo="logo"
       docsLink="https://docs.frappe.io/helpdesk"
       :afterSkip="(step: string) => capture('onboarding_step_skipped_' + step)"
@@ -189,9 +189,9 @@ import { useSidebarStore } from "@/stores/sidebar";
 import { capture } from "@/telemetry";
 import { isCustomerPortal } from "@/utils";
 import { call, toast, useTheme } from "frappe-ui";
+import GettingStartedBanner from "@/components/kb-frappe-ui/GettingStartedBanner.vue";
+import HelpModal from "@/components/kb-frappe-ui/HelpModal.vue";
 import {
-  GettingStartedBanner,
-  HelpModal,
   IntermediateStepModal,
   minimize,
   showHelpModal,
@@ -559,11 +559,11 @@ const steps = [
 
 const articles = ref([
   {
-    title: "Introduction",
+    title: __("Introduction"),
     opened: false,
     subArticles: [
-      { name: "introduction", title: "Introduction" },
-      { name: "setting-up", title: "Setting up" },
+      { name: "introduction", title: __("Introduction") },
+      { name: "setting-up", title: __("Setting up") },
     ],
   },
   {
@@ -572,27 +572,27 @@ const articles = ref([
     subArticles: [
       {
         name: "lesson-1-your-first-ticket",
-        title: "Creating a ticket",
+        title: __("Creating a ticket"),
       },
       {
         name: "lesson-2understanding-ticket-view",
-        title: "Understanding ticket view",
+        title: __("Understanding ticket view"),
       },
       {
         name: "lesson-3-agents-teams",
-        title: "Agents & Teams",
+        title: __("Agents & Teams"),
       },
       {
         name: "customers-contacts",
-        title: "Customers & Contacts",
+        title: __("Customers & Contacts"),
       },
       {
         name: "lesson-4-knowledge-base",
-        title: "Knowledge Base",
+        title: __("Knowledge Base"),
       },
       {
         name: "customer-portal",
-        title: "Customer Portal",
+        title: __("Customer Portal"),
       },
     ],
   },
@@ -616,20 +616,20 @@ const articles = ref([
     title: __("Customizations"),
     opened: false,
     subArticles: [
-      { name: "custom-actions", title: "Custom Actions" },
-      { name: "field-dependency", title: "Field Dependency" },
-      { name: "custom-views", title: "Custom Views" },
+      { name: "custom-actions", title: __("Custom Actions") },
+      { name: "field-dependency", title: __("Field Dependency") },
+      { name: "custom-views", title: __("Custom Views") },
       {
         name: "settings",
-        title: "Settings",
+        title: __("Settings"),
       },
     ],
   },
   {
-    title: "Frappe Helpdesk Mobile",
+    title: __("Frappe Helpdesk Mobile"),
     opened: false,
     subArticles: [
-      { name: "pwa-installation", title: "Mobile App Installation" },
+      { name: "pwa-installation", title: __("Mobile App Installation") },
     ],
   },
 ]);
@@ -686,6 +686,10 @@ async function getGeneralCategory() {
 function setUpOnboarding() {
   if (!authStore.isManager) return;
   setUp(steps);
+  // KB : l'onboarding « Getting started » (Frappe Cloud) ne s'ouvre plus tout
+  // seul à chaque chargement — il masquait la barre latérale du ticket et sa
+  // section Crédits. Il reste accessible par le lien Aide et par Cmd/Ctrl+H.
+  showHelpModal.value = false;
   useShortcut({ key: "h", meta: true }, () => {
     showHelpModal.value = !showHelpModal.value;
   });

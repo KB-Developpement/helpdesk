@@ -6,7 +6,7 @@
       </span>
       <Tooltip :text="__('Remaining / allocated credits for the period')">
         <span class="text-ink-gray-9 text-sm font-semibold shrink-0 tabular-nums">
-          {{ format(summary.balance) }} / {{ format(summary.allocated) }}
+          {{ formatCredits(summary.balance) }} / {{ formatCredits(summary.consumption_base ?? summary.allocated) }}
         </span>
       </Tooltip>
     </div>
@@ -16,18 +16,21 @@
       <div
         class="h-full rounded-full transition-all duration-300"
         :class="barClass"
-        :style="{ width: Math.min(summary.consumption_pct, 100) + '%' }"
+        :style="{ width: Math.min(Number(summary.consumption_pct || 0), 100) + '%' }"
       />
     </div>
 
     <div class="flex items-center justify-between gap-2">
       <span class="text-ink-gray-5 text-xs">
-        {{ __("{0}% consumed").replace("{0}", String(summary.consumption_pct)) }}
+        {{ __("{0}% consumed", formatCredits(summary.consumption_pct ?? 0)) }}
       </span>
       <span v-if="periodLabel" class="text-ink-gray-5 text-xs shrink-0">
         {{ periodLabel }}
       </span>
     </div>
+
+    <!-- art. 5.7 : P1 dégradé tant que l'exercice d'astreinte n'est pas fait -->
+    <SlaDegradedBadge :summary="degradation" compact />
 
     <!-- only surfaced once a threshold is actually crossed -->
     <div
@@ -46,18 +49,57 @@
 </template>
 
 <script setup lang="ts">
-import { dayjs, Tooltip } from "frappe-ui";
-import { computed } from "vue";
+import SlaDegradedBadge from "@/components/kb-credits-portal/SlaDegradedBadge.vue";
+import type { SlaDegradationFields } from "@/components/kb-credits-portal/types";
+import { formatCredits, formatDate } from "@/components/kb-credits-portal/format";
+import { isSlaDegraded } from "@/components/kb-credits-portal/utils";
+import { __ } from "@/translation";
+import { call, Tooltip } from "frappe-ui";
+import { computed, ref, watch } from "vue";
 import LucideTriangleAlert from "~icons/lucide/triangle-alert";
 import type { AccountSummary } from "./types";
 
 const props = defineProps<{ summary: AccountSummary | null }>();
 
-function format(n: number | undefined): string {
-  if (n === undefined || n === null) return "–";
-  // credits are fractional (0.25 steps); drop noise but keep real decimals
-  return Number.isInteger(n) ? String(n) : n.toFixed(2).replace(/\.?0+$/, "");
+// Le résumé du compte ne dit pas toujours si le SLA est dégradé (art. 5.7).
+// Côté agent, la fiche KB Credit Account est lisible (rôle Agent) : on y lit
+// l'état de l'exercice d'astreinte quand le résumé ne le porte pas.
+const accountFields = ref<SlaDegradationFields | null>(null);
+
+function summaryKnowsDegradation(s: AccountSummary | null): boolean {
+  if (!s) return true;
+  // le champ `sla` du compte porte le SLA nominal (« KB XL ») : seul un nom en
+  // « -DEG », le drapeau explicite ou l'état de l'exercice tranchent
+  if (isSlaDegraded(s)) return true;
+  return [s.sla_degraded, s.standby_test_done].some((v) => v !== undefined && v !== null);
 }
+
+watch(
+  () => props.summary?.account,
+  async (account) => {
+    accountFields.value = null;
+    const s = props.summary;
+    if (!account || summaryKnowsDegradation(s)) return;
+    if (!["L", "XL"].includes(String(s?.pack || "").toUpperCase())) return;
+    try {
+      const row = await call("frappe.client.get_value", {
+        doctype: "KB Credit Account",
+        filters: { name: account },
+        fieldname: ["standby_test_done", "sla", "pack", "account_type"],
+      });
+      if (props.summary?.account === account) accountFields.value = row || null;
+    } catch {
+      // pas de droit de lecture : on n'affiche rien plutôt qu'une supposition
+    }
+  },
+  { immediate: true }
+);
+
+const degradation = computed<SlaDegradationFields | null>(() => {
+  const s = props.summary;
+  if (!s) return null;
+  return accountFields.value ? { ...s, ...accountFields.value } : s;
+});
 
 const barClass = computed(() => {
   switch (props.summary?.alert_level) {
@@ -81,15 +123,12 @@ const alertMessage = computed(() => {
   if (!s) return "";
   const threshold =
     s.alert_level === "danger" ? s.thresholds?.danger : s.thresholds?.warning;
-  return __("Consumption has passed {0}% of the allocation.").replace(
-    "{0}",
-    String(threshold ?? "")
-  );
+  return __("Consumption has passed {0}% of the allocation.", formatCredits(threshold ?? 0));
 });
 
 const periodLabel = computed(() => {
   const s = props.summary;
   if (!s?.period_end) return "";
-  return __("until {0}").replace("{0}", dayjs(s.period_end).format("DD/MM/YYYY"));
+  return __("until {0}", formatDate(s.period_end));
 });
 </script>

@@ -67,7 +67,9 @@
         :key="column.key"
         :item="column"
         @columnWidthUpdated="handleColumnResize"
-      />
+      >
+        <div class="truncate">{{ __(column.label) }}</div>
+      </ListHeaderItem>
     </ListHeader>
     <ListRows
       :rows="rows"
@@ -111,7 +113,39 @@
           handlePageLength(count);
         }
       "
-    />
+    >
+      <!-- KB : pied de liste traduit (frappe-ui code « Load More » / « of » en dur) -->
+      <template #right>
+        <div class="flex items-center">
+          <Button
+            v-if="
+              list?.data?.row_count &&
+              list?.data?.total_count &&
+              list.data.row_count < list.data.total_count
+            "
+            :label="__('Load More')"
+            @click="handlePageLength(defaultParams.page_length_count, true)"
+          />
+          <div
+            v-if="
+              list?.data?.row_count &&
+              list?.data?.total_count &&
+              list.data.row_count < list.data.total_count
+            "
+            class="mx-3 h-[80%] border-l"
+          />
+          <div class="text-base text-ink-gray-5">
+            {{
+              __(
+                "{0} of {1}",
+                String(list?.data?.row_count || 0),
+                String(list?.data?.total_count || 0)
+              )
+            }}
+          </div>
+        </div>
+      </template>
+    </ListFooter>
   </div>
   <!-- Empty State -->
   <EmptyState
@@ -484,9 +518,9 @@ const filterableFields = createResource({
   transform: (data) => {
     data = data.map((field) => {
       return {
-        label: field.label,
         value: field.fieldname,
         ...field,
+        label: __(field.label),
       };
     });
     return data;
@@ -496,6 +530,8 @@ const filterableFields = createResource({
 const sortableFields = createResource({
   url: "helpdesk.api.doc.sort_options",
   auto: !options.value.hideViewControls,
+  transform: (data) =>
+    (data || []).map((o) => ({ ...o, label: __(o.label) })),
   params: {
     doctype: options.value.doctype,
     show_customer_portal_fields: defaultParams.show_customer_portal_fields,

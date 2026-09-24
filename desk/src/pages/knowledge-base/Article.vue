@@ -193,7 +193,7 @@
               <p
                 class="truncate capitalize text-p-base text-ink-gray-9 font-medium"
               >
-                <span class="text-base text-ink-gray-5">published by </span>
+                <span class="text-base text-ink-gray-5">{{ __("published by") }} </span>
                 {{ article.data.author.name }}
               </p>
               <div class="flex items-center gap-1">
